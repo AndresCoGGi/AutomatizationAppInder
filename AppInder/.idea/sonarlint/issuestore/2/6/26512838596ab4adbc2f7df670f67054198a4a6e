@@ -1,0 +1,35 @@
+
+[
+squid:S1063"9Replace this use of System.out or System.err by a logger.(Ή¦…‡ϊÿÿÿÿ8½ιΐΌ-
+[
+squid:S1064"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8ÿφΕΌ-
+[
+squid:S106@"9Replace this use of System.out or System.err by a logger.(ρÿ®ϋÿÿÿÿ8χ”Ό-
+[
+squid:S106M"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8¥ªΌ-
+[
+squid:S106O"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8ΞΌ-
+[
+squid:S106J"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8¦ρ‡Ό-
+V
+squid:S106."9Replace this use of System.out or System.err by a logger.(ςΖΆΛ8Ί²Ό-
+[
+squid:S1068"9Replace this use of System.out or System.err by a logger.(¶„Λϊÿÿÿÿ8•€δΌ-
+|squid:S1192/"YDefine a constant instead of duplicating this literal "------------------------" 9 times.(ιη¬ωÿÿÿÿ8¥ªΌ-
+[
+squid:S1060"9Replace this use of System.out or System.err by a logger.(»μαΑώÿÿÿÿ8Ί²Ό-
+[
+squid:S106/"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8ƒΟ³Ό-
+V
+squid:S106<"9Replace this use of System.out or System.err by a logger.(ϊΚΔΘ8οθςΌ-
+[
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8εΔσΌ-
+fsquid:UselessImportCheck"6Remove this unused import 'org.jruby.RubyProcess.Sys'.(›¶²ώÿÿÿÿ8οθςΌ-
+[
+squid:S1061"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8ΕΎΌ-
+[
+squid:S106G"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8ΨΘκΌ-
+[
+squid:S106S"9Replace this use of System.out or System.err by a logger.(ιη¬ωÿÿÿÿ8πΌ-
+V
+squid:S106""9Replace this use of System.out or System.err by a logger.(Ηό€η8η«µΌ-

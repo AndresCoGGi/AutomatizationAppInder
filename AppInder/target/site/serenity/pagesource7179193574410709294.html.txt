@@ -1,0 +1,951 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" class="" lang="es" style="height: auto;"><head class="main-header" style="">
+                    <meta http-equiv="Expires" content="0" />
+            <meta http-equiv="Last-Modified" content="0" />
+            <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate" />
+            <meta http-equiv="Pragma" content="no-cache" />
+            
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta charset="UTF-8" />
+            <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+        
+                                        <link rel="stylesheet" href="/bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/ionicons/css/ionicons.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/iCheck/skins/square/blue.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/select2/select2.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/css/styles.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/css/layout.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/css/tree.css" />
+                        <link rel="stylesheet" href="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/main.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/custom.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/jquery-confirm.min.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/registro.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/fileinput.min.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/timepicker.min.css" />
+            <link rel="stylesheet" type="text/css" href="/bundles/admin/js/jqueryTimeEntry/jquery.timeentry.css" />
+            <link rel="stylesheet" type="text/css" href="/bundles/admin/js/sweetalert2/sweetalert2.min.css" />
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        
+    <link rel="stylesheet" href="/bundles/admin/css/jquery-confirm.min.css" />
+    <link rel="stylesheet" href="/bundles/admin/css/registro.css" />
+    <link rel="stylesheet" href="/bundles/admin/fullcalendar/fullcalendar.min.css" />
+
+    <style>
+        .icheckbox_square-blue{            
+            margin-left: 5px;
+            margin-right: 6px;
+        }
+        .icheckbox_square-blue &gt; label{
+            color: red;
+        }
+        #error3Maximo, #error4Minimo, #errorHorasMaximo, #errorHorasMinimo, #errorDiasReserva, #errorDiasReserva2{
+            margin-left: -7px;
+
+        }
+    </style>
+
+
+                                    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+                    window.SONATA_CONFIG = {
+                        CONFIRM_EXIT: true,
+                        USE_SELECT2: true,
+                        USE_ICHECK: true,
+                        USE_STICKYFORMS: true                    };
+                    
+                                            
+                    window.SONATA_TRANSLATIONS = {
+                        CONFIRM_EXIT: 'Tienes\x20cambios\x20sin\x20guardar.'
+                    };
+
+                    // http://getbootstrap.com/getting-started/#support-ie10-width
+                    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                        var msViewportStyle = document.createElement('style');
+                        msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
+                        document.querySelector('head').appendChild(msViewportStyle);
+                    }
+                </script>
+            
+                                                <script src="/bundles/sonatacore/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonatacore/vendor/moment/min/moment.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jquery-form/jquery.form.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/jquery/jquery.confirmExit.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonatacore/vendor/select2/select2.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/iCheck/icheck.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/readmore-js/readmore.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/Admin.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/treeview.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/sidebar.js" type="text/javascript"></script>
+                            
+                                                    <script src="/bundles/sonatacore/vendor/moment/locale/es.js" type="text/javascript"></script>
+            
+                                    
+                                        <script src="/bundles/sonatacore/vendor/select2/select2_locale_es.js" type="text/javascript"></script>
+                            
+        <!-- Se implementa una librería para que sirva promise en internet explorer -->
+        <script src="/bundles/admin/js/bluebird.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="/bundles/sonatacore/vendor/moment/min/moment-with-locales.min.js"></script>
+        <script type="text/javascript" src="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+        <script src="/bundles/fosjsrouting/js/router.js" type="text/javascript"></script>
+        <script src="/js/routing?callback=fos.Router.setData" type="text/javascript"></script>
+        <script src="/bundles/bazingajstranslation/js/translator.min.js" type="text/javascript"></script>
+        <script src="https://simon.inder.gov.co/translations" type="text/javascript"></script>
+
+        <script src="/bundles/admin/js/jquery-confirm.min.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/jquery.collection.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/select2.min.js" type="text/javascript"></script>
+        <script src="/bundles/pugxautocompleter/js/autocompleter-select2.js" type="text/javascript"></script>
+
+        <script src="/bundles/admin/js/jqueryTimeEntry/jquery.plugin.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/jqueryTimeEntry/jquery.timeentry.js" type="text/javascript"></script>
+
+        <script src="/bundles/admin/js/serializeObject.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/sweetalert2/sweetalert2.min.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/fileInput/fileinput.js" type="text/javascript"></script>
+        <script src="/bundles/itinputmask/vendor/jquery.inputmask/dist/jquery.inputmask.bundle.js" type="text/javascript"></script><style type="text/css">.im-caret {
+	-webkit-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+	from, to {
+		border-right-color: black;
+	}
+	50% {
+		border-right-color: transparent;
+	}
+}
+
+@-webkit-keyframes blink {
+	from, to {
+		border-right-color: black;
+	}
+	50% {
+		border-right-color: transparent;
+	}
+}
+
+.im-static {
+	color: grey;
+}
+</style>
+
+        <script src="/bundles/admin/js/timepicker.min.js" type="text/javascript"></script>
+        
+                <script src="/js/compiled/inder.js" type="text/javascript"></script>
+                
+        
+    
+    <title>
+                    Simon. Sistema de Información Misional
+                            AdminBundle:Usuario:registro
+                        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-58779262-6"></script>
+    <script type="text/javascript">
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-58779262-6');
+    </script>
+</head>
+<body class="sonata-bc skin-black-light layout-top-nav" style="height: auto;">
+
+    <div class="wrapper" style="height: auto;">
+
+                    <header class="main-header">
+                                    <noscript>
+                    &lt;div class="noscript-warning"&gt;
+                        Javascript esta deshabilitado en tu navegador. Algunas características no funcionarán correctamente.
+                    &lt;/div&gt;
+                    </noscript>
+                                                                                                        <nav class="navbar navbar-static-top" role="navigation">
+                                                <!-- inicio menu-arriba -->
+                        <div class="container-fluid ajuste-padding-contenedor">
+                            <div class="navbar-custom-menu menu-arriba">
+                                <div class="nav navbar-nav botonera-arriba"> 
+                                    <!--opciones inclusión-->
+                                    <!-- fin opciones inclusión-->
+                                    <!--Menu usuario-->
+                                                <ul class="menu-usuario">
+            <li class="dropdown user-menu menu-usuario-formato">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw" aria-hidden="true"></i> Juan <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    
+                                                                    
+        
+        <li class="user-header bg-light-blue">
+                            <img src="/uploads/img-perfil.png" class="img-circle" alt="Avatar" />
+                        <p>Juan</p>
+        </li>
+
+        
+        <li class="user-footer">
+            <div class="pull-left">
+                <a href="/admin/sonata/user/user/1178917/edit" class="btn btn-success btn-flat"><i class="fa fa-user"></i> Perfil</a>
+            </div>
+
+            <div class="pull-right">
+                <a href="https://simon.inder.gov.co/admin/logout" class="btn btn-success btn-flat"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión</a>
+            </div>
+        </li>
+                    </ul>
+            </li>
+        </ul>
+        <!--Notificaciones-->                            
+    <div class="dropdown notifications-menu notificaciones">
+        <ul class="dropdown-menu">
+            <li class="header">You have 10 notifications</li>
+            <li>
+                <!-- inner menu: contains the actual data -->
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                    <li>
+                        <a href="#">
+                            5 new members joined today
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Very long description here that may not fit into the
+                            page and may cause design problems
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            5 new members joined
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            25 sales made
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            You changed your username
+                        </a>
+                    </li>
+                </ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            </li>
+            <li class="footer"><a href="#">View all</a></li>
+        </ul>
+    </div>
+    <!--fin notificaciones-->
+                                    <!--fin menu usuario-->
+                                </div>                            
+                            </div>    
+                            <!-- fin menu-arriba -->
+                            <!--cabecera logos pantallas meidanas y grandes -->
+                            <div class="cabecera-logos hidden-sm hidden-xs">
+                                <div class="logos">
+                                    <div class="logo-inder">
+                                        <img src="/bundles/admin/img/logo-simon-header.png" alt="" />
+                                    </div>    
+                                    <div class="logos-mas">
+                                        <img id="img-animacion1" src="/bundles/admin/img/logos-inder-alcaldia.png" alt="Escudo de Colombia" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" /> 
+                                    </div>
+                                </div>
+                                <div class="botonera-otros">    
+                                </div>
+                            </div>
+                            <!-- / cabecera logos pantallas meidanas y grandes -->
+                            <!--cabecera logos pantallas pequeñas-->                
+                            <div class="cabecera-logos-movil hidden-md hidden-lg">
+                                <div class="logo-inder-movil">
+                                    <img src="/bundles/admin/img/logoinder02.svg" alt="" />
+                                </div>    
+                                <div class="contenedor-logos-movil">
+                                    <div class="logos-mas-movil">
+                                        <img id="img-animacion1" src="/bundles/admin/img/logos-inder-alcaldia.png" alt="Escudo de Colombia" /> 
+                                    </div>
+
+                                                                    </div>
+                            </div>                             
+                            <!-- / cabecera logos pantallas pequeñas-->
+                            <!-- menú principal-->  
+                            <div class="container borde-sombra">
+                                <nav class="navbar navbar-default">
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="/admin/dashboard">
+                                            <i class="fa fa-home"></i>
+                                        </a>
+                                    </div>
+                                    <div class="collapse navbar-collapse js-navbar-collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="http://www.inder.gov.co/">Volver al sitio web INDER Alcaldía de Medellín</a>
+                                            </li>
+                                                                                                                                                                                                                                                                                                                                                                    <ul class="menu-simon">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                <li class="dropdown">                                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                                                           
+                        <span>Oferta Institucional</span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>                                                                                                                                                            <ul class="dropdown-menu">
+                                                                                                                                                                                                                            
+                                                                                                                                            <li>                                                <a href="/admin/logic/oferta/list"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Oferta</a>                                                                                                        
+                            </li>
+                                                                
+            
+                                                                            
+                        </ul>
+                                                
+                            </li>
+                                                                
+            
+                                                                                
+                                                                                                                                                                                                                <li class="current_ancestor dropdown">                                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                                                           
+                        <span>Escenarios Deportivos</span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>                                                                                                                                                            <ul class="dropdown-menu">
+                                                                                                                                                                                                                            
+                                                                                                                                            <li>                                                <a href="/admin/logic/escenariodeportivo/list"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Escenario deportivo</a>                                                                                                        
+                            </li>
+                                                                
+            
+                                                                                
+                                                                                                                                            <li class="">                                                <a href="/admin/logic/reserva/list"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Reserva</a>                                                                                                        
+                            </li>
+                                                                
+            
+                                                                            
+                        </ul>
+                                                
+                            </li>
+                                                                
+            
+                                            
+                                            
+                                                                                
+                                                                                                                                                                                                                <li class="dropdown">                                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                                                           
+                        <span>Eventos</span> <i class="fa fa-caret-down" aria-hidden="true"></i></a>                                                                                                                                                            <ul class="dropdown-menu">
+                                                                                                                                                                                                                            
+                                                                                                                                            <li>                                                <a href="/admin/logic/evento/list"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Evento</a>                                                                                                        
+                            </li>
+                                                                
+            
+                                                                            
+                        </ul>
+                                                
+                            </li>
+                                                                
+            
+                                            
+                                            
+                                                                            
+                                                
+                                                                                                                                                                                                                    <!--<li>
+                                                        <a href="/angular6">Angular</a>
+                                                    </li>-->
+                                                </ul>
+                                                                                            
+                                        </ul>
+                                    </div>                               
+                                </nav>
+                            </div>
+                            <!-- / menú principal--> 
+                            <!--menu inclusión móvil-->
+
+
+                            <!-- /.navbar-collapse -->
+                            <!-- Navbar Right Menu -->
+
+                            <!-- /.navbar-custom-menu -->
+                        </div>
+                    </nav>
+                            </header>
+        
+                    <div class="container-fluid miga-ajuste">
+                                    <div class="hidden-xs">
+                                                    <ol class="nav navbar-top-links breadcrumb">
+                                                                            <ol class="breadcrumb">  
+        <li><a href="https://simon.inder.gov.co/admin/dashboard"><i class="fa fa-home"></i></a></li>
+        <li><a href="https://simon.inder.gov.co/admin/logic/escenariodeportivo/list">Escenarios deportivos</a></li>
+        <li><a href="https://simon.inder.gov.co/admin/logic/reserva/list">Reservas</a></li>
+        <li class="active">Crear</li>
+    </ol>
+                                                                    </ol>
+                                            </div>
+                            </div>
+            <div class="content-wrapper content-wrapper-ajuste">
+                <section class="content container">
+
+                        <section class="content">
+                    <form name="reserva" method="post" id="formulario_reserva_paso1" novalidate="true">
+            <div class="container">
+                                                        <div class="row">
+                    <div class="col-md-12 titulos">
+                        <h4>Reserva de escenario deportivo</h4>
+                    </div>
+                </div>
+                <!-- Solicitud-registro-pasos -->
+                <div class="row">
+                    <div class="col-md-12">
+                                            </div>
+                    <div class="col-md-4 iconoText2">
+                        <div class="iconoInfo2">
+                       
+    
+            <div class="linea2" id="linea2" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+        <div class="circulo" id="circulo2" style="opacity: 1;"></div>
+        
+</div>
+<div class="pasos">
+    <div>
+        <ol>
+            <li class="esconderTabletas">
+                <a>
+                    1. Seleccionar escenario                </a>
+            </li>
+            <li class="esconderTabletas">
+                <a>
+                    2. Ubicación                </a>
+            </li>
+                            <li class="esconderTabletas">
+                    <a>
+                        3. Deportistas                    </a>
+                </li>
+                <li class="esconderTabletas">
+                    <a>
+                        4. Términos y Condiciones                    </a>
+                </li>
+                <li class="esconderTabletas">
+                    <a>
+                        5. Confirmación                    </a>
+                </li>
+                    </ol>
+    </div>
+</div>                    </div>
+                    <div class="col-md-8 fondoAzul2">
+                        <div class="infoBox row">                        
+
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 uno contenedorInfoUno">                                
+                                <div class="col-lg-6 col-md-6 divBarrioEscenarioDeportivoReserva">
+                                    <label for="reserva_barrio">Barrio</label>
+                                    <div class="select2-container seleccion_barrio" id="s2id_escenario_deportivo_barrio" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-14">Girardot - Castilla</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen14" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-14" id="s2id_autogen14" /></div><select id="escenario_deportivo_barrio" name="reserva[barrio]" class="seleccion_barrio" data-identificacion="escenario_deportivo" onchange="inder.reserva.actualizarEscenario(this);" title="" style="display: none;" tabindex="-1"><option value="">Seleccione un barrio</option><option value="358">12 de Octubre 1 - 12 de Octubre</option><option value="365">12 de Octubre 2 - 12 de Octubre</option><option value="405">13 de Noviembre - Villa hermosa</option><option value="495">20 de Julio - San Javier</option><option value="423">8 de Marzo - Buenos aires</option><option value="500">Aguacatala - Poblado</option><option value="583">Aguas Frias - Altavista</option><option value="626">Alameda - Bélen</option><option value="1289">Alamos Bermejal - Aranjuez</option><option value="6">Aldea Pablo VI - Popular</option><option value="506">Alejandría - Poblado</option><option value="420">Alejandro Echavarría - Buenos aires</option><option value="343">Alfonso Lopez - Castilla</option><option value="622">Aliadas - Bélen</option><option value="628">Almeria - La América</option><option value="629">Alpinos - Bélen</option><option value="386">Altamira - Robledo</option><option value="546">Altavista - Bélen</option><option value="1296">Altavista parte baja - Bélen</option><option value="580">Altavista Sector Central - Altavista</option><option value="1286">Altos de la Virgen - San Javier</option><option value="505">Altos del Poblado - Poblado</option><option value="16">Andalucía - Santa Cruz</option><option value="481">Antonio Nariño - San Javier</option><option value="704">Apolo - Guayabal</option><option value="329">Aranjuez - Aranjuez</option><option value="579">Area de Expansion Altavista - Altavista</option><option value="588">Area de Expansion Belen - Altavista</option><option value="559">Area de Expansión Calasanz - San Cristóbal</option><option value="578">Area de Expansion Eduardo Santos - San Cristóbal</option><option value="582">Area de Expansion El Noral - Altavista</option><option value="566">Area de Expansion Pajarito - San Cristóbal</option><option value="593">Area de Expansion San Antonio de Prado - San Antonio de prado</option><option value="570">Area Urbana Cgto. San Cristobal - San Cristóbal</option><option value="631">Armero II - 12 de Octubre</option><option value="425">Asomadera No.1 - Buenos aires</option><option value="418">Asomadera No.2 - Buenos aires</option><option value="416">Asomadera No.3 - Buenos aires</option><option value="498">Astorga - Poblado</option><option value="1294">Aures - Robledo</option><option value="367">Aures 1 - Robledo</option><option value="1292">Aures 2 - Robledo</option><option value="632">Barichara - San Antonio de prado</option><option value="513">Barrio Colombia - Poblado</option><option value="477">Barrio Cristóbal - La América</option><option value="633">Barrio Nuevo - Villa hermosa</option><option value="417">Barrios de Jesus - Buenos aires</option><option value="1316">Barrios de Jesús - Bélen</option><option value="600">Barro Blanco - Santa Elena</option><option value="457">Batallon Cuarta Brigada - Laureles-Estadio</option><option value="403">Batallon Girardot - Villa hermosa</option><option value="652">Bayadera - La candelaria</option><option value="338">Belalcázar - Castilla</option><option value="537">Belén - Bélen</option><option value="1297">Bélen Buenavista - Bélen</option><option value="493">Belencito - San Javier</option><option value="543">Belén las playas - Bélen</option><option value="539">Belén los alpes - Bélen</option><option value="634">Belén Rincón - Bélen</option><option value="368">Bello Horizonte - Robledo</option><option value="333">Berlín - Aranjuez</option><option value="336">Berlín - Aranjuez</option><option value="321">Bermejal - Aranjuez</option><option value="478">Betania - San Javier</option><option value="496">Blanquizal - San Javier</option><option value="447">Bolivariana - Laureles-Estadio</option><option value="446">Bomboná - La candelaria</option><option value="412">Bomboná 2 - Buenos aires</option><option value="568">Boqueron - San Cristóbal</option><option value="390">Bosques de San Pablo - Robledo</option><option value="442">Boston - La candelaria</option><option value="350">Boyacá - Castilla</option><option value="649">Brasil - Aranjuez</option><option value="330">Brasilia - Aranjuez</option><option value="421">Buenos Aires - Buenos aires</option><option value="587">Buga Patio Bonito - Altavista</option><option value="635">Bulerias - Laureles-Estadio</option><option value="426">Caicedo - Buenos aires</option><option value="636">Caicedo La Toma - Villa hermosa</option><option value="613">Calasania - La América</option><option value="466">Calasanz - La América</option><option value="465">Calazanz Parte Alta - La América</option><option value="679">Calera - Poblado</option><option value="434">Calle Nueva - La candelaria</option><option value="471">Campo Alegre - La América</option><option value="527">Campo Amor - Guayabal</option><option value="326">Campo Valdés 1 - Aranjuez</option><option value="317">Campo Valdés 2 - Manrique</option><option value="429">Candelaria - La candelaria</option><option value="313">Carambolas - Manrique</option><option value="344">Caribe - Castilla</option><option value="453">Carlos E. Restrepo - Laureles-Estadio</option><option value="10">Carpinelo - Popular</option><option value="341">Castilla - Castilla</option><option value="637">Castillita - Castilla</option><option value="502">Castropol - Poblado</option><option value="414">Cataluña - Buenos aires</option><option value="638">Caunces de Oriente - Buenos aires</option><option value="348">Cementerio Universal - Castilla</option><option value="620">Centralidad - San Cristóbal</option><option value="639">Centro - La candelaria</option><option value="440">Centro Administrativo - La candelaria</option><option value="388">Cerro El Volador - Robledo</option><option value="532">Cerro Nutibara - Bélen</option><option value="640">Ciudad del Rio - Poblado</option><option value="615">Ciudadela Nuevo occidente - San Cristóbal</option><option value="1311">Ciudadela Roblemar - San Cristóbal</option><option value="1276">Civitón - Robledo</option><option value="705">Colina del Sur - Guayabal</option><option value="695">Colinas de la Candelaria - La candelaria</option><option value="445">Colón - La candelaria</option><option value="450">Conquistadores - Laureles-Estadio</option><option value="441">Corazón de Jesús - La candelaria</option><option value="381">Cordoba - Robledo</option><option value="650">Córdoba - Robledo</option><option value="519">Cristo Rey - Guayabal</option><option value="688">Cruz La Salle - Manrique</option><option value="452">Cuarta Brigada - Laureles-Estadio</option><option value="533">Diego Echavarría - Bélen</option><option value="654">Doña María - Robledo</option><option value="380">Ecoparque Cerro El Volador - Robledo</option><option value="491">Eduardo Santos - San Javier</option><option value="1298">Efe Gómez - 12 de Octubre</option><option value="596">El Astillero - San Antonio de prado</option><option value="655">El Bosque - Aranjuez</option><option value="576">El Carmelo - San Cristóbal</option><option value="511">El Castillo - Poblado</option><option value="608">El Cerro - Santa Elena</option><option value="431">El Chagualo - La candelaria</option><option value="657">El Coco - San Javier</option><option value="8">El Compromiso - Popular</option><option value="494">El Corazón - San Javier</option><option value="581">El Corazon El Morro - Altavista</option><option value="653">El Cortijo - Robledo</option><option value="372">El Cucaracho - Robledo</option><option value="468">El Danubio - La América</option><option value="379">El Diamante - Robledo</option><option value="509">El Diamante No.2 - Poblado</option><option value="658">El Edén - Manrique</option><option value="659">El Enclave - Bélen</option><option value="699">El Garabato - Poblado</option><option value="614">El hueco - Bélen</option><option value="1288">El Jardín - Manrique</option><option value="585">El Jardín - Altavista</option><option value="565">El LLano - San Cristóbal</option><option value="603">El LLano Santa Elena - Santa Elena</option><option value="531">El Nogal - Laureles-Estadio</option><option value="571">El Patio - San Cristóbal</option><option value="484">El Pesebre - San Javier</option><option value="569">El Picacho - San Cristóbal</option><option value="404">El Pinal - Villa hermosa</option><option value="602">El Placer - Santa Elena</option><option value="604">El Plan - Santa Elena</option><option value="303">El Playón de Los Comuneros - Santa Cruz</option><option value="660">El Playón de los Comuneros 1 - Santa Cruz</option><option value="514">El Poblado - Poblado</option><option value="308">El Pomar - Manrique</option><option value="352">El Progreso - 12 de Octubre</option><option value="307">El Raizal - Manrique</option><option value="651">El Remanso - Guayabal</option><option value="544">El Rincón - Bélen</option><option value="523">El Rodeo - Bélen</option><option value="591">El Salado - San Antonio de prado</option><option value="482">El Salado - San Javier</option><option value="488">El Socorro - San Javier</option><option value="515">El Tesoro - Poblado</option><option value="356">El Triunfo - 12 de Octubre</option><option value="563">El Uvito - San Cristóbal</option><option value="455">El Velódromo - Laureles-Estadio</option><option value="621">El Vergel - San Antonio de prado</option><option value="575">El Yolombo - San Cristóbal</option><option value="401">Enciso - Villa hermosa</option><option value="436">Estación Villa - La candelaria</option><option value="464">Estadio - Laureles-Estadio</option><option value="382">Facultad de Minas U. Nacional - Robledo</option><option value="383">Fac. Veterinaria y Zootecnia U.de.A. - Robledo</option><option value="547">Fátima - Bélen</option><option value="475">Ferrini - La América</option><option value="345">Florencia - Castilla</option><option value="476">Floresta - La América</option><option value="460">Florida Nueva - Laureles-Estadio</option><option value="342">Francisco Antonio Zea - Castilla</option><option value="339">Frontera - Castilla</option><option value="373">Fuente Clara - Robledo</option><option value="422">Gerona - Buenos aires</option><option value="692">Girardot - Castilla</option><option value="661">Golondrinas - Villa hermosa</option><option value="541">Granada - Bélen</option><option value="12">Granizal - Popular</option><option value="1290">Gratamira - Castilla</option><option value="700">Guadalajara - Poblado</option><option value="525">Guayabal - Guayabal</option><option value="439">Guayaquil - La candelaria</option><option value="337">Hector Abad Gomez - Castilla</option><option value="438">Hospital San Vicente de Paul - La candelaria</option><option value="662">Iguaná - Robledo</option><option value="663">Isaac Gaviria - Villa hermosa</option><option value="320">Jardin Botanico - Aranjuez</option><option value="680">Jesús Nazareno - La candelaria</option><option value="437">Jesús Nazareno - La candelaria</option><option value="664">Jorge Eliécer Gaitán - Manrique</option><option value="410">Juan Pablo II - Buenos aires</option><option value="698">Juan XXIII - La Quiebra - San Javier</option><option value="359">Kennedy - 12 de Octubre</option><option value="555">La Aldea - San Sebastián de Palmitas</option><option value="432">La Alpujarra - La candelaria</option><option value="473">La América - La América</option><option value="9">La Avanzada - Popular</option><option value="1271">La Capilla - Bélen</option><option value="1295">La Cascada - Robledo</option><option value="462">La Castellana - Laureles-Estadio</option><option value="665">La Chacona - Poblado</option><option value="521">La Colina - Guayabal</option><option value="312">La Cruz - Manrique</option><option value="560">La Cuchilla - Robledo</option><option value="696">La Divisa - San Javier</option><option value="357">La Esperanza - 12 de Octubre</option><option value="584">La Esperanza - Altavista</option><option value="7">La Esperanza 2 - Popular</option><option value="503">La Florida - Poblado</option><option value="599">La Florida - San Antonio de prado</option><option value="15">La Francia - Santa Cruz</option><option value="557">La Frisola - San Sebastián de Palmitas</option><option value="14">La Frontera - Santa Cruz</option><option value="538">La Gloria - Bélen</option><option value="689">La Honda - Manrique</option><option value="536">La Hondonada - Bélen</option><option value="617">La Huerta - San Cristóbal</option><option value="564">La Ilusion - San Cristóbal</option><option value="487">La Independencia - San Javier</option><option value="623">La independencia 1 - San Javier</option><option value="624">La independencia 2 - San Javier</option><option value="625">La independencia 3 - San Javier</option><option value="304">La Isla - Santa Cruz</option><option value="397">La Ladera - Villa hermosa</option><option value="406">La Libertad - Villa hermosa</option><option value="516">Lalinde - Poblado</option><option value="573">La Loma - San Cristóbal</option><option value="407">La Mansión - Villa hermosa</option><option value="419">La Milagrosa - Buenos aires</option><option value="693">La Minita - 12 de Octubre</option><option value="548">La Mota - Bélen</option><option value="666">La Nubia - Bélen</option><option value="1299">La palma - Santa Elena</option><option value="572">La Palma - San Cristóbal</option><option value="534">La Palma - Bélen</option><option value="391">La Pilarica - Robledo</option><option value="328">La Piñuela - Aranjuez</option><option value="694">La Pola Monteverde - Robledo</option><option value="486">La Pradera - San Javier</option><option value="480">La Quiebra - San Javier</option><option value="21">La Rosa - Santa Cruz</option><option value="459">Las Acacias - Laureles-Estadio</option><option value="316">La Salle - Manrique</option><option value="354">Las Brisas - Castilla</option><option value="327">Las Esmeraldas - Aranjuez</option><option value="393">Las Estancias - Villa hermosa</option><option value="1303">Las Flores - San Cristóbal</option><option value="318">Las Granjas - Manrique</option><option value="395">La Sierra - Villa hermosa</option><option value="678">Las Lomas - Poblado</option><option value="517">Las Lomas 1  - Poblado</option><option value="510">Las Lomas 2 - Poblado</option><option value="528">Las Mercedes - Bélen</option><option value="690">Las Nieves - Manrique</option><option value="1273">La Soledad - La América</option><option value="609">Las Palmas - Santa Elena</option><option value="444">Las Palmas - La candelaria</option><option value="558">Las Playas - San Cristóbal</option><option value="553">La Sucia - San Sebastián de Palmitas</option><option value="551">La Suiza - San Sebastián de Palmitas</option><option value="549">Las Violetas - Bélen</option><option value="1312">La Torre - Villa hermosa</option><option value="463">Laureles - Laureles-Estadio</option><option value="597">La Verde - San Antonio de prado</option><option value="687">Lenin - Popular</option><option value="677">Limonar - San Antonio de prado</option><option value="1277">Limonar 1 - San Antonio de prado</option><option value="408">LLanaditas - Villa hermosa</option><option value="672">LLeras - Poblado</option><option value="676">Loma del Indio - Poblado</option><option value="542">Loma de Los Bernal - Bélen</option><option value="683">Loma de Los González - Poblado</option><option value="684">Loma de Los Mangos - Villa hermosa</option><option value="703">Loma de los Parra - Poblado</option><option value="681">Lomas de Llanaditas - Villa hermosa</option><option value="387">López de Mesa - Robledo</option><option value="449">Lorena - Laureles-Estadio</option><option value="413">Loreto - Buenos aires</option><option value="492">Los Alcázares - San Javier</option><option value="427">Los Ángeles - La candelaria</option><option value="630">Los Arrayanes - 12 de Octubre</option><option value="508">Los Balsos - Poblado</option><option value="424">Los Cerros El Vergel - Buenos aires</option><option value="448">Los Colores - Laureles-Estadio</option><option value="675">Los Gonzalez - Poblado</option><option value="402">Los Mangos - Villa hermosa</option><option value="674">Los Molinos - Bélen</option><option value="504">Los Naranjos - Poblado</option><option value="469">Los Pinos - La América</option><option value="673">Malibu - Bélen</option><option value="497">Manila - Poblado</option><option value="309">Manrique 1 Central 2 - Manrique</option><option value="310">Manrique 1 Oriental - Manrique</option><option value="325">Manrique Central 1 - Aranjuez</option><option value="706">Manzanares - Guayabal</option><option value="1282">Manzanillo - Altavista</option><option value="1272">Manzanillo - Altavista</option><option value="1278">María Auxiliadora - San Antonio de prado</option><option value="691">María Cano - Manrique</option><option value="610">Mazo - Santa Elena</option><option value="606">Media Luna - Santa Elena</option><option value="489">Metropolitano - San Javier</option><option value="1275">Mirador de Calazans - San Javier</option><option value="360">Mirador del 12 - 12 de Octubre</option><option value="415">Miraflores - Buenos aires</option><option value="682">Miramar - Robledo</option><option value="331">Miranda - Aranjuez</option><option value="530">Miravalle - Bélen</option><option value="592">Montanita - San Antonio de prado</option><option value="377">Monteclaro - Robledo</option><option value="322">Moravia - Aranjuez</option><option value="19">Moscú 1 - Santa Cruz</option><option value="3">Moscú 2 - Popular</option><option value="561">Naranjal - San Cristóbal</option><option value="451">Naranjal - Laureles-Estadio</option><option value="18">Niza Norte (Villa Niza) - Santa Cruz</option><option value="707">Noel - Guayabal</option><option value="709">Nogal - Bélen</option><option value="529">Nueva Villa del Aburra - Bélen</option><option value="1302">Nuevo Occidente - San Cristóbal</option><option value="485">Nuevos Conquistadores - San Javier</option><option value="375">Olaya Herrera - Robledo</option><option value="349">Oleoducto - Castilla</option><option value="305">Oriente(Bello Oriente) - Manrique</option><option value="611">Otro - Otro</option><option value="13">Pablo VI - Santa Cruz</option><option value="376">Pajarito - Robledo</option><option value="574">Pajarito - San Cristóbal</option><option value="370">Palenque 1 y 2 - Robledo</option><option value="334">Palermo - Aranjuez</option><option value="1301">Pallavecini - San Antonio de prado</option><option value="550">Palmitas - San Sebastián de Palmitas</option><option value="618">Paraiso N° 1 - San Cristóbal</option><option value="619">Paraiso N° 2 - San Cristóbal</option><option value="526">Parque Juan Pablo II - Guayabal</option><option value="499">Patio Bonito - Poblado</option><option value="363">Pedregal - 12 de Octubre</option><option value="577">Pedregal Alto - San Cristóbal</option><option value="616">Pedregal Bajo - San Cristóbal</option><option value="697">Peñitas - San Javier</option><option value="1310">Perico - Santa Elena</option><option value="435">Perpetuo Socorro - La candelaria</option><option value="362">Picachito - 12 de Octubre</option><option value="361">Picacho - 12 de Octubre</option><option value="601">Piedra Gorda - Santa Elena</option><option value="607">Piedras Blancas Matasano - Santa Elena</option><option value="1305">Playa rica - Aranjuez</option><option value="612">Playita - Castilla</option><option value="351">Plaza de Ferias - Castilla</option><option value="1308">Poblado de Veracruz - Santa Elena</option><option value="11">Popular 1 y 2 - Popular</option><option value="552">Potrera Miserenga - San Sebastián de Palmitas</option><option value="590">Potrerito - San Antonio de prado</option><option value="1280">Pradito - San Antonio de prado</option><option value="433">Prado - La candelaria</option><option value="671">Prado Centro - La candelaria</option><option value="355">Progreso 2 - 12 de Octubre</option><option value="701">Provenza - Poblado</option><option value="1309">Quinta Linda - Buenos aires</option><option value="1287">Quintas de San Javier - San Javier</option><option value="371">Robledo - Robledo</option><option value="1300">Robledo Cadiz - Robledo</option><option value="670">Robledo la Campiña - Robledo</option><option value="1304">Robledo Primaveral - Robledo</option><option value="644">Rodeo Alto - Bélen</option><option value="1281">Rosaleda - San Antonio de prado</option><option value="540">Rosales - Bélen</option><option value="411">Salvador - Buenos aires</option><option value="392">San Antonio - Villa hermosa</option><option value="595">San Antonio de Prado - San Antonio de prado</option><option value="1279">San Antonio de Prado Parte Central - San Antonio de prado</option><option value="443">San Benito - La candelaria</option><option value="545">San Bernardo - Bélen</option><option value="669">San Blas - Manrique</option><option value="1291">San Cayetano - Aranjuez</option><option value="430">San Diego - La candelaria</option><option value="385">San Germán - Robledo</option><option value="332">San Isidro - Aranjuez</option><option value="483">San Javier - San Javier</option><option value="458">San Joaquín - Laureles-Estadio</option><option value="598">San Jose - San Antonio de prado</option><option value="567">San Jose de La Montana - San Cristóbal</option><option value="589">San Jose del Manzanillo - Altavista</option><option value="314">San José la Cima 1 - Manrique</option><option value="315">San José La Cima 2 - Manrique</option><option value="668">San Julian - Poblado</option><option value="507">San Lucas - Poblado</option><option value="364">San Martín - 12 de Octubre</option><option value="409">San Miguel - Villa hermosa</option><option value="685">San Nicolás - Aranjuez</option><option value="708">San Pablo - Guayabal</option><option value="5">San Pablo - Popular</option><option value="586">San Pablo - Altavista</option><option value="324">San Pedro - Aranjuez</option><option value="1268">Santa Cecilia - Popular</option><option value="20">Santa Cruz - Santa Cruz</option><option value="605">Santa Elena - Santa Elena</option><option value="1274">Santa Elena Parte Central - Santa Elena</option><option value="524">Santa Fe - Guayabal</option><option value="306">Santa Inés - Manrique</option><option value="467">Santa Lucía - La América</option><option value="374">Santa Margarita - Robledo</option><option value="1270">Santa Maria - Robledo</option><option value="501">Santa María de los Ángeles - Poblado</option><option value="474">Santa Monica - La América</option><option value="366">Santander - 12 de Octubre</option><option value="479">Santa Rosa de Lima - San Javier</option><option value="686">Santa Teresa de Jesús - 12 de Octubre</option><option value="472">Santa Teresita - La América</option><option value="1">Santo Domingo Savio - Popular</option><option value="323">Sevilla - Aranjuez</option><option value="641">Shellmar - Guayabal</option><option value="702">Simesa - Poblado</option><option value="470">Simón Bolívar - La América</option><option value="398">Sucre - Villa hermosa</option><option value="456">Suramericana - Laureles-Estadio</option><option value="353">Téjelo - Castilla</option><option value="522">Tenche - Guayabal</option><option value="347">Terminal de Transporte - Castilla</option><option value="667">Torres de patio bonito - Poblado</option><option value="346">Toscana - Castilla</option><option value="562">Travesias - San Cristóbal</option><option value="340">Tricentenario - Castilla</option><option value="520">Trinidad(Barrio Antioquia) - Guayabal</option><option value="461">U.D. Atanasio Girardot - Laureles-Estadio</option><option value="335">Universidad de Antioquia - Aranjuez</option><option value="389">Universidad Nacional - Robledo</option><option value="454">U.P.B - Laureles-Estadio</option><option value="556">Urquita - San Sebastián de Palmitas</option><option value="648">Vallejuelos - Robledo</option><option value="647">Vegas - Poblado</option><option value="646">Vegas del Poblado - Poblado</option><option value="1283">Vereda el Reposo - Altavista</option><option value="1284">Vereda los Tanques - Altavista</option><option value="1285">Vereda travesías el morro - Altavista</option><option value="311">Versalles 1 - Manrique</option><option value="319">Versalles 2 - Manrique</option><option value="518">Villa Carlota - Poblado</option><option value="645">Villa de Aburra - Bélen</option><option value="17">Villa del Socorro - Santa Cruz</option><option value="369">Villaflora - Robledo</option><option value="1293">Villa Flora - Robledo</option><option value="4">Villa Guadalupe - Popular</option><option value="399">Villa Hermosa - Villa hermosa</option><option value="1307">Villa Laura - San Javier</option><option value="396">Villa Lilliam - Villa hermosa</option><option value="428">Villa Nueva - La candelaria</option><option value="643">Villa Sofía - Robledo</option><option value="400">Villatina - Villa hermosa</option><option value="394">Villa Turbay - Villa hermosa</option><option value="554">Volcana Guayabal - San Sebastián de Palmitas</option><option value="594">Yarumalito - San Antonio de prado</option><option value="642">Zafra - Bélen</option></select>                                    
+                                                                    </div>
+
+                                <div class="col-md-6">
+                                    <label class="label_escenario" for="reserva_escenario_deportivo">Escenario deportivo</label>
+                                    <div class="select2-container form-control" id="s2id_escenario_deportivo" title="" style="display: inline-block;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-1438">Seleccione un escenario</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen1438" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1438" id="s2id_autogen1438" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen1438_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1438" id="s2id_autogen1438_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-1438">   </ul></div></div><select id="escenario_deportivo" name="reserva[escenario_deportivo]" class="form-control" onchange="inder.reserva.validarMostrarDivInfo(this, true);" title="" style="display: none;" tabindex="-1"><option value="">Seleccione un escenario</option><option value="147">CANCHA DE FUTBOL 7 EN GRAMA SINTETICA UNIDAD DEPORTIVA DE CASTILLA</option><option value="155">CANCHA DE FUTBOL EN GRAMA SINTETICA UNIDAD DEPORTIVA DE CASTILLA</option><option value="175">CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.1 UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="843">CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.2 UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="171">CANCHA DE MINITENIS N.1 DE LA UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="176">CANCHA DE MINITENIS N.2 UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="180">CANCHA DE MINITENIS N.3 UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="1071">CANCHA DE RUGBY EN GRAMA SINTETICA UNIDAD DEPORTIVA DE CASTILLA</option><option value="1496">CANCHA DE TEJO UNIDAD DEPORTIVA DE CASTILLA</option><option value="174">CANCHA DE TENIS DE CAMPO N.1 EN POLVO DE LADRILLO UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="178">CANCHA DE TENIS DE CAMPO N.2 EN POLVO DE LADRILLO UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="181">CANCHA DE TENIS DE CAMPO N.3 EN POLVO DE LADRILLO DE LA UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="182">CANCHA DE TENIS DE CAMPO N.4 EN POLVO DE LADRILLO DE LA UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="183">CANCHA DE TENIS DE CAMPO N.5 EN POLVO DE LADRILLO UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="184">CANCHA DE TENIS DE CAMPO N.6 EN POLVO DE LADRILLO UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="185">CANCHA DE TENIS DE CAMPO N.7 EN POLVO DE LADRILLO UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="152">CANCHA POLIDEPORTIVA CUBIERTA UNIDAD DEPORTIVA DE CASTILLA</option><option value="1139">CANCHA POLIDEPORTIVA LOS RIELES</option><option value="146">CANCHA POLIDEPORTIVA UNIDAD DEPORTIVA DE CASTILLA</option><option value="1073">CENTRO DE PROMOCION DE LA SALUD UNIDAD DEPORTIVA DE CASTILLA</option><option value="1078">LUDOTEKA UNIDAD DEPORTIVA DE CASTILLA</option><option value="1079">LUDOTEKA UNIDAD DEPORTIVA JUANES DE LA PAZ</option><option value="1179">PISTA DE SKATE UNIDAD DEPORTIVA DE CASTILLA</option><option value="1096">PISTA MULTIPROPÓSITO GIRARDOT</option><option value="1080">PISTA MULTIPROPÓSITO UNIDAD DEPORTIVA DE CASTILLA</option><option value="922">SEDE ADMINISTRATIVA UNIDAD DEPORTIVA JUANES DE LA PAZ</option></select>
+                                                                    </div>                                    
+
+                                <div style="display: none;" class="col-md-12 cajaSeleccionDeporte">
+
+                                    <div class="col-md-12">
+                                        <label class="required">Seleccion</label>
+                                        <div id="reserva_seleccion" class="seleccion_tendencia_disciplina"><div class="iradio_square-blue" style="position: relative;"><input type="radio" id="reserva_seleccion_0" name="reserva[seleccion]" required="required" class="seleccion-reserva" value="Disciplina" style="position: absolute; opacity: 0;" /><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="reserva_seleccion_0" class="required">Disciplina</label><div class="iradio_square-blue" style="position: relative;"><input type="radio" id="reserva_seleccion_1" name="reserva[seleccion]" required="required" class="seleccion-reserva" value="Tendencia" style="position: absolute; opacity: 0;" /><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="reserva_seleccion_1" class="required">Tendencia</label></div>
+                                                                            </div>
+
+                                    <div class="col-md-12 disciplinaCaja" style="display: none;">
+                                        <label for="reserva_disciplina">Disciplina</label>
+                                        <div class="select2-container" id="s2id_disciplina_escenario_deportivoreserva" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-16">Seleccione una opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen16" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-16" id="s2id_autogen16" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen16_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-16" id="s2id_autogen16_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-16">   </ul></div></div><select id="disciplina_escenario_deportivoreserva" name="reserva[disciplina]" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="0">NINGUNA</option><option value="162">STREET WORKOUT</option><option value="163">FREESTYLE FRISBEE</option><option value="8">RUGBY</option><option value="27">PATINAJE</option><option value="158">SQUASH</option><option value="74">HOCKEY SUBACUÁTICO</option><option value="20">FISICULTURISMO</option><option value="19">GIMNASIO</option><option value="22">BEISBOL</option><option value="24">BILLAR</option><option value="25">BILLAR POOL</option><option value="32">AEROBICOS</option><option value="33">BICICRÓS</option><option value="35">TIRO Y CAZA</option><option value="39">VOLEIBOL DE PLAYA</option><option value="41">KARTS</option><option value="42">SOFTBOL</option><option value="44">MINITENIS</option><option value="47">WUSHU</option><option value="49">HAPKIDO</option><option value="58">COMBATE</option><option value="63">MICROFUTBOL</option><option value="71">NADO SINCRONIZADO</option><option value="73">RUGBY SUBACUATICO</option><option value="76">HIDROAEROBICOS</option><option value="81">PESAS</option><option value="83">BALONMANO PLAYA</option><option value="86">CARRO DE RODILLOS</option><option value="92">GIMNASIA</option><option value="93">ARQUERIA</option><option value="96">HOCKEY  CÉSPED</option><option value="98">SUMO</option><option value="99">AUTOMOVILISMO</option><option value="101">BALON PESADO</option><option value="102">BOCHAS</option><option value="104">BRIDGE</option><option value="106">CHALANERIA</option><option value="109">ECUESTRE</option><option value="110">ESQUI NAUTICO</option><option value="112">GOLF</option><option value="114">KENDO</option><option value="116">MONTAÑA Y ESCALADA</option><option value="117">MOTOCICLISMO</option><option value="119">MUSHING</option><option value="122">PESCA</option><option value="125">SAMBO</option><option value="174">SALVAMENTO ACUÁTICO</option><option value="168">CANICROSS</option><option value="123">PESCA DEPORTIVA</option><option value="124">RAQUETBALL</option><option value="128">TRIATHLON</option><option value="130">TAI CHI HUAN</option><option value="131">VELA</option><option value="133">PANKRATION</option><option value="135">ULTIMATE PLAYA</option><option value="137">PATINAJE ARTISTICO</option><option value="138">FLATLAND</option><option value="141">FÚTBOL PLAYA</option><option value="150">GOALBALL</option><option value="160">PARKOUR</option><option value="169">DISC DOG</option><option value="172">LACROSSE</option><option value="176">SOCCER FREESTYLE</option><option value="177">STUNT</option><option value="179">BIKE POLO</option><option value="181">FIXER</option><option value="54">ULTIMATE FRISBEE</option><option value="199">BOCCIA</option><option value="205">SHOWDOWN</option><option value="6">VOLEIBOL</option><option value="5">FÚTBOL DE SALÓN</option><option value="207">CICLISMO PISTA</option><option value="157">TEJO</option><option value="203">KARATE KATAS</option><option value="57">NATACIÓN</option><option value="171">FREESTYLE BMX</option><option value="259">HOCKEY SOBRE PATINES EN LÍNEA</option><option value="254">NATACIÓN ADAPTADA</option><option value="26">BOLO</option><option value="260">ADRENALINA</option><option value="227">ULTIMATE</option><option value="262">GIMNASIA ARTÍSTICA MASCULINA</option><option value="263">GIMNASIA ARTÍSTICA FEMENINA</option><option value="253">ATLETISMO ADAPTADO</option><option value="50">JUDO</option><option value="36">BIKE TRIAL</option><option value="29">SKATEBOARDING</option><option value="167">AGILITY</option><option value="148">BADMINTON</option><option value="231">KARATE</option><option value="250">BMX Frestyle  </option><option value="264">INICIACIÓN MULTILATERAL</option><option value="266">ORIGEN RACE</option><option value="268">RUGBY ADAPATADO</option><option value="269">BALONCESTO ADAPTADO</option><option value="2">BALONCESTO</option><option value="48">KARATE DO</option><option value="182">FOTBAG</option><option value="183">KARTISMO</option><option value="185">PAINTBALL</option><option value="187">HAEDONG KUMDO</option><option value="196">ROLLER</option><option value="200">CROSS COUNTRY</option><option value="202">PUMSE</option><option value="235">LEVANTAMIENTO DE PESAS</option><option value="211">SCUBA</option><option value="212">PARAPENTE</option><option value="214">YOGA</option><option value="219">LUCHA OLÍMPICA</option><option value="220">ATLETISMO SALTO</option><option value="222">ATLETISMO VELOCIDAD</option><option value="224">TRIAL</option><option value="225">FREESTYLE FOOTBALL</option><option value="258">Buceo</option><option value="87">CAPOEIRA</option><option value="91">SALTO CON DOBLE CUERDA</option><option value="210">KARATE DO - COMBATE</option><option value="239">ATLETISMO LANZAMIENTOS</option><option value="4">FÚTBOL</option><option value="9">SKATE</option><option value="23">TROTE EN PISTA</option><option value="31">ESCALADA DEPORTIVA EN MURO</option><option value="34">SALTO LARGO</option><option value="43">CICLISMO</option><option value="45">CICLORUTA</option><option value="62">AIKIDO</option><option value="68">ATLETISMO</option><option value="72">POLO ACUÁTICO</option><option value="75">NATACIÓN CON ALETAS</option><option value="77">PORRISMO</option><option value="84">BALONMANO</option><option value="88">CICLOMONTAÑISMO</option><option value="95">APNEA</option><option value="97">FÚTBOL  AMERICANO</option><option value="100">BAILE DEPORTIVO</option><option value="103">BOLO CRIOLLO</option><option value="105">CANOTAJE Y REMO</option><option value="107">COLEO</option><option value="108">DEPORTES AÉREOS</option><option value="111">FISTBALL</option><option value="113">JIUJITSU</option><option value="115">KICK BOXING</option><option value="118">MOTONAUTICA</option><option value="121">PELOTA MANO CHAZA</option><option value="126">SAVATE</option><option value="173">ROLLER DERBY</option><option value="120">MUAY THAI BORAN</option><option value="127">SURF</option><option value="129">TREKING</option><option value="132">SEPAKTAKEAW</option><option value="134">DIRTJUMP</option><option value="136">RUGBY PLAYA</option><option value="139">PETANCA</option><option value="143">BADMINTON PLAYA</option><option value="165">FÚTBOL SALA</option><option value="170">CRICKET</option><option value="175">SLACK LINE</option><option value="178">AEROMODELISMO</option><option value="180">CARRERA DE AVENTURA</option><option value="184">LONBOARDING</option><option value="186">PATINAJE AGRESIVO</option><option value="195">BIKER</option><option value="198">HALTEROFILIA</option><option value="201">DOWNHILL</option><option value="209">HOCKEY SOBRE PATINES</option><option value="213">PREDATOR</option><option value="221">ATLETISMO LANZAMIENTO</option><option value="223">ATLETISMO RESISTENCIA</option><option value="40">TENIS DE MESA</option><option value="206">BMX</option><option value="37">TENIS DE CAMPO</option><option value="261">FUTBOL 7</option><option value="89">ORIENTACION DEPORTIVA</option><option value="166">TIRO CON ARCO</option><option value="193">CLAVADOS</option><option value="271">GIMNASIA TRAMPOLÍN</option><option value="21">BOXEO</option><option value="78">GIMNASIA RÍTMICA</option><option value="38">AJEDREZ</option><option value="46">TAEKWONDO</option><option value="18">LUCHA</option><option value="79">GIMNASIA ARTÍSTICA</option><option value="17">ESGRIMA</option><option value="270">FÚTBOL FREESTYLE</option></select>
+                                                                            </div>
+
+                                    <div class="col-md-12 tendenciaCaja" style="display: none;">
+                                        <label for="reserva_tendenciaEscenarioDeportivo">Tendencia escenario deportivo</label>
+                                        <div class="select2-container" id="s2id_tendencia_escenario_deportivoreserva" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-17">Seleccione una opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen17" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-17" id="s2id_autogen17" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen17_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-17" id="s2id_autogen17_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-17">   </ul></div></div><select id="tendencia_escenario_deportivoreserva" name="reserva[tendenciaEscenarioDeportivo]" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="1">INTERACTIVOS</option><option value="19">INTERACTIVOS</option><option value="21">INTERACTIVOS</option><option value="22">INTERACTIVOS</option><option value="25">INTERACTIVOS</option><option value="27">INTERACTIVOS</option><option value="29">INTERACTIVOS</option></select>
+                                                                            </div>
+
+
+                                </div>
+                                <div class="col-sm-12 alert alert-danger" role="alert">
+                                    <p>Los escenarios del <b>complejo acuático</b> destinados para practica libre <b>Piscina Subacuatica</b> y <b>Piscina Olímpica</b> se encuentran <b>deshabilitados</b> hasta noviembre debido a <b>mantenimiento</b></p>
+                                </div>
+                                <div class="col-sm-12 col-md-12 marginT10 marginB10 sombra borde-radio padding" id="show_map" style="display: none;">
+
+                                    <div class="col-sm-6 col-md-6 padding">
+                                        <div class="imagen-escenario">
+                                                                                            <img id="img-escenario" />
+                                            
+                                        </div>
+                                        <div class="info-escenario">
+                                            <label id="nombre_escenario_deportivo">
+                                                                                            </label>
+                                            <p>Horario</p>
+
+                                            <p><span id="labelLunes">Lunes: </span></p> 
+                                            <span id="horarioMañanaLunes">
+                                                                                            </span> / <span id="horarioTardeLunes">
+                                                                                            </span>
+                                            <br />
+                                            <p><span id="labelMartes">Martes: </span></p> 
+                                            <span id="horarioMañanaMartes">
+                                                                                            </span> / <span id="horarioTardeMartes">
+                                                                                            </span>
+                                            <br />
+                                            <p><span id="labelMiercoles">Miercoles: </span></p> 
+                                            <span id="horarioMañanaMiercoles">
+                                                                                            </span> / <span id="horarioTardeMiercoles">
+                                                                                            </span>
+                                            <br />
+                                            <p><span id="labelJueves">Jueves: </span></p> 
+                                            <span id="horarioMañanaJueves">
+                                                                                            </span> / <span id="horarioTardeJueves">
+                                                                                            </span>
+                                            <br />
+                                            <p><span id="labelViernes">Viernes: </span></p> 
+                                            <span id="horarioMañanaViernes">
+                                                                                            </span> / <span id="horarioTardeViernes">
+                                                                                            </span>
+                                            <br />
+                                            <p><span id="labelSabado">Sabado: </span></p> 
+                                            <span id="horarioMañanaSabado">
+                                                                                            </span> / <span id="horarioTardeSabado">
+                                                                                            </span>
+                                            <br />
+                                            <p><span id="labelDomingo">Domingo: </span></p> 
+                                            <span id="horarioMañanaDomingo">
+                                                                                            </span> / <span id="horarioTardeDomingo">
+                                                                                            </span>
+                                            <br />
+
+                                            <p>Dirección :  
+                                                <span id="direccion_escenario_deportivo">
+                                                                                                    </span>
+                                            </p>
+                                            <p>Teléfono :    
+                                                <span id="telefono_escenario_deportivo">
+                                                                                                    </span>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 col-md-6 padding">
+                                        <span id="map_escenario">
+                                                                                    </span>
+                                        <div>
+                                            <label>Información adicional para reserva</label>
+                                            <p>
+                                                <span id="informacionReserva">
+                                                                                                    </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 uno">
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <label class="required">Tipo reserva</label>                                        
+                                        <div id="tipoReservaPaso1"><div class="iradio_square-blue checked" style="position: relative;"><input type="radio" id="reserva_tipoReserva_6" name="reserva[tipoReserva]" required="required" value="6" checked="checked" style="position: absolute; opacity: 0;" /><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="reserva_tipoReserva_6" class="required">Practica Libre</label></div>
+                                                                            </div>
+                                    <div class="col-md-12">
+                                        <label>Seleccionar una fecha</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                                                                    <div class="col-md-12">
+                                                <label>Fecha</label>
+                                            </div>
+                                        
+                                        <div class="input-group">
+                                            <div class="input-group-addon" onclick="inder.openDatePicker('#fechaInicio')">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <div>                                                
+                                                <input type="text" id="fechaInicio" name="reserva[fechaInicio]" required="required" placeholder="dd/MM/yyyy" class="form-control input-inline datetimepicker fechaInicio" data-provide="datetimepicker" solo="1" readonly="readonly" />
+                                            </div>
+                                        </div>
+                                                                            </div>
+
+                                                                            <div class="col-md-6">
+                                            <label for="reserva_jornada" class="required">Jornada</label>
+                                            <div class="select2-container jornada" id="s2id_reserva_jornada" title="Jornada" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-18">Seleccione una opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen18" class="select2-offscreen">Jornada</label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-18" id="s2id_autogen18" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen18_search" class="select2-offscreen">Jornada</label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-18" id="s2id_autogen18_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-18">   </ul></div></div><select id="reserva_jornada" name="reserva[jornada]" required="required" class="jornada" onchange="inder.reserva.cambioJornada(this, true)" title="Jornada" style="display: none;" tabindex="-1"><option value="" selected="selected">Seleccione una opción</option><option value="1">Mañana</option><option value="2">Tarde</option></select>
+                                                
+                                        </div>
+                                                                        
+                                    <div class="col-md-12">
+                                        <div class="col-md-4">Día</div>
+                                        <div class="col-md-2 manana">Hora incial mañana</div>
+                                        <div class="col-md-2 manana">Hora final mañana</div>
+                                        <div class="col-md-2 tarde">Hora inicial tarde</div>
+                                        <div class="col-md-2 tarde">Hora final tarde</div>
+                                    </div>
+                                    <div class="col-md-12">
+                                                                            </div>
+                                                                            <div class="row">
+                                            <div class="col-md-12  1 dia-reserva">
+                                                <div class="col-md-4">
+                                                    <div class="select2-container select2-allowclear select2-container-disabled coleccionDias dias-disabled" id="s2id_reserva_programaciones_0_dia" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-19">Lunes</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen19" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-19" id="s2id_autogen19" disabled="" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen19_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-19" id="s2id_autogen19_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-19">   </ul></div></div><select id="reserva_programaciones_0_dia" name="reserva[programaciones][0][dia]" disabled="" class="coleccionDias dias-disabled" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="1" selected="selected">Lunes</option><option value="2">Martes</option><option value="3">Miércoles</option><option value="4">Jueves</option><option value="5">Viernes</option><option value="6">Sábado</option><option value="7">Domingo</option></select>
+                                                </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_0_inicioManana" name="reserva[programaciones][0][inicioManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_0_finManana" name="reserva[programaciones][0][finManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_0_inicioTarde" name="reserva[programaciones][0][inicioTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_0_finTarde" name="reserva[programaciones][0][finTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="row">
+                                            <div class="col-md-12  2 dia-reserva">
+                                                <div class="col-md-4">
+                                                    <div class="select2-container select2-allowclear select2-container-disabled coleccionDias dias-disabled" id="s2id_reserva_programaciones_1_dia" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-20">Martes</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen20" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-20" id="s2id_autogen20" disabled="" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen20_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-20" id="s2id_autogen20_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-20">   </ul></div></div><select id="reserva_programaciones_1_dia" name="reserva[programaciones][1][dia]" disabled="" class="coleccionDias dias-disabled" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="1">Lunes</option><option value="2" selected="selected">Martes</option><option value="3">Miércoles</option><option value="4">Jueves</option><option value="5">Viernes</option><option value="6">Sábado</option><option value="7">Domingo</option></select>
+                                                </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_1_inicioManana" name="reserva[programaciones][1][inicioManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_1_finManana" name="reserva[programaciones][1][finManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_1_inicioTarde" name="reserva[programaciones][1][inicioTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_1_finTarde" name="reserva[programaciones][1][finTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="row">
+                                            <div class="col-md-12  3 dia-reserva">
+                                                <div class="col-md-4">
+                                                    <div class="select2-container select2-allowclear select2-container-disabled coleccionDias dias-disabled" id="s2id_reserva_programaciones_2_dia" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-21">Miércoles</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen21" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-21" id="s2id_autogen21" disabled="" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen21_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-21" id="s2id_autogen21_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-21">   </ul></div></div><select id="reserva_programaciones_2_dia" name="reserva[programaciones][2][dia]" disabled="" class="coleccionDias dias-disabled" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="1">Lunes</option><option value="2">Martes</option><option value="3" selected="selected">Miércoles</option><option value="4">Jueves</option><option value="5">Viernes</option><option value="6">Sábado</option><option value="7">Domingo</option></select>
+                                                </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_2_inicioManana" name="reserva[programaciones][2][inicioManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_2_finManana" name="reserva[programaciones][2][finManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_2_inicioTarde" name="reserva[programaciones][2][inicioTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_2_finTarde" name="reserva[programaciones][2][finTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="row">
+                                            <div class="col-md-12  4 dia-reserva">
+                                                <div class="col-md-4">
+                                                    <div class="select2-container select2-allowclear select2-container-disabled coleccionDias dias-disabled" id="s2id_reserva_programaciones_3_dia" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-22">Jueves</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen22" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-22" id="s2id_autogen22" disabled="" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen22_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-22" id="s2id_autogen22_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-22">   </ul></div></div><select id="reserva_programaciones_3_dia" name="reserva[programaciones][3][dia]" disabled="" class="coleccionDias dias-disabled" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="1">Lunes</option><option value="2">Martes</option><option value="3">Miércoles</option><option value="4" selected="selected">Jueves</option><option value="5">Viernes</option><option value="6">Sábado</option><option value="7">Domingo</option></select>
+                                                </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_3_inicioManana" name="reserva[programaciones][3][inicioManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_3_finManana" name="reserva[programaciones][3][finManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_3_inicioTarde" name="reserva[programaciones][3][inicioTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_3_finTarde" name="reserva[programaciones][3][finTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="row">
+                                            <div class="col-md-12  5 dia-reserva">
+                                                <div class="col-md-4">
+                                                    <div class="select2-container select2-allowclear select2-container-disabled coleccionDias dias-disabled" id="s2id_reserva_programaciones_4_dia" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-23">Viernes</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen23" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-23" id="s2id_autogen23" disabled="" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen23_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-23" id="s2id_autogen23_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-23">   </ul></div></div><select id="reserva_programaciones_4_dia" name="reserva[programaciones][4][dia]" disabled="" class="coleccionDias dias-disabled" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="1">Lunes</option><option value="2">Martes</option><option value="3">Miércoles</option><option value="4">Jueves</option><option value="5" selected="selected">Viernes</option><option value="6">Sábado</option><option value="7">Domingo</option></select>
+                                                </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_4_inicioManana" name="reserva[programaciones][4][inicioManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_4_finManana" name="reserva[programaciones][4][finManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_4_inicioTarde" name="reserva[programaciones][4][inicioTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_4_finTarde" name="reserva[programaciones][4][finTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="row">
+                                            <div class="col-md-12  6 dia-reserva">
+                                                <div class="col-md-4">
+                                                    <div class="select2-container select2-allowclear select2-container-disabled coleccionDias dias-disabled" id="s2id_reserva_programaciones_5_dia" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-24">Sábado</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen24" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-24" id="s2id_autogen24" disabled="" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen24_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-24" id="s2id_autogen24_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-24">   </ul></div></div><select id="reserva_programaciones_5_dia" name="reserva[programaciones][5][dia]" disabled="" class="coleccionDias dias-disabled" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="1">Lunes</option><option value="2">Martes</option><option value="3">Miércoles</option><option value="4">Jueves</option><option value="5">Viernes</option><option value="6" selected="selected">Sábado</option><option value="7">Domingo</option></select>
+                                                </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_5_inicioManana" name="reserva[programaciones][5][inicioManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_5_finManana" name="reserva[programaciones][5][finManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_5_inicioTarde" name="reserva[programaciones][5][inicioTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_5_finTarde" name="reserva[programaciones][5][finTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                                                            <div class="row">
+                                            <div class="col-md-12  7 dia-reserva">
+                                                <div class="col-md-4">
+                                                    <div class="select2-container select2-allowclear select2-container-disabled coleccionDias dias-disabled" id="s2id_reserva_programaciones_6_dia" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-25">Domingo</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen25" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-25" id="s2id_autogen25" disabled="" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen25_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-25" id="s2id_autogen25_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-25">   </ul></div></div><select id="reserva_programaciones_6_dia" name="reserva[programaciones][6][dia]" disabled="" class="coleccionDias dias-disabled" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="1">Lunes</option><option value="2">Martes</option><option value="3">Miércoles</option><option value="4">Jueves</option><option value="5">Viernes</option><option value="6">Sábado</option><option value="7" selected="selected">Domingo</option></select>
+                                                </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_6_inicioManana" name="reserva[programaciones][6][inicioManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion manana">
+                                                    <input type="text" id="reserva_programaciones_6_finManana" name="reserva[programaciones][6][finManana]" class="form-control time manana" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_6_inicioTarde" name="reserva[programaciones][6][inicioTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                                <div class="col-md-2 programacion tarde">
+                                                    <input type="text" id="reserva_programaciones_6_finTarde" name="reserva[programaciones][6][finTarde]" class="form-control time tarde" placeholder="hh:mm" />
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                                                        
+                                    <div class="col-lg-12 col-md-12">                                        
+                                        <input type="hidden" id="reservaDisponible" name="reserva[reservaDisponible]" value="false" style="display: none;" />
+                                                                            </div>
+
+                                    <input type="hidden" name="mostrarInfoEscenario" id="mostrarInfoEscenario" value="false" />
+                                    <input type="hidden" name="idReservaOculto" id="idReservaOculto" value="0" />
+                                    <input type="hidden" id="reserva_id" name="reserva[id]" value="0" />
+                                    <input type="hidden" name="isSuperAdminOrganismoDeportivo" id="isSuperAdminOrganismoDeportivo" value="" />
+                                    <input type="hidden" name="idEscenarioDeportivoReservaPaso1" id="idEscenarioDeportivoReservaPaso1" value="false" />
+                                    <input type="hidden" name="isGestorEscenario" id="isGestorEscenario" value="" />
+                                    
+                                    <div class="col-md-12">
+                                        <div class="col-xs-12 col-md-12 alert alert-info">
+                                            Señor usuario debe seleccionar un horario, y luego hacer clic en el botón <strong>"Consultar disponibilidad"</strong> para validar si la reserva esta disponible en la fecha y hora indicada en la parte de arriba. Si el escenario esta disponible, debe hacer clic en el botón guardar y continuar en la parte inferior.
+                                        </div>
+                                        <div class="col-xs-12 col-md-12 d-flex">
+                                                                                        <a>
+                                                <button type="button" class="btn btnVerde btnSize btnConsultarReserva" onclick="inder.reserva.consoltarReservas(1178917, 'NDUwOWVmZTYxMTkzNTg4MTUxOGI5Mzk0ZDE3ZTIyZWYyNmUyOTNmZWY0NGRhMDQ2MjA2MDk0YzhkYjFkYzExNw')">
+                                                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                                    Consultar disponibilidad
+                                                </button>
+                                            </a>
+                                            <strong class="texto-rojo-bold fecha-no-disponilbe" style="display: none;">Fecha no disponible</strong>
+                                            <label class="label-reserva"></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="col-sm-4 col-md-4 d-flex a-items">
+                                            <div class="circulo-verde"></div>
+                                            <p class="maginL10">Disponible</p>
+                                        </div>
+                                        <div class="col-sm-4 col-md-4 d-flex a-items">
+                                            <div class="circulo-rojo"></div>
+                                            <p class="maginL10">No disponible</p>
+                                        </div>
+                                        <div class="col-sm-4 col-md-4 d-flex a-items">
+                                            <div class="circulo-amarillo"></div>
+                                            <p class="maginL10">Mantenimiento</p>
+                                        </div>
+                                    </div>
+                                    <link rel="stylesheet" href="" />
+
+                                    <script src="/bundles/admin/fullcalendar/fullcalendar.min.js"></script>
+                                    <script src="/bundles/admin/fullcalendar/locale/es.js"></script>
+
+                                    <!-- Calendario -->
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="box">
+                                            <div class="box-body no-padding">
+                                                <!-- THE CALENDAR -->
+                                                <div id="calendar" class="sombra borde-radio"></div>
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                        <!-- /. box -->
+                                    </div>                                    
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 dos">
+                                <div class="col-md-12 division"></div>
+                                <div class="col-md-12">
+                                    <span></span>
+                                    <div class="col-md-12">
+                                        <a type="button" class="btn btnNaranja" onclick="inder.reserva.cancelarReserva()">
+                                            <i class="fa fa-chevron-left"></i>
+                                            Cancelar
+                                        </a>
+                                        <button type="submit" id="btnguardar" name="reserva[save]" class="btn btnVerde">Guardar y Continuar</button>
+                                    </div>
+                                    <div style="display: none;">
+                                        <div><label for="reserva_fechaFinal" class="required">Fecha final</label><input type="text" id="reserva_fechaFinal" name="reserva[fechaFinal]" required="required" placeholder="dd/MM/yyyy" class="form-control input-inline datetimepicker fechaFin" data-provide="datetimepicker" solo="1" readonly="readonly" /></div><div><label for="reserva_tipoIdentificacion" class="required">Tipo identificacion</label><div class="select2-container" id="s2id_reserva_tipoIdentificacion" title="Tipo identificacion" style="display: block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-26">Cédula de Ciudadanía</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen26" class="select2-offscreen">Tipo identificacion</label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-26" id="s2id_autogen26" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen26_search" class="select2-offscreen">Tipo identificacion</label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-26" id="s2id_autogen26_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-26">   </ul></div></div><select id="reserva_tipoIdentificacion" name="reserva[tipoIdentificacion]" class="" onchange="inder.reserva.asignarNoDocumentoReservaPaso1(this)" placeholder="Tipo de documento" title="Tipo identificacion" style="display: none;" tabindex="-1"><option value="6">Cédula de Ciudadanía</option><option value="7">Cédula de Extranjería</option><option value="9">Número de Identificación Tributaria</option><option value="5">Numero único de Identificación Personal</option><option value="8">Pasaporte</option><option value="2">Registro Civil</option><option value="4">Tarjeta de Identidad</option></select></div><div><label for="reserva_numeroIdentificacion" class="required">Numero identificacion</label><input type="text" id="reserva_numeroIdentificacion" name="reserva[numeroIdentificacion]" required="required" class="form-control" placeholder="No. Documento" /></div><input type="hidden" id="reserva__token" name="reserva[_token]" value="oEgqR7On63RhcKf3cLW04suwSwLk9P1xzYiIw7UlXa0" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span id="alertas" data-tituloalerta="¡Error!." data-yaseleccionada="La disciplina ya fue seleccionada, por favor selecciona otra." data-revisecampos="Por favor revise los campos." data-registrado="Por favor revise los campos." data-mensajeerror="Ocurrió un error, por favor intente de nuevo." data-titulook="¡Gracias!."></span>
+            <span id="url" data-infoorganigrama="/organismo/deportivo/info/organigrama"></span>
+            </form>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    if ($(".seleccion_disciplina").is(':checked')) {
+                        $('.disciplinaCaja').show();
+                        $('.tendenciaCaja').hide();
+                    }
+
+                    if ($(".seleccion_tendencia").is(':checked')) {
+                        $('.tendenciaCaja').show();
+                        $('.disciplinaCaja').hide();
+                    }
+                });
+
+                $('.seleccion_disciplina').on('ifClicked', function (event) {
+                    $('.disciplinaCaja').show();
+                    $('.tendenciaCaja').hide();
+                });
+
+                $('.seleccion_tendencia').on('ifClicked', function (event) {
+                    $('.tendenciaCaja').show();
+                    $('.disciplinaCaja').hide();
+                });
+                inder.reserva.client = "1_62x2cnalxv4skkk4o8scoo0wg08480wso444kw804wgw4k0ksg";
+                inder.reserva.secret = "1hejc2rqc8m8ogs8sg0g0ccc80g40kgsgwg4kcg8s004os000k";
+            </script>
+            </section>
+                    </section>
+                </div>
+                    </div>
+        <footer class="main-footer ajuste-padding-contenedor">
+            <div class="container-fluid" id="bgcolor-footer">
+                <div class="container">
+                    <div class="content">
+                        <div class="row contenedor-contacto">
+                            <div class="col-lg-6">
+                                <div class="redes-footer">
+                                    <div class="logo-inder-footer">
+                                        <img src="/bundles/admin/img/logo-inder-blanco.png" alt="" />
+                                    </div>
+                                    <div class="contenedor-redes-footer">
+                                        <a id="url-inder" href="#">www.inder.gov.co</a>
+                                        <div class="redes">
+                                            <ul class="botonera-redes-footer">
+                                                <li class="redondo"><a href="https://twitter.com/INDERMEDELLIN" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li class="redondo"><a href="https://www.facebook.com/indermedellin/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li class="redondo"><a href="https://www.youtube.com/user/COMUNICACIONESINDER" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                                <li class="redondo"><a href="https://www.instagram.com/indermedellin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <hr />
+                                <p>Recomendamos usar para mayor compatibilidad el navegador Google Chrome para acceder a la aplicación y garantizar la debida visualización de las funciones</p>
+                                <hr />
+                                <p><b>Sede Administrativa:</b> Calle 47D # 75 - 276 - Barrio Velódromo<br />
+                                    <b>Horario de atención sede administrativa:</b><br />
+                                    Lunes a jueves  7:30 a.m. a 12:30 p.m. y 1:30 p.m. a 5:30 p.m.<br />
+                                    Viernes 7:30 a.m. a 12:30 p.m. y 1:30 p.m. a 4:30 p.m.
+                                </p>
+                                <hr />                              
+                                <p><b>Sede Estadio Atanasio Girardot:</b> Calle 48 # 73 -10 - Puerta No 36</p>
+                                <hr />
+                                <p>Línea Segura 369 90 00/Política de privacidad y condiciones de uso.</p>
+                                <hr />
+                                <p>©2016/NIT:800194096-0/Código Postal: 0500304</p>
+                            </div>
+                            <div class="col-lg-6 logos-footer">
+                                <div class="contenedor-logos-iso">
+                                    <figure class="logo-iso">
+                                        <img src="/bundles/admin/img/iso14001.png" alt="ISO 14001" />
+                                        <figcaption>
+                                            ISO 14001:2004<br />SA-CER307282
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="logo-iso">
+                                        <img src="/bundles/admin/img/iso9001.png" alt="ISO 9001" />
+                                        <figcaption>
+                                            ISO 9001:<br />CO-SC-CER203995
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="logo-iso">
+                                        <img src="/bundles/admin/img/ntcgp1000.png" alt="" />
+                                        <figcaption>
+                                            NTCGP 1000:<br />GP-CER203996
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="logo-iso"><img src="/bundles/admin/img/iqnet.png" alt="" /></figure>
+                                </div>
+                                <div class="logo-alcaldia-footer">
+                                    <img src="/bundles/admin/img/alcaldia-b.png" alt="Alcaldía de Medellín" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+            <div class="container contenedor-logos-gobierno">
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/lucha-contra-corrupcion.png" alt="" /></a>
+                </div>
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/hora-legal.png" alt="" /></a>
+                </div>
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/colombia-compra.png" alt="" /></a>
+                </div>
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/Gobierno_en_linea.png" alt="" /></a>
+                </div>
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/Logo-Urna_GA_2.jpg" alt="" /></a>
+                </div>
+            </div>
+            <div class="container-fluid contenedor-barras-footer">
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+            </div>               
+        </footer>
+
+
+        <div id="encuestaModal" class="modal fade" role="dialog">
+        </div>
+        
+                    <script src="/bundles/admin/js/TweenMax.min.js" type="text/javascript"></script>
+            <script src="/bundles/admin/js/TimelineMax.min.js" type="text/javascript"></script>
+            <script src="/bundles/admin/js/CSSPlugin.min.js" type="text/javascript"></script>
+            <script src="/bundles/admin/js/main.js" type="text/javascript"></script>
+            <script src="/bundles/admin/js/jquery-confirm.min.js" type="text/javascript"></script>
+
+            <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+            
+
+<div class="bootstrap-datetimepicker-widget dropdown-menu"><div class="datepicker"><div class="datepicker-days" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">noviembre 2019</th><th class="next">›</th></tr><tr><th class="dow">lu</th><th class="dow">ma</th><th class="dow">mi</th><th class="dow">ju</th><th class="dow">vi</th><th class="dow">sá</th><th class="dow">do</th></tr></thead><tbody><tr><td class="day old">28</td><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td></tr><tr><td class="day">4</td><td class="day active today">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td></tr><tr><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td></tr><tr><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td></tr><tr><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="day new">1</td></tr><tr><td class="day new">2</td><td class="day new">3</td><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">ene.</span><span class="month">feb.</span><span class="month">mar.</span><span class="month">abr.</span><span class="month">may.</span><span class="month">jun.</span><span class="month">jul.</span><span class="month">ago.</span><span class="month">sep.</span><span class="month">oct.</span><span class="month active">nov.</span><span class="month">dic.</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></div><div class="bootstrap-datetimepicker-widget dropdown-menu"><div class="datepicker"><div class="datepicker-days" style="display: block;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">noviembre 2019</th><th class="next">›</th></tr><tr><th class="dow">lu</th><th class="dow">ma</th><th class="dow">mi</th><th class="dow">ju</th><th class="dow">vi</th><th class="dow">sá</th><th class="dow">do</th></tr></thead><tbody><tr><td class="day old">28</td><td class="day old">29</td><td class="day old">30</td><td class="day old">31</td><td class="day">1</td><td class="day">2</td><td class="day">3</td></tr><tr><td class="day">4</td><td class="day active today">5</td><td class="day">6</td><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td></tr><tr><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td></tr><tr><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="day">21</td><td class="day">22</td><td class="day">23</td><td class="day">24</td></tr><tr><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="day new">1</td></tr><tr><td class="day new">2</td><td class="day new">3</td><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td></tr></tbody></table></div><div class="datepicker-months" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="month">ene.</span><span class="month">feb.</span><span class="month">mar.</span><span class="month">abr.</span><span class="month">may.</span><span class="month">jun.</span><span class="month">jul.</span><span class="month">ago.</span><span class="month">sep.</span><span class="month">oct.</span><span class="month active">nov.</span><span class="month">dic.</span></td></tr></tbody></table></div><div class="datepicker-years" style="display: none;"><table class="table-condensed"><thead><tr><th class="prev">‹</th><th colspan="5" class="picker-switch">2010-2019</th><th class="next">›</th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year active">2019</span><span class="year old">2020</span></td></tr></tbody></table></div></div></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="left: 559.5px; width: 335px; top: 267.188px; bottom: auto; display: none;">   <div class="select2-search">       <label for="s2id_autogen14_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-14" id="s2id_autogen14_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-14"></ul></div><div id="select2-drop-mask" class="select2-drop-mask" style="display: none;"></div><span role="status" aria-live="polite" class="select2-hidden-accessible"></span></body></html>

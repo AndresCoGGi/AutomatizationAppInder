@@ -1,0 +1,717 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" class="" lang="es" style="height: auto;"><head class="main-header" style="">
+                    <meta http-equiv="Expires" content="0" />
+            <meta http-equiv="Last-Modified" content="0" />
+            <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate" />
+            <meta http-equiv="Pragma" content="no-cache" />
+            
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta charset="UTF-8" />
+            <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+        
+                                        <link rel="stylesheet" href="/bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/ionicons/css/ionicons.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/iCheck/skins/square/blue.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/select2/select2.css" />
+                            <link rel="stylesheet" href="/bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/css/styles.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/css/layout.css" />
+                            <link rel="stylesheet" href="/bundles/sonataadmin/css/tree.css" />
+                        <link rel="stylesheet" href="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/main.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/custom.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/jquery-confirm.min.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/registro.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/fileinput.min.css" />
+            <link rel="stylesheet" href="/bundles/admin/css/timepicker.min.css" />
+            <link rel="stylesheet" type="text/css" href="/bundles/admin/js/jqueryTimeEntry/jquery.timeentry.css" />
+            <link rel="stylesheet" type="text/css" href="/bundles/admin/js/sweetalert2/sweetalert2.min.css" />
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+        
+    <link rel="stylesheet" href="/bundles/admin/css/jquery-confirm.min.css" />
+    <link rel="stylesheet" href="/bundles/admin/css/registro.css" />
+    <style type="text/css">
+        abbr.select2-search-choice-close {
+            display: none !important;
+        }
+    </style>
+
+                                    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+                    window.SONATA_CONFIG = {
+                        CONFIRM_EXIT: true,
+                        USE_SELECT2: true,
+                        USE_ICHECK: true,
+                        USE_STICKYFORMS: true                    };
+                    
+                                            
+                    window.SONATA_TRANSLATIONS = {
+                        CONFIRM_EXIT: 'Tienes\x20cambios\x20sin\x20guardar.'
+                    };
+
+                    // http://getbootstrap.com/getting-started/#support-ie10-width
+                    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                        var msViewportStyle = document.createElement('style');
+                        msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'));
+                        document.querySelector('head').appendChild(msViewportStyle);
+                    }
+                </script>
+            
+                                                <script src="/bundles/sonatacore/vendor/jquery/dist/jquery.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonatacore/vendor/moment/min/moment.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/jquery-form/jquery.form.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/jquery/jquery.confirmExit.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonatacore/vendor/select2/select2.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/iCheck/icheck.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/readmore-js/readmore.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/Admin.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/treeview.js" type="text/javascript"></script>
+                                    <script src="/bundles/sonataadmin/sidebar.js" type="text/javascript"></script>
+                            
+                                                    <script src="/bundles/sonatacore/vendor/moment/locale/es.js" type="text/javascript"></script>
+            
+                                    
+                                        <script src="/bundles/sonatacore/vendor/select2/select2_locale_es.js" type="text/javascript"></script>
+                            
+        <!-- Se implementa una librería para que sirva promise en internet explorer -->
+        <script src="/bundles/admin/js/bluebird.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="/bundles/sonatacore/vendor/moment/min/moment-with-locales.min.js"></script>
+        <script type="text/javascript" src="/bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+        <script src="/bundles/fosjsrouting/js/router.js" type="text/javascript"></script>
+        <script src="/js/routing?callback=fos.Router.setData" type="text/javascript"></script>
+        <script src="/bundles/bazingajstranslation/js/translator.min.js" type="text/javascript"></script>
+        <script src="https://simon.inder.gov.co/translations" type="text/javascript"></script>
+
+        <script src="/bundles/admin/js/jquery-confirm.min.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/jquery.collection.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/select2.min.js" type="text/javascript"></script>
+        <script src="/bundles/pugxautocompleter/js/autocompleter-select2.js" type="text/javascript"></script>
+
+        <script src="/bundles/admin/js/jqueryTimeEntry/jquery.plugin.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/jqueryTimeEntry/jquery.timeentry.js" type="text/javascript"></script>
+
+        <script src="/bundles/admin/js/serializeObject.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/sweetalert2/sweetalert2.min.js" type="text/javascript"></script>
+        <script src="/bundles/admin/js/fileInput/fileinput.js" type="text/javascript"></script>
+        <script src="/bundles/itinputmask/vendor/jquery.inputmask/dist/jquery.inputmask.bundle.js" type="text/javascript"></script><style type="text/css">.im-caret {
+	-webkit-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+	from, to {
+		border-right-color: black;
+	}
+	50% {
+		border-right-color: transparent;
+	}
+}
+
+@-webkit-keyframes blink {
+	from, to {
+		border-right-color: black;
+	}
+	50% {
+		border-right-color: transparent;
+	}
+}
+
+.im-static {
+	color: grey;
+}
+</style>
+
+        <script src="/bundles/admin/js/timepicker.min.js" type="text/javascript"></script>
+        
+                <script src="/js/compiled/inder.js" type="text/javascript"></script>
+                
+        
+    
+    <title>
+                    Simon. Sistema de Información Misional
+                            AdminBundle:Usuario:registro
+                        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-58779262-6"></script>
+    <script type="text/javascript">
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-58779262-6');
+    </script>
+<style type="text/css">.im-caret {
+	-webkit-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+	from, to {
+		border-right-color: black;
+	}
+	50% {
+		border-right-color: transparent;
+	}
+}
+
+@-webkit-keyframes blink {
+	from, to {
+		border-right-color: black;
+	}
+	50% {
+		border-right-color: transparent;
+	}
+}
+
+.im-static {
+	color: grey;
+}
+</style></head>
+<body class="sonata-bc skin-black-light layout-top-nav" style="height: auto;">
+
+    <div class="wrapper" style="height: auto;">
+
+                    <header class="main-header">
+                                    <noscript>
+                    &lt;div class="noscript-warning"&gt;
+                        Javascript esta deshabilitado en tu navegador. Algunas características no funcionarán correctamente.
+                    &lt;/div&gt;
+                    </noscript>
+                                                                                                        <nav class="navbar navbar-static-top" role="navigation">
+                                                <!-- inicio menu-arriba -->
+                        <div class="container-fluid ajuste-padding-contenedor">
+                            <div class="navbar-custom-menu menu-arriba">
+                                <div class="nav navbar-nav botonera-arriba"> 
+                                    <!--opciones inclusión-->
+                                    <!-- fin opciones inclusión-->
+                                    <!--Menu usuario-->
+                                                                        <!--fin menu usuario-->
+                                </div>                            
+                            </div>    
+                            <!-- fin menu-arriba -->
+                            <!--cabecera logos pantallas meidanas y grandes -->
+                            <div class="cabecera-logos hidden-sm hidden-xs">
+                                <div class="logos">
+                                    <div class="logo-inder">
+                                        <img src="/bundles/admin/img/logo-simon-header.png" alt="" />
+                                    </div>    
+                                    <div class="logos-mas">
+                                        <img id="img-animacion1" src="/bundles/admin/img/logos-inder-alcaldia.png" alt="Escudo de Colombia" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);" /> 
+                                    </div>
+                                </div>
+                                <div class="botonera-otros">    
+                                </div>
+                            </div>
+                            <!-- / cabecera logos pantallas meidanas y grandes -->
+                            <!--cabecera logos pantallas pequeñas-->                
+                            <div class="cabecera-logos-movil hidden-md hidden-lg">
+                                <div class="logo-inder-movil">
+                                    <img src="/bundles/admin/img/logoinder02.svg" alt="" />
+                                </div>    
+                                <div class="contenedor-logos-movil">
+                                    <div class="logos-mas-movil">
+                                        <img id="img-animacion1" src="/bundles/admin/img/logos-inder-alcaldia.png" alt="Escudo de Colombia" /> 
+                                    </div>
+
+                                                                    </div>
+                            </div>                             
+                            <!-- / cabecera logos pantallas pequeñas-->
+                            <!-- menú principal-->  
+                            <div class="container borde-sombra">
+                                <nav class="navbar navbar-default">
+                                    <div class="navbar-header">
+                                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="/admin/dashboard">
+                                            <i class="fa fa-home"></i>
+                                        </a>
+                                    </div>
+                                    <div class="collapse navbar-collapse js-navbar-collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="http://www.inder.gov.co/">Volver al sitio web INDER Alcaldía de Medellín</a>
+                                            </li>
+                                                                                                                                                                                                                                                                                                                                                                    <ul class="menu-simon">
+                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                    <!--<li>
+                                                        <a href="/angular6">Angular</a>
+                                                    </li>-->
+                                                </ul>
+                                                                                            
+                                        </ul>
+                                    </div>                               
+                                </nav>
+                            </div>
+                            <!-- / menú principal--> 
+                            <!--menu inclusión móvil-->
+
+
+                            <!-- /.navbar-collapse -->
+                            <!-- Navbar Right Menu -->
+
+                            <!-- /.navbar-custom-menu -->
+                        </div>
+                    </nav>
+                            </header>
+        
+                    <div class="container-fluid miga-ajuste">
+                                    <div class="hidden-xs">
+                                            </div>
+                            </div>
+            <div class="content-wrapper content-wrapper-ajuste">
+                <section class="content container">
+
+                        <section class="content">
+                    <form name="formulario_registro" method="post" id="formulario_registro" novalidate="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 titulos">
+                        <h4>Solicitud de Registro</h4>
+                    </div>
+                    <div class="col-md-12 padding">
+                                            </div>
+                    <div class="col-md-4 padding">
+                        <div class="alerta">
+                            <i class="fa fa-exclamation-triangle fa-2x" aria-hidden="true"></i>
+                            <section>
+                                <h5>Atención</h5>
+                                Todos los campos marcados con <span>* </span>son obligatorios.                            </section>
+                        </div>
+                    </div>
+                    <div class="col-md-8 fondoAzul">
+                        <div class="row infoBox">
+                            <label for="formulario_registro_tipopersona" class="required">Tipo de persona</label>
+                            <div class="select2-container select2-allowclear" id="s2id_tipopersona" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-15">Persona Natural</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen15" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-15" id="s2id_autogen15" /></div><select id="tipopersona" name="formulario_registro[tipopersona]" required="required" onchange="inder.formulario.cambiaTipoPersona(this)" title="" style="display: none;" tabindex="-1"><option value="" selected="selected"></option><option value="N">Persona Natural</option><option value="D">Organismos Deportivos</option></select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Información general -->
+                <div class="row datos_contacto" style="display: block;">
+                    <div class="col-md-4 iconoText" id="varAlto" style="height: 306px;">
+                        <div class="iconoInfo">
+                            <div class="circuloIcono">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>1: Información general</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8 fondoAzul" id="formatoAlto">
+                        <div class="infoBox row">
+                            <div class="col-md-12">
+                                <div class="col-lg-6">
+                                    <label for="formulario_registro_tipoidentificacion" class="required">Tipo de documento</label>
+                                    <div class="select2-container select2-allowclear" id="s2id_tipoidentificacion" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-16">Pasaporte</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen16" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-16" id="s2id_autogen16" /></div><select id="tipoidentificacion" name="formulario_registro[tipoidentificacion]" required="required" class="" autocomplete="off" title="" style="display: none;" tabindex="-1"><option value="" selected="selected"></option><option value="6" tipo="CC">Cédula de Ciudadanía</option><option value="7" tipo="CE">Cédula de Extranjería</option><option value="9" tipo="NIT">Número de Identificación Tributaria</option><option value="5" tipo="NUIP">Numero único de Identificación Personal</option><option value="8" tipo="PA">Pasaporte</option><option value="2" tipo="RC">Registro Civil</option><option value="4" tipo="TI">Tarjeta de Identidad</option></select>
+                                                                    </div>
+                                <div class="col-lg-6">
+                                    <label for="formulario_registro_numeroidentificacion" class="required">Número de identificación</label>
+                                    <input type="text" id="numeroidentificacion" name="formulario_registro[numeroidentificacion]" required="required" class="form-control" autocomplete="off" oninput="inder.formulario.buscarUsuario()" />
+                                                                        <span class="error_campo_mensaje" id="identificacionregistrada" style="display: none;"></span>
+                                </div>
+                            </div>
+                            <div id="persona_natural" style="display: block;">
+                                <div class="col-md-12">
+                                    <div class="col-lg-6">
+                                        <label for="formulario_registro_firstname" class="required">Nombre(s) completos</label>
+                                        <input type="text" id="nombres" name="formulario_registro[firstname]" required="required" maxlength="255" class="form-control" autocomplete="off" />
+                                                                            </div>
+                                    <div class="col-lg-6">
+                                        <label for="formulario_registro_lastname" class="required">Apellido(s) completos</label>
+                                        <input type="text" id="apellidos" name="formulario_registro[lastname]" required="required" maxlength="255" class="form-control" autocomplete="off" />
+                                                                            </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="col-lg-6">
+                                        <label for="formulario_registro_gender" class="required">Sexo</label>
+                                        <div class="select2-container select2-allowclear" id="s2id_genero" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-17">Masculino</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen17" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-17" id="s2id_autogen17" /></div><select id="genero" name="formulario_registro[gender]" required="required" title="" style="display: none;" tabindex="-1"><option value="" selected="selected"></option><option value="f">Femenino</option><option value="m">Masculino</option></select>
+                                                                            </div>
+                                    <div class="col-lg-6">
+                                        <label for="formulario_registro_dateOfBirth" class="required">Fecha de nacimiento</label>
+                                        <div class="col-lg-12 input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" id="fechanacimiento" name="formulario_registro[dateOfBirth]" required="required" placeholder="dd/mm/yyyy" class="form-control" autocomplete="off" data-inputmask="'alias': 'dd/mm/yyyy'" />
+
+        <script type="text/javascript">
+
+        if(typeof jQuery == 'undefined'){
+            document.write('&lt;'+'script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"&gt;&lt;'+'/script&gt;');
+        }
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var scriptSrc = "/bundles/itinputmask/vendor/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js";
+
+            if ($('script[src="'+scriptSrc+'"]').length &lt;= 0) {
+                $.getScript(scriptSrc, function() {
+                    Inputmask().mask(document.querySelectorAll("input"));
+                });
+            }
+        });
+    </script>
+
+
+                                        </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                            <div id="persona_juridica">
+                                <div class="col-md-12">
+                                    <div class="col-lg-12">
+                                        <label for="formulario_registro_tipoentidad" class="required">Tipo de entidad</label>
+                                        <div class="select2-container" id="s2id_tipoentidad" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-18">Seleccione una opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen18" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-18" id="s2id_autogen18" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen18_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-18" id="s2id_autogen18_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-18">   </ul></div></div><select id="tipoentidad" name="formulario_registro[tipoentidad]" required="required" class="" autocomplete="off" title="" style="display: none;" tabindex="-1"><option value="" selected="selected"></option><option value="1">Clubes de entidades no deportivas</option><option value="2">Otras organizaciones legalmente constituidas</option><option value="3">Club personas naturales</option></select>
+                                                                            </div>
+                                    <div class="col-lg-12">
+                                        <label for="formulario_registro_organizaciondeportiva" class="required">Razón Social</label>
+                                        <input type="text" id="razonsocial" name="formulario_registro[organizaciondeportiva]" required="required" class="form-control" autocomplete="off" />
+                                                                            </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="col-lg-6 datos_clave" style="display: block;">
+                                    <label for="formulario_registro_password_first" class="required">Clave</label>
+                                    <input type="password" id="clave_uno" name="formulario_registro[password][first]" required="required" class="form-control claved" autocomplete="off" />
+                                                                        <div id="pswd_info" style="display: none;">
+                                        <h4>Recomendaciones para su clave</h4>
+                                        <ul>
+                                            <li id="letter" class="valid">Debe contener al menos una letra.</li>
+                                            <li id="number" class="valid">Debe contener al menos un número.</li>
+                                            <li id="length" class="valid">Debe contener al menos 6 caracteres.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 datos_clave" style="display: block;">
+                                    <label for="formulario_registro_password_second" class="required">Confirmar clave</label>
+                                    <input type="password" id="clave_dos" name="formulario_registro[password][second]" required="required" class="form-control claveu" autocomplete="off" />
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Datos de contacto -->
+                <div class="row datos_contacto" style="display: block;">
+                    <div class="col-md-4 iconoText" id="varAlto2" style="height: 356px;">
+                        <div class="iconoInfo">
+                            <div class="circuloIcono">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>2: Datos de contacto</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8 fondoAzul" id="formatoAlto2">
+                        <div class="infoBox row">
+                            <div class="municipio col-lg-12 col-md-12">
+                                <label class="label_municipio" for="formulario_registro_municipio">Municipio</label>
+                                <div class="select2-container select2-allowclear" id="s2id_municipio" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-19">Medellín</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen19" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-19" id="s2id_autogen19" /></div><select id="municipio" name="formulario_registro[municipio]" class="" onchange="inder.oferta.actualizarBarrios(this);" title="" style="display: none;" tabindex="-1"><option value=""></option><option value="3">Abejorral</option><option value="813">Abrego</option><option value="4">Abriaquí</option><option value="720">Acacías</option><option value="456">Acandí</option><option value="638">Acevedo</option><option value="158">Achí</option><option value="431">Aguachica</option><option value="893">Aguada</option><option value="327">Aguadas</option><option value="516">Agua de Dios</option><option value="370">Aguazul</option><option value="432">Agustín Codazzi</option><option value="639">Aipe</option><option value="517">Albán</option><option value="749">Albán</option><option value="894">Albania</option><option value="675">Albania</option><option value="354">Albania</option><option value="1053">Alcalá</option><option value="750">Aldana</option><option value="5">Alejandría</option><option value="690">Algarrobo</option><option value="640">Algeciras</option><option value="389">Almaguer</option><option value="204">Almeida</option><option value="1006">Alpujarra</option><option value="641">Altamira</option><option value="457">Alto Baudó (Pie de Pató)</option><option value="159">Altos del Rosario</option><option value="1007">Alvarado</option><option value="6">Amagá</option><option value="7">Amalfi</option><option value="1008">Ambalema</option><option value="518">Anapoima</option><option value="751">Ancuya</option><option value="1054">Andalucía</option><option value="8">Andes</option><option value="9">Angelópolis</option><option value="10">Angostura</option><option value="519">Anolaima</option><option value="11">Anorí</option><option value="328">Anserma</option><option value="1055">Ansermanuevo</option><option value="12">Anzá</option><option value="1009">Anzoátegui</option><option value="13">Apartadó</option><option value="878">Apía</option><option value="520">Apulo</option><option value="205">Aquitania</option><option value="691">Aracataca</option><option value="329">Aranzazu</option><option value="895">Aratoca</option><option value="128">Arauca</option><option value="129">Arauquita</option><option value="521">Arbeláez</option><option value="752">Arboleda</option><option value="814">Arboledas</option><option value="14">Arboletes</option><option value="206">Arcabuco</option><option value="160">Arenal</option><option value="1056">Argelia</option><option value="15">Argelia</option><option value="390">Argelia</option><option value="692">Ariguaní</option><option value="161">Arjona</option><option value="16">Armenia</option><option value="866">Armenia</option><option value="1010">Armero Guayabal</option><option value="162">Arroyohondo</option><option value="433">Astrea</option><option value="1011">Ataco</option><option value="486">Ayapel</option><option value="458">Bagadó</option><option value="459">Bahía Solano</option><option value="460">Bajo Baudó</option><option value="391">Balboa</option><option value="879">Balboa</option><option value="135">Baranoa</option><option value="642">Baraya</option><option value="753">Barbacoas</option><option value="896">Barbosa</option><option value="17">Barbosa</option><option value="897">Barichara</option><option value="898">Barrancabermeja</option><option value="721">Barranca de Upía</option><option value="676">Barrancas</option><option value="163">Barranco de Loba</option><option value="1114">Barranco Minas</option><option value="136">Barranquilla</option><option value="434">Becerril</option><option value="330">Belalcázar</option><option value="754">Belén</option><option value="207">Belén</option><option value="355">Belén de Los Andaquíes</option><option value="880">Belén de Umbría</option><option value="18">Bello</option><option value="19">Belmira</option><option value="522">Beltrán</option><option value="208">Berbeo</option><option value="20">Betania</option><option value="209">Betéitiva</option><option value="899">Betulia</option><option value="21">Betulia</option><option value="523">Bituima</option><option value="210">Boavita</option><option value="815">Bochalema</option><option value="524">Bogotá D.C.</option><option value="525">Bojacá</option><option value="461">Bojayá</option><option value="1057">Bolívar</option><option value="900">Bolívar</option><option value="392">Bolívar</option><option value="435">Bosconia</option><option value="211">Boyacá</option><option value="22">Briceño</option><option value="212">Briceño</option><option value="901">Bucaramanga</option><option value="816">Bucarasica</option><option value="1058">Buenaventura</option><option value="213">Buenavista</option><option value="980">Buenavista</option><option value="487">Buenavista</option><option value="867">Buenavista</option><option value="393">Buenos Aires</option><option value="755">Buesaco</option><option value="1059">Bugalagrande</option><option value="23">Buriticá</option><option value="214">Busbanzá</option><option value="526">Cabrera</option><option value="902">Cabrera</option><option value="722">Cabuyaro</option><option value="1115">Cacahual</option><option value="24">Cáceres</option><option value="527">Cachipay</option><option value="1103">Cachipay</option><option value="817">Cáchira</option><option value="818">Cácota</option><option value="25">Caicedo</option><option value="1060">Caicedonia</option><option value="981">Caimito</option><option value="1012">Cajamarca</option><option value="394">Cajibío</option><option value="1104">Cajica</option><option value="528">Cajicá</option><option value="164">Calamar</option><option value="634">Calamar</option><option value="868">Calarcá</option><option value="26">Caldas</option><option value="215">Caldas</option><option value="395">Caldono</option><option value="1061">Cali</option><option value="903">California</option><option value="1084">Calima EL Darién</option><option value="396">Caloto</option><option value="27">Campamento</option><option value="643">Campoalegre</option><option value="137">Campo de la Cruz</option><option value="216">Campohermoso</option><option value="488">Canalete</option><option value="28">Cañasgordas</option><option value="138">Candelaria</option><option value="1062">Candelaria</option><option value="165">Cantagallo</option><option value="529">Caparrapí</option><option value="904">Capitanejo</option><option value="530">Cáqueza</option><option value="29">Caracolí</option><option value="30">Caramanta</option><option value="905">Carcasí</option><option value="31">Carepa</option><option value="1013">Carmen de Apicalá</option><option value="531">Carmen de Carupa</option><option value="32">Carolina del Príncipe</option><option value="166">Cartagena de Indias</option><option value="356">Cartagena del Chairá</option><option value="1063">Cartago</option><option value="1095">Carurú</option><option value="1014">Casabianca</option><option value="723">Castilla la Nueva</option><option value="33">Caucasia</option><option value="906">Cepitá</option><option value="489">Cereté</option><option value="217">Cerinza</option><option value="907">Cerrito</option><option value="693">Cerro de San Antonio</option><option value="462">Cértegui</option><option value="756">Chachagui</option><option value="532">Chaguaní</option><option value="982">Chalán</option><option value="371">Chameza</option><option value="1015">Chaparral</option><option value="908">Charalá</option><option value="909">Charta</option><option value="533">Chía</option><option value="694">Chibolo</option><option value="34">Chigorodó</option><option value="910">Chima</option><option value="490">Chimá</option><option value="436">Chimichagua</option><option value="819">Chinácota</option><option value="218">Chinavita</option><option value="331">Chinchiná</option><option value="491">Chinú</option><option value="534">Chipaque</option><option value="911">Chipatá</option><option value="219">Chiquinquirá</option><option value="220">Chíquiza</option><option value="437">Chiriguaná</option><option value="221">Chiscas</option><option value="222">Chita</option><option value="820">Chitagá</option><option value="223">Chitaraque</option><option value="224">Chivatá</option><option value="225">Chivor</option><option value="535">Choachí</option><option value="536">Chocontá</option><option value="167">Cicuco</option><option value="695">Ciénaga</option><option value="492">Ciénaga de Oro</option><option value="226">Ciénega</option><option value="912">Cimitarra</option><option value="869">Circasia</option><option value="35">Cisneros</option><option value="36">Ciudad Bolívar</option><option value="168">Clemencia</option><option value="37">Cocorná</option><option value="1016">Coello</option><option value="537">Cogua</option><option value="644">Colombia</option><option value="853">Colón</option><option value="757">Colón Genová</option><option value="983">Colosó</option><option value="227">Cómbita</option><option value="38">Concepción</option><option value="913">Concepción</option><option value="696">Concordia</option><option value="39">Concordia</option><option value="463">Condoto</option><option value="914">Confines</option><option value="758">Consacá</option><option value="759">Contadero</option><option value="915">Contratación</option><option value="821">Convención</option><option value="40">Copacabana</option><option value="228">Coper</option><option value="760">Córdoba</option><option value="870">Córdoba</option><option value="169">Córdoba</option><option value="397">Corinto</option><option value="916">Coromoro</option><option value="984">Corozal</option><option value="229">Corrales</option><option value="538">Cota</option><option value="493">Cotorra</option><option value="230">Covarachía</option><option value="985">Coveñas</option><option value="1017">Coyaima</option><option value="130">Cravo Norte</option><option value="761">Cuaspud Carlosama</option><option value="231">Cubará</option><option value="724">Cubarral</option><option value="232">Cucaita</option><option value="539">Cucunubá</option><option value="822">Cucutilla</option><option value="233">Cuítiva</option><option value="725">Cumaral</option><option value="1098">Cumaribo</option><option value="762">Cumbal</option><option value="763">Cumbitara</option><option value="1018">Cunday</option><option value="357">Curillo</option><option value="917">Curití</option><option value="438">Curumaní</option><option value="41">Dabeiba</option><option value="1064">Dagua</option><option value="677">Dibulla</option><option value="678">Distracción</option><option value="1019">Dolores</option><option value="42">Don Matías</option><option value="881">Dosquebradas</option><option value="234">Duitama</option><option value="823">Duranía</option><option value="43">Ebéjico</option><option value="645">El Agrado</option><option value="1065">El Águila</option><option value="464">El Atrato</option><option value="44">El Bagre</option><option value="697">El Banco</option><option value="1066">El Cairo</option><option value="726">El Calvario</option><option value="465">El Cantón de San Pablo</option><option value="824">El Carmen</option><option value="466">El Carmen de Atrato</option><option value="170">El Carmen de Bolívar</option><option value="918">El Carmen de Chucurí</option><option value="467">El Carmen del Darién</option><option value="45">El Carmen de Viboral</option><option value="727">El Castillo</option><option value="1067">El Cerrito</option><option value="764">El Charco</option><option value="235">El Cocuy</option><option value="540">El Colegio</option><option value="439">El Copey</option><option value="358">El Doncello</option><option value="728">El Dorado</option><option value="1068">El Dovio</option><option value="1020">El Espinal</option><option value="236">El Espino</option><option value="919">El Guacamayo</option><option value="1021">El Guamo</option><option value="171">El Guamo</option><option value="647">Elías</option><option value="679">El Molino</option><option value="440">El Paso</option><option value="359">El Paujil</option><option value="46">El Peñol</option><option value="765">El Peñol</option><option value="920">El Peñón</option><option value="172">El Peñón</option><option value="541">El Peñón</option><option value="698">El Piñon</option><option value="646">El Pital</option><option value="921">El Playón</option><option value="699">El Retén</option><option value="47">El Retiro</option><option value="635">El Retorno</option><option value="986">El Roble</option><option value="542">El Rosal</option><option value="766">El Rosario</option><option value="48">El Santuario</option><option value="767">El Tablón de Gómez</option><option value="768">El Tambo</option><option value="398">El Tambo</option><option value="825">El Tarra</option><option value="826">El Zulia</option><option value="922">Encino</option><option value="923">Enciso</option><option value="49">Entrerríos</option><option value="50">Envigado</option><option value="543">Facatativá</option><option value="1022">Falan</option><option value="332">Filadelfia</option><option value="871">Filandia</option><option value="237">Firavitoba</option><option value="1023">Flandes</option><option value="360">Florencia</option><option value="399">Florencia</option><option value="238">Floresta</option><option value="924">Florián</option><option value="1069">Florida</option><option value="925">Floridablanca</option><option value="544">Fómeque</option><option value="680">Fonseca</option><option value="131">Fortul</option><option value="545">Fosca</option><option value="769">Francisco Pizarro</option><option value="51">Fredonia</option><option value="1024">Fresno</option><option value="52">Frontino</option><option value="729">Fuente de Oro</option><option value="700">Fundación</option><option value="770">Funes</option><option value="546">Funza</option><option value="547">Fúquene</option><option value="548">Fusagasugá</option><option value="549">Gachalá</option><option value="550">Gachancipá</option><option value="239">Gachantivá</option><option value="551">Gachetá</option><option value="926">Galán</option><option value="139">Galapa</option><option value="987">Galeras</option><option value="552">Gama</option><option value="441">Gamarra</option><option value="927">Gámbita</option><option value="240">Gámeza</option><option value="241">Garagoa</option><option value="648">Garzón</option><option value="872">Génova</option><option value="649">Gigante</option><option value="1070">Ginebra</option><option value="53">Giraldo</option><option value="553">Girardot</option><option value="54">Girardota</option><option value="928">Girón</option><option value="55">Gómez Plata</option><option value="442">González</option><option value="827">Gramalote</option><option value="554">Granada</option><option value="56">Granada</option><option value="730">Granada</option><option value="929">Guaca</option><option value="242">Guacamayas</option><option value="1071">Guacarí</option><option value="400">Guachené</option><option value="555">Guachetá</option><option value="771">Guachucal</option><option value="1072">Guadalajara de Buga</option><option value="930">Guadalupe</option><option value="650">Guadalupe</option><option value="57">Guadalupe</option><option value="556">Guaduas</option><option value="772">Guaitarilla</option><option value="773">Gualmatán</option><option value="731">Guamal</option><option value="701">Guamal</option><option value="401">Guapi</option><option value="931">Guapotá</option><option value="988">Guaranda</option><option value="58">Guarne</option><option value="557">Guasca</option><option value="59">Guatapé</option><option value="558">Guataquí</option><option value="559">Guatavita</option><option value="243">Guateque</option><option value="882">Guática</option><option value="932">Guavatá</option><option value="560">Guayabal de Síquima</option><option value="561">Guayabetal</option><option value="244">Guayatá</option><option value="933">Güepsa</option><option value="245">Güicán</option><option value="562">Gutiérrez</option><option value="828">Hacarí</option><option value="173">Hatillo de Loba</option><option value="934">Hato</option><option value="372">Hato Corozal</option><option value="681">Hatonuevo</option><option value="60">Heliconia</option><option value="829">Herrán</option><option value="1025">Herveo</option><option value="61">Hispania</option><option value="651">Hobo</option><option value="1026">Honda</option><option value="1027">Ibagué</option><option value="1028">Icononzo</option><option value="774">Iles</option><option value="775">Imués</option><option value="633">Inírida</option><option value="402">Inzá</option><option value="776">Ipiales</option><option value="652">Iquira</option><option value="653">Isnos</option><option value="468">Istmina</option><option value="62">Itagüí</option><option value="63">Ituango</option><option value="246">Iza</option><option value="403">Jambaló</option><option value="1073">Jamundí</option><option value="64">Jardín</option><option value="247">Jenesano</option><option value="248">Jericó</option><option value="65">Jericó</option><option value="563">Jerusalén</option><option value="935">Jesús María</option><option value="936">Jordán</option><option value="140">Juan de Acosta</option><option value="564">Junín</option><option value="469">Jurado</option><option value="494">La Apartada</option><option value="654">La Argentina</option><option value="832">Labateca</option><option value="937">La Belleza</option><option value="252">Labranzagrande</option><option value="565">La Calera</option><option value="249">La Capilla</option><option value="66">La Ceja</option><option value="883">La Celia</option><option value="1105">La Chorrera</option><option value="777">La Cruz</option><option value="1074">La Cumbre</option><option value="333">La Dorada</option><option value="830">La Esperanza</option><option value="67">La Estrella</option><option value="778">La Florida</option><option value="443">La Gloria</option><option value="1116">La Guadalupe</option><option value="444">La Jagua de Ibirico</option><option value="682">La Jagua del Pilar</option><option value="779">La Llanada</option><option value="732">La Macarena</option><option value="334">La Merced</option><option value="566">La Mesa</option><option value="361">La Montañita</option><option value="939">Landázuri</option><option value="567">La Palma</option><option value="938">La Paz</option><option value="445">La Paz Robles</option><option value="1106">La Pedrera</option><option value="568">La Peña</option><option value="68">La Pintada</option><option value="655">La Plata</option><option value="831">La Playa De Belén</option><option value="1099">La Primavera</option><option value="373">La Salina</option><option value="404">La Sierra</option><option value="873">La Tebaida</option><option value="780">La Tola</option><option value="989">La Unión</option><option value="781">La Unión</option><option value="1075">La Unión</option><option value="69">La Unión</option><option value="250">La Uvita</option><option value="405">La Vega</option><option value="569">La Vega</option><option value="251">La Victoria</option><option value="1107">La Victoria</option><option value="1076">La Victoria</option><option value="884">La Virginia</option><option value="940">Lebrija</option><option value="782">Leiva</option><option value="733">Lejanías</option><option value="570">Lenguazaque</option><option value="1029">Lérida</option><option value="1">Leticia</option><option value="1030">Líbano</option><option value="70">Liborina</option><option value="783">Linares</option><option value="470">Litoral del San Juan</option><option value="471">Lloró</option><option value="406">López De Micay</option><option value="784">Los Andes Sotomayor</option><option value="495">Los Córdobas</option><option value="990">Los Palmitos</option><option value="833">Los Patios</option><option value="941">Los Santos</option><option value="834">Lourdes</option><option value="141">Luruaco</option><option value="253">Macanal</option><option value="942">Macaravita</option><option value="71">Maceo</option><option value="571">Machetá</option><option value="572">Madrid</option><option value="174">Magangué</option><option value="785">Magui Payán</option><option value="175">Mahates</option><option value="683">Maicao</option><option value="991">Majagual</option><option value="943">Málaga</option><option value="142">Malambo</option><option value="786">Mallama</option><option value="143">Manatí</option><option value="684">Manaure</option><option value="446">Manaure Balcón del Cesar</option><option value="374">Maní</option><option value="335">Manizales</option><option value="573">Manta</option><option value="336">Manzanares</option><option value="734">Mapiripán</option><option value="1117">Mapiripana</option><option value="176">Margarita</option><option value="177">María La Baja</option><option value="72">Marinilla</option><option value="254">Maripí</option><option value="337">Marmato</option><option value="338">Marquetalia</option><option value="885">Marsella</option><option value="339">Marulanda</option><option value="944">Matanza</option><option value="73">Medellín</option><option value="574">Medina</option><option value="472">Medio Atrato</option><option value="473">Medio Baudó</option><option value="474">Medio San Juan</option><option value="1031">Melgar</option><option value="407">Mercaderes</option><option value="735">Mesetas</option><option value="362">Milán</option><option value="636">Miraflores</option><option value="255">Miraflores</option><option value="408">Miranda</option><option value="1108">Miriti(parana)</option><option value="886">Mistrató</option><option value="1096">Mitú</option><option value="854">Mocoa</option><option value="945">Mogotes</option><option value="946">Molagavita</option><option value="496">Momil</option><option value="256">Mongua</option><option value="257">Monguí</option><option value="258">Moniquirá</option><option value="499">Moñitos</option><option value="74">Montebello</option><option value="178">Montecristo</option><option value="497">Montelíbano</option><option value="874">Montenegro</option><option value="498">Montería</option><option value="375">Monterrey</option><option value="409">Morales</option><option value="179">Morales</option><option value="363">Morelia</option><option value="1118">Morichal</option><option value="992">Morroa</option><option value="575">Mosquera</option><option value="787">Mosquera</option><option value="259">Motavita</option><option value="1032">Murillo</option><option value="75">Murindó</option><option value="76">Mutatá</option><option value="835">Mutiscua</option><option value="260">Muzo</option><option value="576">Nariño</option><option value="788">Nariño</option><option value="77">Nariño</option><option value="656">Nátaga</option><option value="1033">Natagaima</option><option value="78">Nechí</option><option value="79">Necoclí</option><option value="340">Neira</option><option value="657">Neiva</option><option value="577">Nemocón</option><option value="578">Nilo</option><option value="579">Nimaima</option><option value="261">Nobsa</option><option value="580">Nocaima</option><option value="341">Norcasia</option><option value="180">Norosí</option><option value="475">Nóvita</option><option value="702">Nueva Granada</option><option value="262">Nuevo Colón</option><option value="376">Nunchía</option><option value="476">Nuquí</option><option value="1077">Obando</option><option value="947">Ocamonte</option><option value="836">Ocaña</option><option value="948">Oiba</option><option value="263">Oicatá</option><option value="80">Olaya</option><option value="789">Olaya Herrera</option><option value="949">Onzaga</option><option value="658">Oporapa</option><option value="855">Orito</option><option value="377">Orocué</option><option value="1034">Ortega</option><option value="790">Ospina</option><option value="264">Otanche</option><option value="993">Ovejas</option><option value="265">Pachavita</option><option value="581">Pacho</option><option value="1122">Pacoa</option><option value="342">Pácora</option><option value="410">Padilla</option><option value="266">Páez</option><option value="411">Páez (Belalcázar)</option><option value="659">Paicol</option><option value="447">Pailitas</option><option value="582">Paime</option><option value="267">Paipa</option><option value="268">Pajarito</option><option value="660">Palermo</option><option value="661">Palestina</option><option value="343">Palestina</option><option value="950">Palmar</option><option value="144">Palmar de Varela</option><option value="951">Palmas del Socorro</option><option value="1078">Palmira</option><option value="1035">Palocabildo</option><option value="837">Pamplona</option><option value="838">Pamplonita</option><option value="1119">Pana Pana</option><option value="583">Pandi</option><option value="269">Panqueba</option><option value="1123">Papunaua</option><option value="952">Páramo</option><option value="584">Paratebueno</option><option value="585">Pasca</option><option value="412">Patía</option><option value="270">Pauna</option><option value="271">Paya</option><option value="378">Paz de Ariporo</option><option value="272">Paz de Río</option><option value="703">Pedraza</option><option value="448">Pelaya</option><option value="344">Pensilvania</option><option value="81">Peque</option><option value="887">Pereira</option><option value="273">Pesca</option><option value="413">Piamonte</option><option value="953">Piedecuesta</option><option value="1036">Piedras</option><option value="414">Piendamó</option><option value="875">Pijao</option><option value="704">Pijiño del Carmen</option><option value="954">Pinchote</option><option value="181">Pinillos</option><option value="145">Piojo</option><option value="274">Pisba</option><option value="662">Pitalito</option><option value="705">Pivijay</option><option value="1037">Planadas</option><option value="500">Planeta Rica</option><option value="706">Plato</option><option value="791">Policarpa</option><option value="146">Polonuevo</option><option value="147">Ponedera</option><option value="415">Popayán</option><option value="379">Pore</option><option value="792">Potosí</option><option value="1079">Pradera</option><option value="1038">Prado</option><option value="892">Providencia</option><option value="793">Providencia</option><option value="449">Pueblo Bello</option><option value="501">Pueblo Nuevo</option><option value="888">Pueblo Rico</option><option value="82">Pueblorrico</option><option value="707">Puebloviejo</option><option value="955">Puente Nacional</option><option value="794">Puerres</option><option value="1109">Puerto Alegria</option><option value="1110">Puerto Arica</option><option value="856">Puerto Asís</option><option value="83">Puerto Berrío</option><option value="275">Puerto Boyacá</option><option value="857">Puerto Caicedo</option><option value="1100">Puerto Carreño</option><option value="1120">Puerto Colombia</option><option value="148">Puerto Colombia</option><option value="736">Puerto Concordia</option><option value="502">Puerto Escondido</option><option value="737">Puerto Gaitán</option><option value="858">Puerto Guzmán</option><option value="859">Puerto Leguízamo</option><option value="503">Puerto Libertador</option><option value="738">Puerto Lleras</option><option value="739">Puerto López</option><option value="84">Puerto Nare</option><option value="1111">Puerto Nariño</option><option value="2">Puerto Nariño</option><option value="956">Puerto Parra</option><option value="740">Puerto Rico</option><option value="364">Puerto Rico</option><option value="132">Puerto Rondón</option><option value="586">Puerto Salgar</option><option value="839">Puerto Santander</option><option value="1112">Puerto Santander</option><option value="416">Puerto Tejada</option><option value="85">Puerto Triunfo</option><option value="957">Puerto Wilches</option><option value="587">Pulí</option><option value="795">Pupiales</option><option value="417">Puracé (Coconuco)</option><option value="1039">Purificación</option><option value="504">Purísima</option><option value="588">Quebradanegra</option><option value="589">Quetame</option><option value="477">Quibdó</option><option value="876">Quimbaya</option><option value="889">Quinchía</option><option value="276">Quípama</option><option value="590">Quipile</option><option value="840">Ragonvalia</option><option value="277">Ramiriquí</option><option value="278">Ráquira</option><option value="380">Recetor</option><option value="182">Regidor</option><option value="86">Remedios</option><option value="708">Remolino</option><option value="149">Repelón</option><option value="741">Restrepo</option><option value="1080">Restrepo</option><option value="796">Ricaurte</option><option value="591">Ricaurte</option><option value="1040">Rioblanco</option><option value="450">Río de Oro</option><option value="1081">Riofrío</option><option value="685">Riohacha</option><option value="478">Río Iro</option><option value="87">Rionegro</option><option value="958">Rionegro</option><option value="479">Río Quito</option><option value="345">Riosucio</option><option value="480">Riosucio</option><option value="183">Ríoviejo</option><option value="346">Risaralda</option><option value="663">Rivera</option><option value="797">Roberto Payán San José</option><option value="1082">Roldanillo</option><option value="1041">Roncesvalles</option><option value="279">Rondón</option><option value="418">Rosas</option><option value="1042">Rovira</option><option value="959">Sabana de Torres</option><option value="150">Sabanagrande</option><option value="88">Sabanalarga</option><option value="151">Sabanalarga</option><option value="381">Sabanalarga</option><option value="709">Sabanas de San Ángel</option><option value="89">Sabaneta</option><option value="280">Saboyá</option><option value="382">Sácama</option><option value="281">Sáchica</option><option value="505">Sahagún</option><option value="664">Saladoblanco</option><option value="347">Salamina</option><option value="710">Salamina</option><option value="841">Salazar De Las Palmas</option><option value="1043">Saldaña</option><option value="877">Salento</option><option value="90">Salgar</option><option value="282">Samacá</option><option value="348">Samaná</option><option value="798">Samaniego</option><option value="994">Sampués</option><option value="665">San Agustín</option><option value="451">San Alberto</option><option value="1125">San Andres</option><option value="960">San Andrés</option><option value="91">San Andrés de Cuerquia</option><option value="506">San Andrés de Sotavento</option><option value="507">San Antero</option><option value="1044">San Antonio</option><option value="592">San Antonio del Tequendama</option><option value="995">San Antonio de Palmito</option><option value="961">San Benito</option><option value="996">San Benito Abad</option><option value="799">San Bernardo</option><option value="593">San Bernardo</option><option value="508">San Bernardo del Viento</option><option value="842">San Calixto</option><option value="509">San Carlos</option><option value="92">San Carlos</option><option value="742">San Carlos de Guaroa</option><option value="594">San Cayetano</option><option value="843">San Cayetano</option><option value="184">San Cristóbal</option><option value="452">San Diego</option><option value="804">Sandoná</option><option value="283">San Eduardo</option><option value="185">San Estanislao</option><option value="1121">San Felipe</option><option value="186">San Fernando</option><option value="860">San Francisco</option><option value="93">San Francisco</option><option value="595">San Francisco</option><option value="962">San Gil</option><option value="187">San Jacinto</option><option value="188">San Jacinto del Cauca</option><option value="94">San Jerónimo</option><option value="963">San Joaquín</option><option value="349">San José</option><option value="844">San José de Cúcuta</option><option value="95">San José de la Montaña</option><option value="365">San José del Fragua</option><option value="637">San José del Guaviare</option><option value="481">San José del Palmar</option><option value="964">San José de Miranda</option><option value="284">San José de Pare</option><option value="510">San José de Uré</option><option value="743">San Juan de Arama</option><option value="997">San Juan de Betulia</option><option value="686">San Juan del Cesar</option><option value="800">San Juan de Pasto</option><option value="596">San Juan de Río Seco</option><option value="96">San Juan de Urabá</option><option value="744">San Juanito</option><option value="189">San Juan Nepomuceno</option><option value="801">San Lorenzo</option><option value="1045">San Luis</option><option value="97">San Luis</option><option value="285">San Luis de Gaceno</option><option value="383">San Luis de Palenque</option><option value="998">San Marcos</option><option value="453">San Martín</option><option value="190">San Martín de Loba</option><option value="745">San Martín de los Llanos</option><option value="286">San Mateo</option><option value="861">San Miguel</option><option value="965">San Miguel</option><option value="287">San Miguel de Sema</option><option value="999">San Onofre</option><option value="191">San Pablo</option><option value="802">San Pablo</option><option value="288">San Pablo de Borbur</option><option value="1083">San Pedro</option><option value="1000">San Pedro</option><option value="803">San Pedro de Cartago</option><option value="98">San Pedro de los Milagros</option><option value="99">San Pedro de Urabá</option><option value="511">San Pelayo</option><option value="100">San Rafael</option><option value="101">San Roque</option><option value="419">San Sebastián</option><option value="711">San Sebastián de Buenavist</option><option value="1046">San Sebastián De Mariquita</option><option value="713">Santa Ana</option><option value="103">Santa Bárbara</option><option value="967">Santa Bárbara</option><option value="714">Santa Bárbara de Pinto</option><option value="805">Santa Bárbara - Iscuande</option><option value="192">Santa Catalina</option><option value="512">Santa Cruz de Lorica</option><option value="193">Santa Cruz de Mompós</option><option value="806">Santacruz Guachavés</option><option value="104">Santa Fe de Antioquia</option><option value="968">Santa Helena del Opón</option><option value="1047">Santa Isabel</option><option value="152">Santa Lucía</option><option value="666">Santa María</option><option value="289">Santa María</option><option value="715">Santa Marta</option><option value="292">Santana</option><option value="421">Santander de Quilichao</option><option value="420">Santa Rosa</option><option value="890">Santa Rosa de Cabal</option><option value="194">Santa Rosa Del Norte</option><option value="195">Santa Rosa del Sur</option><option value="105">Santa Rosa de Osos</option><option value="290">Santa Rosa de Viterbo</option><option value="1101">Santa Rosalía</option><option value="291">Santa Sofía</option><option value="845">Santiago</option><option value="862">Santiago</option><option value="1001">Santiago de Tolú</option><option value="106">Santo Domingo</option><option value="846">Santo Domingo De Silos</option><option value="153">Santo Tomás</option><option value="891">Santuario</option><option value="966">San Vicente de Chucurí</option><option value="366">San Vicente del Caguán</option><option value="102">San Vicente Ferrer</option><option value="712">San Zenón</option><option value="807">Sapuyes</option><option value="133">Saravena</option><option value="847">Sardinata</option><option value="597">Sasaima</option><option value="293">Sativanorte</option><option value="294">Sativasur</option><option value="107">Segovia</option><option value="598">Sesquilé</option><option value="1085">Sevilla</option><option value="295">Siachoque</option><option value="599">Sibaté</option><option value="863">Sibundoy</option><option value="600">Silvania</option><option value="422">Silvia</option><option value="969">Simacota</option><option value="601">Simijaca</option><option value="196">Simití</option><option value="1002">Sincé</option><option value="1003">Sincelejo</option><option value="482">Sipí</option><option value="716">Sitionuevo</option><option value="602">Soacha</option><option value="296">Soatá</option><option value="297">Socha</option><option value="970">Socorro</option><option value="298">Socotá</option><option value="299">Sogamoso</option><option value="367">Solano</option><option value="154">Soledad</option><option value="368">Solita</option><option value="300">Somondoco</option><option value="108">Sonsón</option><option value="109">Sopetrán</option><option value="197">Soplaviento</option><option value="603">Sopó</option><option value="301">Sora</option><option value="302">Soracá</option><option value="303">Sotaquirá</option><option value="423">Sotará (Paispamba)</option><option value="971">Suaita</option><option value="155">Suan</option><option value="424">Suárez</option><option value="1048">Suárez</option><option value="667">Suaza</option><option value="604">Subachoque</option><option value="1004">Sucre</option><option value="425">Sucre</option><option value="972">Sucre</option><option value="605">Suesca</option><option value="606">Supatá</option><option value="350">Supía</option><option value="973">Suratá</option><option value="607">Susa</option><option value="304">Susacón</option><option value="305">Sutamarchán</option><option value="608">Sutatausa</option><option value="306">Sutatenza</option><option value="609">Tabio</option><option value="483">Tadó</option><option value="198">Talaigua Nuevo</option><option value="454">Tamalameque</option><option value="384">Támara</option><option value="134">Tame</option><option value="110">Támesis</option><option value="808">Taminango</option><option value="809">Tangua</option><option value="1097">Taraira</option><option value="1113">Tarapaca</option><option value="111">Tarazá</option><option value="668">Tarqui</option><option value="112">Tarso</option><option value="307">Tasco</option><option value="385">Tauramena</option><option value="610">Tausa</option><option value="669">Tello</option><option value="611">Tena</option><option value="717">Tenerife</option><option value="612">Tenjo</option><option value="308">Tenza</option><option value="848">Teorama</option><option value="670">Teruel</option><option value="671">Tesalia</option><option value="613">Tibacuy</option><option value="309">Tibaná</option><option value="310">Tibasosa</option><option value="614">Tibirita</option><option value="849">Tibú</option><option value="513">Tierralta</option><option value="672">Timaná</option><option value="426">Timbío</option><option value="427">Timbiquí</option><option value="311">Tinjacá</option><option value="312">Tipacoque</option><option value="199">Tiquisio</option><option value="113">Titiribí</option><option value="313">Toca</option><option value="615">Tocaima</option><option value="616">Tocancipá</option><option value="314">Togüí</option><option value="114">Toledo</option><option value="850">Toledo</option><option value="1005">Toluviejo</option><option value="974">Tona</option><option value="315">Tópaga</option><option value="617">Topaipí</option><option value="428">Toribio</option><option value="1086">Toro</option><option value="316">Tota</option><option value="429">Totoró</option><option value="386">Trinidad</option><option value="1087">Trujillo</option><option value="156">Tubará</option><option value="514">Tuchín</option><option value="1088">Tuluá</option><option value="810">Tumaco</option><option value="317">Tunja</option><option value="318">Tununguá</option><option value="811">Túquerres</option><option value="200">Turbaco</option><option value="201">Turbana</option><option value="115">Turbo</option><option value="319">Turmequé</option><option value="320">Tuta</option><option value="321">Tutazá</option><option value="618">Ubalá</option><option value="619">Ubaque</option><option value="620">Ubaté</option><option value="1089">Ulloa</option><option value="322">Umbita</option><option value="621">Une</option><option value="484">Unguía</option><option value="485">Unión Panamericana</option><option value="116">Uramita</option><option value="746">Uribe</option><option value="687">Uribia</option><option value="117">Urrao</option><option value="688">Urumita</option><option value="157">Usiacurí</option><option value="622">Útica</option><option value="118">Valdivia</option><option value="515">Valencia</option><option value="864">Valle del Guamuez</option><option value="975">Valle de San José</option><option value="1049">Valle de San Juan</option><option value="455">Valledupar</option><option value="369">Valparaíso</option><option value="119">Valparaíso</option><option value="120">Vegachí</option><option value="976">Vélez</option><option value="1050">Venadillo</option><option value="623">Venecia</option><option value="121">Venecia</option><option value="323">Ventaquemada</option><option value="624">Vergara</option><option value="1090">Versalles</option><option value="977">Vetas</option><option value="625">Vianí</option><option value="351">Victoria</option><option value="122">Vigía del Fuerte</option><option value="1091">Vijes</option><option value="851">Villa Caro</option><option value="324">Villa de Leyva</option><option value="852">Villa del Rosario</option><option value="865">Villagarzón</option><option value="626">Villagómez</option><option value="1051">Villahermosa</option><option value="352">Villamaría</option><option value="689">Villanueva</option><option value="978">Villanueva</option><option value="202">Villanueva</option><option value="387">Villanueva</option><option value="627">Villapinzón</option><option value="430">Villa Rica</option><option value="1052">Villarrica</option><option value="747">Villavicencio</option><option value="673">Villavieja</option><option value="628">Villeta</option><option value="629">Viotá</option><option value="325">Viracachá</option><option value="748">Vistahermosa</option><option value="353">Viterbo</option><option value="630">Yacopí</option><option value="812">Yacuanquer</option><option value="674">Yaguará</option><option value="123">Yali</option><option value="124">Yarumal</option><option value="1124">Yavarate</option><option value="125">Yolombó</option><option value="126">Yondó</option><option value="388">Yopal</option><option value="1092">Yotoco</option><option value="1093">Yumbo</option><option value="203">Zambrano</option><option value="979">Zapatoca</option><option value="718">Zapayán</option><option value="127">Zaragoza</option><option value="1094">Zarzal</option><option value="326">Zetaquirá</option><option value="631">Zipacón</option><option value="632">Zipaquirá</option><option value="719">Zona Bananera</option></select>
+                                                            </div>
+                            <div class="col-lg-12 col-md-12 direccionOComuna">
+                                <label>Dirección</label>
+                                <div id="formulario_registro_direccionOcomuna"><div class="iradio_square-blue checked" style="position: relative;"><input type="radio" id="formulario_registro_direccionOcomuna_0" name="formulario_registro[direccionOcomuna]" class="choice-direcion-type" choice-key="comuna" value="comuna" style="position: absolute; opacity: 0;" /><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="formulario_registro_direccionOcomuna_0" class="">Vereda</label><div class="iradio_square-blue" style="position: relative;"><input type="radio" id="formulario_registro_direccionOcomuna_1" name="formulario_registro[direccionOcomuna]" class="choice-direcion-type" choice-key="direccion" value="direccion" style="position: absolute; opacity: 0;" /><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div><label for="formulario_registro_direccionOcomuna_1">Barrio</label></div>
+                                                            </div>
+                            <div class="barrio col-lg-12 col-md-12">
+                                <label class="label_barrio" for="formulario_registro_barrio">Vereda</label>
+                                <div class="select2-container seleccion_barrio" id="s2id_formulario_registro_barrio" title="Barrio" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-20">Aguas Frias , Altavista</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen20" class="select2-offscreen">Vereda</label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-20" id="s2id_autogen20" /></div><select id="formulario_registro_barrio" name="formulario_registro[barrio]" class="seleccion_barrio" onchange="inder.reserva.actualizarEscenario(this);" title="Barrio" style="display: none;" tabindex="-1"><option value="0">Seleccione una opción</option><option value="583">Aguas Frias , Altavista</option><option value="580">Altavista Sector Central , Altavista</option><option value="579">Area de Expansion Altavista , Altavista</option><option value="588">Area de Expansion Belen , Altavista</option><option value="559">Area de Expansión Calasanz , San Cristóbal</option><option value="578">Area de Expansion Eduardo Santos , San Cristóbal</option><option value="582">Area de Expansion El Noral , Altavista</option><option value="566">Area de Expansion Pajarito , San Cristóbal</option><option value="593">Area de Expansion San Antonio de Prado , San Antonio de prado</option><option value="570">Area Urbana Cgto. San Cristobal , San Cristóbal</option><option value="632">Barichara , San Antonio de prado</option><option value="600">Barro Blanco , Santa Elena</option><option value="568">Boqueron , San Cristóbal</option><option value="587">Buga Patio Bonito , Altavista</option><option value="620">Centralidad , San Cristóbal</option><option value="615">Ciudadela Nuevo occidente , San Cristóbal</option><option value="596">El Astillero , San Antonio de prado</option><option value="576">El Carmelo , San Cristóbal</option><option value="608">El Cerro , Santa Elena</option><option value="581">El Corazon El Morro , Altavista</option><option value="585">El Jardín , Altavista</option><option value="565">El LLano , San Cristóbal</option><option value="603">El LLano Santa Elena , Santa Elena</option><option value="571">El Patio , San Cristóbal</option><option value="569">El Picacho , San Cristóbal</option><option value="602">El Placer , Santa Elena</option><option value="604">El Plan , Santa Elena</option><option value="591">El Salado , San Antonio de prado</option><option value="563">El Uvito , San Cristóbal</option><option value="621">El Vergel , San Antonio de prado</option><option value="575">El Yolombo , San Cristóbal</option><option value="555">La Aldea , San Sebastián de Palmitas</option><option value="584">La Esperanza , Altavista</option><option value="599">La Florida , San Antonio de prado</option><option value="557">La Frisola , San Sebastián de Palmitas</option><option value="617">La Huerta , San Cristóbal</option><option value="564">La Ilusion , San Cristóbal</option><option value="573">La Loma , San Cristóbal</option><option value="1299">La palma , Santa Elena</option><option value="572">La Palma , San Cristóbal</option><option value="1303">Las Flores , San Cristóbal</option><option value="609">Las Palmas , Santa Elena</option><option value="558">Las Playas , San Cristóbal</option><option value="553">La Sucia , San Sebastián de Palmitas</option><option value="551">La Suiza , San Sebastián de Palmitas</option><option value="597">La Verde , San Antonio de prado</option><option value="677">Limonar , San Antonio de prado</option><option value="1272">Manzanillo , Altavista</option><option value="1282">Manzanillo , Altavista</option><option value="610">Mazo , Santa Elena</option><option value="606">Media Luna , Santa Elena</option><option value="592">Montanita , San Antonio de prado</option><option value="561">Naranjal , San Cristóbal</option><option value="574">Pajarito , San Cristóbal</option><option value="550">Palmitas , San Sebastián de Palmitas</option><option value="618">Paraiso N° 1 , San Cristóbal</option><option value="619">Paraiso N° 2 , San Cristóbal</option><option value="577">Pedregal Alto , San Cristóbal</option><option value="616">Pedregal Bajo , San Cristóbal</option><option value="1310">Perico , Santa Elena</option><option value="601">Piedra Gorda , Santa Elena</option><option value="607">Piedras Blancas Matasano , Santa Elena</option><option value="552">Potrera Miserenga , San Sebastián de Palmitas</option><option value="590">Potrerito , San Antonio de prado</option><option value="595">San Antonio de Prado , San Antonio de prado</option><option value="598">San Jose , San Antonio de prado</option><option value="567">San Jose de La Montana , San Cristóbal</option><option value="589">San Jose del Manzanillo , Altavista</option><option value="586">San Pablo , Altavista</option><option value="605">Santa Elena , Santa Elena</option><option value="1274">Santa Elena Parte Central , Santa Elena</option><option value="562">Travesias , San Cristóbal</option><option value="556">Urquita , San Sebastián de Palmitas</option><option value="1283">Vereda el Reposo , Altavista</option><option value="1284">Vereda los Tanques , Altavista</option><option value="1285">Vereda travesías el morro , Altavista</option><option value="554">Volcana Guayabal , San Sebastián de Palmitas</option><option value="594">Yarumalito , San Antonio de prado</option></select>
+                                                            </div>
+                            <div class="comuna">
+                                <div class="col-lg-12 col-md-12">
+                                    <label class="required">Comuna o corregimiento</label>
+                                        <div class="col-lg-12 col-md-12">
+        <p>Por favor ingrese la dirección utilizando cada uno de los campos.</p>
+    </div>
+            <div class="col-lg-12 col-md-12 ">
+        <div class="row comuna">
+            <div class="col-sm-12 col-md-12 fondoDireccion">
+                <div class="col-sm-4 col-md-4 ">
+                    <div class="select2-container dato_comuna" id="s2id_formulario_registro_comuna_format_tipo_via" title="" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-21">Kilometro</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen21" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-21" id="s2id_autogen21" /></div><select id="formulario_registro_comuna_format_tipo_via" name="formulario_registro[comuna_format][tipo_via]" onchange="inder.formulario.actualizarDireccionComuna(&quot;#comuna&quot;);" class="dato_comuna" title="" style="display: none;" tabindex="-1"><option value="" selected="selected">Ninguna opción</option><option value="Kilometro">Kilometro</option><option value="Corregimiento">Corregimiento</option></select>
+                                    </div>
+                <div class="col-sm-3 col-sm-3 col-md-3  margenCampoDireccion">
+                    <input type="text" id="formulario_registro_comuna_format_numero_via" name="formulario_registro[comuna_format][numero_via]" oninput="inder.formulario.actualizarDireccionComuna(&quot;#comuna&quot;);" class="form-control dato_comuna" placeholder="" />
+                                    </div>
+                <div class="col-sm-4 col-md-4  margenCampoDireccion">
+                    <input type="text" id="formulario_registro_comuna_format_complemento" name="formulario_registro[comuna_format][complemento]" oninput="inder.formulario.actualizarDireccionComuna(&quot;#comuna&quot;);" class="form-control dato_comuna complemento" placeholder="" />
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+
+                                                                    </div>
+                                <div class="col-lg-12 col-md-12 fondoDireccion">
+                                    <label for="formulario_registro_direccionComuna" class="required">Confirma aquí la dirección</label>
+                                    <input type="text" id="comuna" name="formulario_registro[direccionComuna]" required="required" readonly="readonly" class="form-control" />
+                                                                    </div>
+                            </div>
+                            <div class="direccion hidden">
+                                <div class="col-lg-12 col-md-12">
+                                    <label>Dirección</label>
+                                        <div class="col-lg-12 col-md-12">
+                <p>Por favor ingrese la dirección utilizando cada uno de los campos.</p>
+    </div>
+            <div class="col-lg-12 col-md-12 ">
+        <div class="row direccion hidden">
+            <div class="col-sm-12 col-md-12 fondoDireccion">
+                <div class="contenedorDireccionTooltip">
+                    <div class="direccionTooltip">
+                        <p>Esta guía te puede ayudar a ingresar tu dirección. Utiliza los campos que necesites.</p>
+                        <img src="/bundles/admin/img/ayudaDireccion.gif" />
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2 margenCampoDireccion ">
+                    <div class="select2-container dato_direccion" id="s2id_formulario_registro_direccion_format_tipo_via" title="" style="display: block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-22">Ninguna opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen22" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-22" id="s2id_autogen22" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen22_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-22" id="s2id_autogen22_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-22">   </ul></div></div><select id="formulario_registro_direccion_format_tipo_via" name="formulario_registro[direccion_format][tipo_via]" onchange="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="dato_direccion" title="" style="display: none;" tabindex="-1"><option value="" selected="selected">Ninguna opción</option><option value="Autopista">Autopista</option><option value="Avenida">Avenida</option><option value="Calle">Calle</option><option value="Carrera">Carrera</option><option value="Diagonal">Diagonal</option><option value="Transversal">Transversal</option></select>
+                                    </div>
+                <div class="col-sm-1 col-md-1 margenCampoDireccion ">
+                    <input type="text" id="formulario_registro_direccion_format_numero_via" name="formulario_registro[direccion_format][numero_via]" oninput="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="form-control dato_direccion" />
+                                    </div>
+                <div class="col-sm-1 col-md-1  ">
+                    <div class="select2-container dato_direccion" id="s2id_formulario_registro_direccion_format_letra_prefijo" title="" style="display: block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-23">Ninguna opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen23" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-23" id="s2id_autogen23" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen23_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-23" id="s2id_autogen23_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-23">   </ul></div></div><select id="formulario_registro_direccion_format_letra_prefijo" name="formulario_registro[direccion_format][letra_prefijo]" onchange="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="dato_direccion" title="" style="display: none;" tabindex="-1"><option value="" selected="selected">Ninguna opción</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option></select>
+                                    </div>
+                <div class="col-sm-1 col-md-1 margenCampoDireccion ">
+                    <div class="select2-container dato_direccion" id="s2id_formulario_registro_direccion_format_prefijo" title="" style="display: block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-24">Ninguna opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen24" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-24" id="s2id_autogen24" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen24_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-24" id="s2id_autogen24_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-24">   </ul></div></div><select id="formulario_registro_direccion_format_prefijo" name="formulario_registro[direccion_format][prefijo]" onchange="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="dato_direccion" title="" style="display: none;" tabindex="-1"><option value="" selected="selected">Ninguna opción</option><option value="BIS">BIS</option></select>
+                                    </div>
+                <div class="col-sm-2 col-md-2 margenCampoDireccion ">
+                    <div class="select2-container dato_direccion" id="s2id_formulario_registro_direccion_format_cuadrante" title="" style="display: block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-25">Ninguna opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen25" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-25" id="s2id_autogen25" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen25_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-25" id="s2id_autogen25_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-25">   </ul></div></div><select id="formulario_registro_direccion_format_cuadrante" name="formulario_registro[direccion_format][cuadrante]" onchange="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="dato_direccion" title="" style="display: none;" tabindex="-1"><option value="" selected="selected">Ninguna opción</option><option value="Norte">Norte</option><option value="Oeste">Oeste</option><option value="Oriente">Oriente</option><option value="Sur">Sur</option></select>
+                                    </div>
+                <div class="col-sm-1 col-md-1 margenCampoDireccion ">
+                    <input type="text" id="formulario_registro_direccion_format_numero_generador" name="formulario_registro[direccion_format][numero_generador]" style="width:100%;float:right;" oninput="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="form-control dato_direccion numero_generador" />
+                                    </div>
+                <div class="col-sm-1 col-md-1 margenCampoDireccion ">
+                    <div class="select2-container dato_direccion" id="s2id_formulario_registro_direccion_format_letra_sufijo" title="" style="display: block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-26">Ninguna opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen26" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-26" id="s2id_autogen26" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen26_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-26" id="s2id_autogen26_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-26">   </ul></div></div><select id="formulario_registro_direccion_format_letra_sufijo" name="formulario_registro[direccion_format][letra_sufijo]" onchange="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="dato_direccion" placeholder="" title="" style="display: none;" tabindex="-1"><option value="" selected="selected">Ninguna opción</option><option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option><option value="I">I</option><option value="J">J</option><option value="K">K</option><option value="L">L</option><option value="M">M</option><option value="N">N</option><option value="O">O</option><option value="P">P</option><option value="Q">Q</option><option value="R">R</option><option value="S">S</option><option value="T">T</option><option value="U">U</option><option value="V">V</option><option value="W">W</option><option value="X">X</option><option value="Y">Y</option><option value="Z">Z</option></select>
+                                    </div>
+                <div class="col-sm-1 col-md-1 margenCampoDireccion ">
+                    <div class="select2-container dato_direccion" id="s2id_formulario_registro_direccion_format_sufijo" title="" style="display: block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-27">Ninguna opción</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen27" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-27" id="s2id_autogen27" /><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen27_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-27" id="s2id_autogen27_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-27">   </ul></div></div><select id="formulario_registro_direccion_format_sufijo" name="formulario_registro[direccion_format][sufijo]" onchange="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="dato_direccion" title="" style="display: none;" tabindex="-1"><option value="" selected="selected">Ninguna opción</option><option value="BIS">BIS</option></select>
+                                    </div>
+                <div class="col-sm-1 col-md-1 margenCampoDireccion ">
+                    <input type="text" id="formulario_registro_direccion_format_numero_placa" name="formulario_registro[direccion_format][numero_placa]" oninput="inder.formulario.actualizarDireccion(&quot;#direccion&quot;);" class="form-control dato_direccion numero_placa" />
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+
+                                                                    </div>
+                                <div class="col-sm-12 col-md-12 fondoDireccion">
+                                    <label for="formulario_registro_direccionresidencia" class="required">Confirma aquí la dirección</label>
+                                    <input type="text" id="direccion" name="formulario_registro[direccionresidencia]" required="required" readonly="readonly" class="form-control" />
+                                                                    </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <label for="formulario_registro_estrato" class="required">Estrato</label>
+                                <div class="select2-container select2-allowclear" id="s2id_formulario_registro_estrato" title="Estrato" style="display: inline-block; width: 100%;"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-28">3</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen28" class="select2-offscreen">Estrato</label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-28" id="s2id_autogen28" /></div><select id="formulario_registro_estrato" name="formulario_registro[estrato]" required="required" class="" autocomplete="off" title="Estrato" style="display: none;" tabindex="-1"><option value="" selected="selected"> </option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select>
+                                                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <label for="formulario_registro_email" class="required">Correo electrónico</label>
+                                <input type="email" id="correoelectronico" name="formulario_registro[email]" required="required" class="form-control" autocomplete="off" />
+                                                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <label for="formulario_registro_phone">Teléfono móvil / Teléfono fijo</label>
+                                <input type="text" id="telefonomovil" name="formulario_registro[phone]" maxlength="255" class="form-control" autocomplete="off" />
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Políticas de protección -->       
+                <div class="row datos_proteccion" style="display: block;">
+                    <div class="col-md-4 iconoText" id="varAlto2">
+                        <div class="iconoInfo">
+                            <div class="circuloIcono">
+                                <i class="fa fa-handshake-o"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>3: Política de protección de datos, Términos y condiciones</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8 fondoAzul" id="formatoAlto2">
+                        <div class="infoBox row">
+                            <div class="col-md-12">
+                                <p>El INDER-MEDELLÍN, Se encuentra comprometido con el adecuado manejo de los datos personales y en calidad de responsable dando cumplimiento a la Ley 1581 de 2012 y el decreto 1074 de 2015 de Protección de Datos Personales, por ello entiende que la persona al insertar sus datos personales en el presente documento ha leído, entendido y aceptado la política de protección de datos aceptando la finalidad dada a los datos aquí recolectados para la realización de capacitaciones, desarrollo de estrategias INDER, listados de asistencia, formación, y cualquier otra actividad liderada por el instituto, dispuesta en la política de la institución. SE ENTIENDE QUE LA AUTORIZACIÓN ES EXPRESA E INFORMADA por parte del titular de datos en el presente documento de registro. Cualquier inquietud favor dirigirse al correo institucional <a>proteccion.datos@inder.gov.co</a> o consulte los demás canales de atención en la política divulgada en <a>https://www.inder.gov.co</a> para ejercer los derechos de conocer, actualizar, rectificar, suprimir y revocar la autorización.</p>
+                            </div>
+                            <div class="col-md-12">
+                                <a href="/bundles/admin/doc/manual-proteccion-de-datos-personales.pdf" target="_blank">
+                                    <button type="button" class="btn btnBlanco">
+                                        <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+                                        <span>Descarga nuestra política de protección de datos</span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Aceptar políticas de Habeas Data </label>
+                                <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" id="aceptahb" name="formulario_registro[aceptahb]" value="1" style="position: absolute; opacity: 0;" /><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="lineaPunteada"></div>
+                            </div>
+                            <div class="col-md-12">
+                                <p></p>
+                            </div>
+                            <div class="col-md-12">
+                                <a href="/bundles/admin/doc/politica-de-privacidad-y-condiciones-de-uso-del-portal.pdf" target="_blank">
+                                    <button type="button" class="btn btnBlanco">
+                                        <i class="fa fa-book fa-2x" aria-hidden="true"></i>
+                                        <span>Conoce nuestros Términos y condiciones</span>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Aceptar Términos y condiciones <span>*</span></label>
+                                <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" id="aceptatc" name="formulario_registro[aceptatc]" required="required" value="1" style="position: absolute; opacity: 0;" /><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botones -->
+                <div class="row datos_contacto" style="display: block;">
+                    <div class="col-md-12 botones">
+                        <button type="submit" class="btn btnVerde" id="registro_save" title="Acción no permitida">
+                            <i class="fa fa-floppy-o"></i>
+                            Guardar                        </button>
+                        <button type="button" class="btn btnNaranja" onclick="inder.formulario.redirecHome();">
+                            <i class="fa fa-chevron-left"></i>
+                            Cancelar                        </button>
+                    </div>
+                </div>
+            </div>
+            <span id="alertas" data-tituloalerta="¡Error!." data-yaseleccionada="La disciplina ya fue seleccionada, por favor selecciona otra." data-revisecampos="Por favor revise los campos." data-registrado="Sus datos han sido registrados." data-mensajeerror="Ocurrió un error, por favor intente de nuevo." data-titulook="¡Gracias!."></span>
+
+            <input type="hidden" id="formulario_registro__token" name="formulario_registro[_token]" value="OjueZUxbnitgNqx5wO3tLik31M2pBMQS_QmZ9WPn1YU" /></form>
+            </section>
+    <span id="idFormulario" data-idform="formulario_registro_"></span>
+                    </section>
+                </div>
+                    </div>
+        <footer class="main-footer ajuste-padding-contenedor">
+            <div class="container-fluid" id="bgcolor-footer">
+                <div class="container">
+                    <div class="content">
+                        <div class="row contenedor-contacto">
+                            <div class="col-lg-6">
+                                <div class="redes-footer">
+                                    <div class="logo-inder-footer">
+                                        <img src="/bundles/admin/img/logo-inder-blanco.png" alt="" />
+                                    </div>
+                                    <div class="contenedor-redes-footer">
+                                        <a id="url-inder" href="#">www.inder.gov.co</a>
+                                        <div class="redes">
+                                            <ul class="botonera-redes-footer">
+                                                <li class="redondo"><a href="https://twitter.com/INDERMEDELLIN" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li class="redondo"><a href="https://www.facebook.com/indermedellin/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li class="redondo"><a href="https://www.youtube.com/user/COMUNICACIONESINDER" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                                                <li class="redondo"><a href="https://www.instagram.com/indermedellin/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <hr />
+                                <p>Recomendamos usar para mayor compatibilidad el navegador Google Chrome para acceder a la aplicación y garantizar la debida visualización de las funciones</p>
+                                <hr />
+                                <p><b>Sede Administrativa:</b> Calle 47D # 75 - 276 - Barrio Velódromo<br />
+                                    <b>Horario de atención sede administrativa:</b><br />
+                                    Lunes a jueves  7:30 a.m. a 12:30 p.m. y 1:30 p.m. a 5:30 p.m.<br />
+                                    Viernes 7:30 a.m. a 12:30 p.m. y 1:30 p.m. a 4:30 p.m.
+                                </p>
+                                <hr />                              
+                                <p><b>Sede Estadio Atanasio Girardot:</b> Calle 48 # 73 -10 - Puerta No 36</p>
+                                <hr />
+                                <p>Línea Segura 369 90 00/Política de privacidad y condiciones de uso.</p>
+                                <hr />
+                                <p>©2016/NIT:800194096-0/Código Postal: 0500304</p>
+                            </div>
+                            <div class="col-lg-6 logos-footer">
+                                <div class="contenedor-logos-iso">
+                                    <figure class="logo-iso">
+                                        <img src="/bundles/admin/img/iso14001.png" alt="ISO 14001" />
+                                        <figcaption>
+                                            ISO 14001:2004<br />SA-CER307282
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="logo-iso">
+                                        <img src="/bundles/admin/img/iso9001.png" alt="ISO 9001" />
+                                        <figcaption>
+                                            ISO 9001:<br />CO-SC-CER203995
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="logo-iso">
+                                        <img src="/bundles/admin/img/ntcgp1000.png" alt="" />
+                                        <figcaption>
+                                            NTCGP 1000:<br />GP-CER203996
+                                        </figcaption>
+                                    </figure>
+                                    <figure class="logo-iso"><img src="/bundles/admin/img/iqnet.png" alt="" /></figure>
+                                </div>
+                                <div class="logo-alcaldia-footer">
+                                    <img src="/bundles/admin/img/alcaldia-b.png" alt="Alcaldía de Medellín" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+            <div class="container contenedor-logos-gobierno">
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/lucha-contra-corrupcion.png" alt="" /></a>
+                </div>
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/hora-legal.png" alt="" /></a>
+                </div>
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/colombia-compra.png" alt="" /></a>
+                </div>
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/Gobierno_en_linea.png" alt="" /></a>
+                </div>
+                <div class="logo-gobierno">
+                    <a href="#"><img src="/bundles/admin/img/Logo-Urna_GA_2.jpg" alt="" /></a>
+                </div>
+            </div>
+            <div class="container-fluid contenedor-barras-footer">
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+                <div class="barras-footer"></div>
+            </div>               
+        </footer>
+
+
+        <div id="encuestaModal" class="modal fade" role="dialog">
+        </div>
+        
+                    <script src="/bundles/admin/js/TweenMax.min.js" type="text/javascript"></script>
+            <script src="/bundles/admin/js/TimelineMax.min.js" type="text/javascript"></script>
+            <script src="/bundles/admin/js/CSSPlugin.min.js" type="text/javascript"></script>
+            <script src="/bundles/admin/js/main.js" type="text/javascript"></script>
+            <script src="/bundles/admin/js/jquery-confirm.min.js" type="text/javascript"></script>
+
+            <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+            
+
+<span role="status" aria-live="polite" class="select2-hidden-accessible">3</span><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="left: 549.5px; width: 700px; top: 452.188px; bottom: auto; display: none;">   <div class="select2-search">       <label for="s2id_autogen15_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-15" id="s2id_autogen15_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-15"></ul></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="left: 569.5px; width: 315px; top: 329.188px; bottom: auto; display: none;">   <div class="select2-search">       <label for="s2id_autogen16_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-16" id="s2id_autogen16_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-16"></ul></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="display: none; left: 569.5px; width: 315px; top: 602.188px; bottom: auto;">   <div class="select2-search">       <label for="s2id_autogen17_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-17" id="s2id_autogen17_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-17"></ul></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="left: 554.5px; width: 690px; top: 674.188px; bottom: auto; display: none;">   <div class="select2-search">       <label for="s2id_autogen19_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-19" id="s2id_autogen19_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-19"></ul></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="display: none; left: 554.5px; width: 690px; top: 803.188px; bottom: auto;">   <div class="select2-search">       <label for="s2id_autogen20_search" class="select2-offscreen">Vereda</label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-20" id="s2id_autogen20_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-20"></ul></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="display: none; left: 569.5px; width: 213px; top: 1036.19px; bottom: auto;">   <div class="select2-search">       <label for="s2id_autogen21_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-21" id="s2id_autogen21_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-21"></ul></div><div id="select2-drop-mask" class="select2-drop-mask" style="display: none;"></div><div class="select2-drop select2-display-none select2-with-searchbox select2-drop-active" style="display: none; left: 554.5px; width: 690px; top: 1114.19px; bottom: auto;">   <div class="select2-search">       <label for="s2id_autogen28_search" class="select2-offscreen">Estrato</label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-28" id="s2id_autogen28_search" placeholder="" />   </div>   <ul class="select2-results" role="listbox" id="select2-results-28"></ul></div></body></html>

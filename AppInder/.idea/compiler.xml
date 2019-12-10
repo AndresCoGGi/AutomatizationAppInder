@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="AppInder.main" target="11" />
+      <module name="AppInder.test" target="11" />
+      <module name="co.com.bancolombia.certificacion.appinder.AppInder.main" target="1.8" />
+      <module name="co.com.bancolombia.certificacion.appinder.AppInder.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
