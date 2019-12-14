@@ -14,7 +14,7 @@ public class ReservaElements {
       .locatedBy("//div[@id='s2id_escenario_deportivo_barrio']");
   public static final Target ESCENARIO_DEPORTIVO = Target.the("Escenario deportivo")
       .locatedBy("//div[@id='s2id_escenario_deportivo']//span[contains(@id,'select2-chosen')]");
- public static final Target DISCIPLINA_CHECKBOX = Target.the("Disciplina")
+  public static final Target DISCIPLINA_CHECKBOX = Target.the("Disciplina")
       .locatedBy("(//div[@class='iradio_square-blue'])[1]");
   public static final Target DISCIPLINA_CAMPO = Target.the("Disciplina campo")
       .locatedBy("//span[@id='select2-chosen-16']");
@@ -41,7 +41,7 @@ public class ReservaElements {
   public static final Target BTN_OK_ADVERTENCIA = Target.the("BOTON OK ADVERTENCIA")
       .locatedBy("//button[text()='OK']");
   public static final Target BTN_GUARDAR_CONTINUAR = Target.the("Continuar")
-  .locatedBy("//button[@id='btnguardar']");
+      .locatedBy("//button[@id='btnguardar']");
   //PAGE 2
   public static final Target UBICACION_COMPLETA = Target.the("Ubicacion completa")
       .locatedBy("//div[@id='divItemDivision']//div");
@@ -49,13 +49,28 @@ public class ReservaElements {
   public static final Target AGREGAR_NUEVO_JUGADOR = Target.the("Agregar nuevo")
       .locatedBy("//i[text()=' Agregar nuevo']");
   public static final Target TIPO_DOCUMENTO = Target.the("Tipo documento")
-      .locatedBy("//select[@id='usuarios_division_reserva_type_divisiones_0_divisionReservas_{0}_tipoIdentificacion']//option[contains(text(),'{1}')]");
- public static final Target NRO_DOCUMENTO_BTN = Target.the("Nro Documento")
-      .locatedBy("//div[@id='s2id_fake_usuarios_division_reserva_type_divisiones_0_divisionReservas_{0}_numeroIdentificacion']");
+      .locatedBy(
+          "//select[@id='usuarios_division_reserva_type_divisiones_0_divisionReservas_{0}_tipoIdentificacion']//option[contains(text(),'{1}')]");
+  public static final Target NRO_DOCUMENTO_BTN = Target.the("Nro Documento")
+      .locatedBy(
+          "//div[@id='s2id_fake_usuarios_division_reserva_type_divisiones_0_divisionReservas_{0}_numeroIdentificacion']");
   public static final Target NUMERO_DOCUMENTO_INPUT = Target.the("Numero de docmento input")
       .locatedBy("//ul//li/ancestor::div[1]//input[contains(@id,'search')]");
   public static final Target DOCUMENTO_ENCONTRADO = Target.the("Documento encontrado")
       .locatedBy("//span[contains(@class,'match')]");
+  //PAGE 4
+  public static final Target ACEPTAR_TERMINOS = Target.the("Aceptar terminos")
+      .locatedBy("//div[@id='reserva_terminos']//div");
+  //PAGE 5
+  public static final Target FECHA_RESERVADA = Target.the("Fecha reservada")
+      .locatedBy("//p//strong[text()='Fecha: ']/ancestor::p[1]");
+  //PAGE FINAL
+  public static final Target INBOX_FELICITACIONES = Target.the("Inbox felicitaciones")
+      .locatedBy("//div[@class='infoBox felicitaciones']");
+  public static final Target MENSAJE_FELICITACIONES = Target.the("Mensaje de felicitaciones")
+      .locatedBy("//h2");
+  public static final Target ACEPTAR_RESERVA = Target.the("Aceptar resreva")
+      .locatedBy("//a[@class='btn btnVerde']");
 
 
   private ReservaElements() {

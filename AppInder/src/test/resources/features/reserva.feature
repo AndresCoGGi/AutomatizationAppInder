@@ -7,7 +7,8 @@ Característica: Reservar Escenario Deportivo
   @reserva_exitosa
   Escenario: Reserva exitosa
     Dado que el usuario inicia la sesion
-      | user     | 29370322 |
-      | password | 202090an |
-    Cuando el ingresa los datos de la reserva 12-diciembre 2019 dia Jueves<
-    Entonces el podra ver un mensaje de Felicitaciones
+      | tipo_documento | Tarjeta de Identidad |
+      | user           | 1000207300           |
+      | password       | nacional             |
+    Cuando el ingresa los datos de la reserva 23-diciembre 2019 dia Lunes
+    Entonces el podra ver un mensaje de ¡Felicitaciones!

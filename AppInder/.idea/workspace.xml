@@ -5,12 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b56e9ac-4cf2-4a82-ba13-7acadfba719d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/174da9fdcde35be1ab96345b8f1cce650dfc493c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/7/174da9fdcde35be1ab96345b8f1cce650dfc493c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a83d393d0d0e2b39db981e0bd8c650bd85be5a18" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a83d393d0d0e2b39db981e0bd8c650bd85be5a18" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d7ea6113687000eafb9224e54888cc43c9d17dee" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d7ea6113687000eafb9224e54888cc43c9d17dee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppInder.7z" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IniciarSesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/ReservaElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/ReservaElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/ReservaStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/ReservaStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/reserva.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/reserva.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2d04e8a429c668bfd280972da46535bc10b3995c0cf1f1aad4bbd75302776748.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/2d04e8a429c668bfd280972da46535bc10b3995c0cf1f1aad4bbd75302776748.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2d04e8a429c668bfd280972da46535bc10b3995c0cf1f1aad4bbd75302776748.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/2d04e8a429c668bfd280972da46535bc10b3995c0cf1f1aad4bbd75302776748.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/2d04e8a429c668bfd280972da46535bc10b3995c0cf1f1aad4bbd75302776748_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/2d04e8a429c668bfd280972da46535bc10b3995c0cf1f1aad4bbd75302776748_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-2d04e8a429c668bfd280972da46535bc10b3995c0cf1f1aad4bbd75302776748.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-2d04e8a429c668bfd280972da46535bc10b3995c0cf1f1aad4bbd75302776748.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentos/AdecuacionDatosBiztrack.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentos/Advantage+demo+1_1_6.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentos/CONFIGURACIÓN DE GIT.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentos/ComprobanteDePago_28022019_Andres Correa Giraldo.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentos/Errores en Certificacion.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentos/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentos/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Saludo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/.gradle/4.9/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/.gradle/4.9/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/.gradle/4.9/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/.gradle/vcsWorkingDirs/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/chromedriver.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/out/production/classes/co/com/bancolombia/certificacion/todolist/questions/ProductAdded.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/out/production/classes/co/com/bancolombia/certificacion/todolist/tasks/AddItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/out/production/classes/co/com/bancolombia/certificacion/todolist/userinterfaces/HomePage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/out/test/classes/co/com/bancolombia/certificacion/todolist/runner/TodoListRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/out/test/classes/co/com/bancolombia/certificacion/todolist/stepdefinition/TodoListStepdefinition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/out/test/resources/feature/todolist.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/src/main/java/co/com/bancolombia/certificacion/todolist/questions/ProductAdded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/src/main/java/co/com/bancolombia/certificacion/todolist/tasks/AddItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/src/main/java/co/com/bancolombia/certificacion/todolist/userinterfaces/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/src/test/java/co/com/bancolombia/certificacion/todolist/runner/TodoListRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/src/test/java/co/com/bancolombia/certificacion/todolist/stepdefinition/TodoListStepdefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TodoList/src/test/resources/feature/todolist.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hola.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -50,11 +83,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/reserva.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
+            <state relative-caret-position="221">
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -62,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IniciarSesion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
+            <state relative-caret-position="-13">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,19 +105,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/login.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/ReservaStepDefinitions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IngresarJugadores.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+            <state relative-caret-position="211">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,20 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="60" column="61" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+            <state relative-caret-position="305">
+              <caret line="93" column="56" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,13 +129,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/UsuarioInder.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/questions/VerificarReserva.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            <state relative-caret-position="293">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding>
-                <element signature="e#1074#1075#0" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/ReservaElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="71" column="44" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -203,19 +236,20 @@
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/util/DiaSemanaUtility.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/registro.feature" />
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/util/Constantes.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IniciarSesion.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/RegistroElementos.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/util/JugadoresUtility.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/paradigma/funcional/EjemploLambda.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/interactions/SeleccionarFecha.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/interactions/IngresarDocumentoJugador.java" />
-        <option value="$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/ReservaStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/ReservaElements.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IngresarJugadores.java" />
-        <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/reserva.feature" />
         <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/reserva.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/ReservaStepDefinitions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IniciarSesion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/ReservaElements.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/questions/VerificarReserva.java" />
       </list>
     </option>
   </component>
@@ -314,6 +348,15 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="appinder" type="462c0819:PsiDirectoryNode" />
+              <item name="questions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppInder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppInder" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="appinder" type="462c0819:PsiDirectoryNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -395,7 +438,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1575657208101" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576341892033" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -501,12 +544,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Reserva - 2019.12.05 at 13h 05m 49s.xml">
-      <configuration name="Reserva" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Reserva - 2019.12.05 at 13h 28m 34s.xml">
-      <configuration name="Reserva" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Reserva - 2019.12.05 at 16h 56m 11s.xml">
       <configuration name="Reserva" configurationId="JUnit" />
     </history-entry>
@@ -531,6 +568,12 @@
     <history-entry file="Reserva - 2019.12.09 at 11h 03m 35s.xml">
       <configuration name="Reserva" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Reserva - 2019.12.14 at 11h 28m 56s.xml">
+      <configuration name="Reserva" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Reserva - 2019.12.14 at 11h 41m 59s.xml">
+      <configuration name="Reserva" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,7 +587,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.47049925" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.2934947" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.25340393" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -553,12 +596,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2913257" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3535188" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.64648116" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.35679215" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" visible="true" weight="0.19639935" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49924356" visible="true" weight="0.44189852" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.25204584" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.07528642" />
@@ -741,13 +784,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/interactions/IngresarDocumentoJugador.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/ReservaElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/RegistroElementos.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -759,16 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/ReservaStepDefinitions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -806,23 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/reserva.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="75" selection-start-line="11" selection-start-column="75" selection-end-line="11" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IniciarSesion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/login.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -834,16 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="60" column="61" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -887,11 +886,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="318">
           <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/ReservaStepDefinitions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IniciarSesion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="93" column="56" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/userinterface/ReservaElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="71" column="44" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/questions/VerificarReserva.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/reserva.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
         </state>
       </provider>
     </entry>

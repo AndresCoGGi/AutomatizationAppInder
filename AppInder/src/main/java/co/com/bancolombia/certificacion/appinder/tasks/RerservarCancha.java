@@ -46,6 +46,9 @@ public class RerservarCancha implements Task {
         SeleccionarEnLista.opcion(
             "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.1 UNIDAD DEPORTIVA JUANES DE LA PAZ",
             ReservaElements.ESCENARIO_DEPORTIVO),
+        SeleccionarEnLista.opcion(
+            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.1 UNIDAD DEPORTIVA JUANES DE LA PAZ",
+            ReservaElements.ESCENARIO_DEPORTIVO),
         WaitUntil.the(ReservaElements.DISCIPLINA_CHECKBOX, isVisible()),
         Click.on(ReservaElements.DISCIPLINA_CHECKBOX),
         WaitUntil.the(ReservaElements.DISCIPLINA_CAMPO, isEnabled()),
@@ -85,6 +88,15 @@ public class RerservarCancha implements Task {
     //PAGE 3
     actor.attemptsTo(IngresarJugadores.delInder(), Click.on(ReservaElements.BTN_GUARDAR_CONTINUAR));
     //PAGE 4
+    actor.attemptsTo(Click.on(ReservaElements.BTN_GUARDAR_CONTINUAR),
+        WaitUntil.the(ReservaElements.ACEPTAR_TERMINOS, isVisible()),
+        Click.on(ReservaElements.ACEPTAR_TERMINOS),
+        Click.on(ReservaElements.BTN_GUARDAR_CONTINUAR),
+        Click.on(ReservaElements.BTN_GUARDAR_CONTINUAR));
+    //PAGE 5
+    System.out.println(
+        "SE HA RESERVADO EXITOSAMENTE EN LA " + ReservaElements.FECHA_RESERVADA.resolveFor(actor)
+            .getText());
     actor.attemptsTo(Click.on(ReservaElements.BTN_GUARDAR_CONTINUAR));
   }
 }
