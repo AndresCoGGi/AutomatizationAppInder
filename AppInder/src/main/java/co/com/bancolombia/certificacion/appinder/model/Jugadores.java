@@ -6,7 +6,7 @@ import java.util.Map;
 public class Jugadores {
 
   public static Map obtenerJugadoresSantiago() {
-    Map<String, String> jugadoresSantiago = new HashMap<String, String>();
+    Map<String, String> jugadoresSantiago = new HashMap();
     jugadoresSantiago.put("15655233", "Cédula de Ciudadanía");
     jugadoresSantiago.put("98732011", "Cédula de Ciudadanía");
     jugadoresSantiago.put("98644438", "Cédula de Ciudadanía");
@@ -16,21 +16,20 @@ public class Jugadores {
     jugadoresSantiago.put("71263817", "Cédula de Ciudadanía");
     jugadoresSantiago.put("1128267443", "Cédula de Ciudadanía");
     jugadoresSantiago.put("98642377", "Cédula de Ciudadanía");
-    System.out.println("Tamaño despues de añadir los elementos : " + jugadoresSantiago.size());
     return jugadoresSantiago;
   }
 
-  public static HashMap obtenerJugadoresAndres() {
-    HashMap jugadoresAndres = new HashMap();
-    jugadoresAndres.put("Pasaporte", "39370322");
-    jugadoresAndres.put("Cédula de Ciudadanía", "98553671");
-    jugadoresAndres.put("Cédula de Ciudadanía", "98716701");
-    jugadoresAndres.put("Cédula de Ciudadanía", "98216544");
-    jugadoresAndres.put("Cédula de Ciudadanía", "98712618");
-    jugadoresAndres.put("Cédula de Ciudadanía", "1017178720");
-    jugadoresAndres.put("Cédula de Ciudadanía", "71266606");
-    jugadoresAndres.put("Cédula de Ciudadanía", "1013536502");
-    jugadoresAndres.put("Cédula de Ciudadanía", "98572088");
+  public static Map obtenerJugadoresAndres() {
+    Map<String, String> jugadoresAndres = new HashMap();
+    jugadoresAndres.put("39370322", "Pasaporte");
+    jugadoresAndres.put("98553671", "Cédula de Ciudadanía");
+    jugadoresAndres.put("98716701", "Cédula de Ciudadanía");
+    jugadoresAndres.put("98216544", "Cédula de Ciudadanía");
+    jugadoresAndres.put("98712618", "Cédula de Ciudadanía");
+    jugadoresAndres.put("1017178720", "Cédula de Ciudadanía");
+    jugadoresAndres.put("71266606", "Cédula de Ciudadanía");
+    jugadoresAndres.put("1013536502", "Cédula de Ciudadanía");
+    jugadoresAndres.put("98572088", "Cédula de Ciudadanía");
     return jugadoresAndres;
   }
 

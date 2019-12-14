@@ -1,9 +1,4 @@
 
-squid:S1319"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(Æ¾Ü¥ıÿÿÿÿ8ğ¹¹ø×-
-Xsquid:S1118":Add a private constructor to hide the implicit public one.(üîù8‘™µø×-
-bsquid:S4143"DVerify this is the key that was intended; it was already set before.(ùı„÷8êİ¿ø×-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Şİ«Ùşÿÿÿÿ8úŸ¾ºí-
 vsquid:S1192
 "XDefine a constant instead of duplicating this literal "CÃ©dula de CiudadanÃ­a" 17 times.( Ø½Ş8‘™µø×-
-|squid:S2293	"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŸÊìÅıÿÿÿÿ8¦©ÿ¹í-
+Xsquid:S1118":Add a private constructor to hide the implicit public one.(üîù8‘™µø×-
