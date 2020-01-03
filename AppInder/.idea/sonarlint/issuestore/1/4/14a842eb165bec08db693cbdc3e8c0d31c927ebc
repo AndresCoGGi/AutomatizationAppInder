@@ -1,4 +1,6 @@
 
-dsquid:S2142C"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8„Øòö×-
-Fsquid:S1148D"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8„Øòö×-
-nsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(Úûœšùÿÿÿÿ8¸ªòö×-
+V
+squid:S106a"9Replace this use of System.out or System.err by a logger.(ÆÀûı8ª Ë©ğ-
+Fsquid:S1148G"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8„Øòö×-
+nsquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(Úûœšùÿÿÿÿ8¸ªòö×-
+dsquid:S2142F"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8„Øòö×-

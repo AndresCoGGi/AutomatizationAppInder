@@ -51,3 +51,5 @@ Rsrc/main/java/co/com/bancolombia/certificacion/appinder/util/DiaSemanaUtility.j
 Lsrc/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java,d\7\d7ea6113687000eafb9224e54888cc43c9d17dee
 „
 Tsrc/main/java/co/com/bancolombia/certificacion/appinder/tasks/IngresarJugadores.java,1\7\174da9fdcde35be1ab96345b8f1cce650dfc493c
+‡
+Wsrc/main/java/co/com/bancolombia/certificacion/appinder/questions/VerificarReserva.java,6\e\6ef57d476fff8ebe8fbb8842155cc3c1434b9523
