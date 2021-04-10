@@ -2,7 +2,6 @@ package co.com.bancolombia.certificacion.appinder.paradigma.funcional;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.jruby.RubyProcess.Sys;
 
 public class EjemploLambda {
 

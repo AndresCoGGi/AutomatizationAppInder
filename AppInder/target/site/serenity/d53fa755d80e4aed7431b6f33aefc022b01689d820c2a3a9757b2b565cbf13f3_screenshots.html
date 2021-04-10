@@ -129,7 +129,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-08-2019 11:42</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-04-2021 14:40</span>
     <br style="clear:left"/>
 </div>
 
@@ -178,9 +178,9 @@ Para realizar los tramites del inder
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Iniciar sesion exitoso
+                                <span class="error-color">Iniciar sesion exitoso
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -197,27 +197,48 @@ Para realizar los tramites del inder
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: no such window: target window already closed</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.bancolombia.certificacion.appinder.stepdefinitions.InicioSesionStepDefinitions.elIniciaraSesionExitosamente(InicioSesionStepDefinitions.java:34)<br />✽.el iniciara sesion exitosamente(src/test/resources/features/login.feature:11)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="63dd835f2190c306a2f62d06daee634a80609d6f27f3eb4f5d9abd196a71550b.png" title=" Given el usuario se encuentra en la pagina principal del inder" width="1366"/>
-                <img src="c87d865afe2db939c8da36ec6b0c72eb6469d53b0da71612048bc2f1e132c868.png" title=" When el ingresa los datos de autenticacion" width="1366"/>
-                <img src="c87d865afe2db939c8da36ec6b0c72eb6469d53b0da71612048bc2f1e132c868.png" title=" Andres iniciar sesion" width="1366"/>
-                <img src="c87d865afe2db939c8da36ec6b0c72eb6469d53b0da71612048bc2f1e132c868.png" title=" Andres seleccionar en lista" width="1366"/>
-                <img src="c87d865afe2db939c8da36ec6b0c72eb6469d53b0da71612048bc2f1e132c868.png" title=" Andres clicks on Tipo de documento" width="1366"/>
-                <img src="c87d865afe2db939c8da36ec6b0c72eb6469d53b0da71612048bc2f1e132c868.png" title=" Andres clicks on Opcion lista" width="1366"/>
-                <img src="da3ebc5683e777de5814ae6aad11eb820e2c7edea08417f274cf5e42a4ea07f1.png" title=" Andres clicks on Opcion lista (completed)" width="1366"/>
-                <img src="da3ebc5683e777de5814ae6aad11eb820e2c7edea08417f274cf5e42a4ea07f1.png" title=" Andres seleccionar en lista (completed)" width="1366"/>
-                <img src="da3ebc5683e777de5814ae6aad11eb820e2c7edea08417f274cf5e42a4ea07f1.png" title=" Andres enters '1020459879' into Numero de documento" width="1366"/>
-                <img src="41f37828c2ccac24280e59dfdc2bec4b74f9fc7732ac1519d0f7e36920981571.png" title=" Andres enters '1020459879' into Numero de documento (completed)" width="1366"/>
-                <img src="41f37828c2ccac24280e59dfdc2bec4b74f9fc7732ac1519d0f7e36920981571.png" title=" Andres enters '1020459879' into Contrasenia" width="1366"/>
-                <img src="9482081e91b45369b7a20f4d8aab577661fdfc51f28b3d37c1258b5cb4583fa7.png" title=" Andres enters '1020459879' into Contrasenia (completed)" width="1366"/>
-                <img src="9482081e91b45369b7a20f4d8aab577661fdfc51f28b3d37c1258b5cb4583fa7.png" title=" Andres clicks on Btn entrar" width="1366"/>
-                <img src="8f45960775b8132b064e918bd59f04e8d54ea9d4b0221b15d8db7d19be007513.png" title=" Andres clicks on Btn entrar (completed)" width="1366"/>
-                <img src="8f45960775b8132b064e918bd59f04e8d54ea9d4b0221b15d8db7d19be007513.png" title=" Andres iniciar sesion (completed)" width="1366"/>
-                <img src="8f45960775b8132b064e918bd59f04e8d54ea9d4b0221b15d8db7d19be007513.png" title=" When el ingresa los datos de autenticacion (completed)" width="1366"/>
-                <img src="8f45960775b8132b064e918bd59f04e8d54ea9d4b0221b15d8db7d19be007513.png" title=" Then el iniciara sesion exitosamente" width="1366"/>
-                <img src="8f45960775b8132b064e918bd59f04e8d54ea9d4b0221b15d8db7d19be007513.png" title=" Then verificar inicio sesion" width="1366"/>
-                <img src="8f45960775b8132b064e918bd59f04e8d54ea9d4b0221b15d8db7d19be007513.png" title=" Then el iniciara sesion exitosamente (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="e7644fecad930dade747fd1ffdbd4fdd4e83a77349eca3eaee03189591ada4d3.png" title=" Given el usuario se encuentra en la pagina principal del inder: <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 

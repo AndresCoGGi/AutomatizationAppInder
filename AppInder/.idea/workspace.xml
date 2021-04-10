@@ -8,10 +8,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b56e9ac-4cf2-4a82-ba13-7acadfba719d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/paradigma/funcional/EjemploLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/paradigma/funcional/EjemploLambda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/GeneralStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/GeneralStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3_screenshots.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +41,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="AppInder" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="AppInder" type="f1a62948:ProjectNode" />
-                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
               </path>
             </expand>
             <select />
@@ -299,14 +303,17 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\Documents\Proyectos Automatizacion\AutomatizationAppInder\AppInder" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\1583443\Documents\RepoAndres\AW1029_EJERCICIOSGIT_TEST\AppInder\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Reserva">
+  <component name="RunManager" selected="Gradle.InicioSesion">
     <configuration name="EjemploLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.com.bancolombia.certificacion.appinder.paradigma.funcional.EjemploLambda" />
       <module name="AW1029_EJERCICIOSGIT_TEST.AppInder.main" />
@@ -319,6 +326,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="InicioSesion" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;co.com.bancolombia.certificacion.appinder.runners.InicioSesion&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="InicioSesion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AW1029_EJERCICIOSGIT_TEST.AppInder.test" />
@@ -336,30 +364,34 @@
       </method>
     </configuration>
     <configuration name="RegistroUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AW1029_EJERCICIOSGIT_TEST.AppInder.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="co.com.bancolombia.certificacion.appinder.runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="co.com.bancolombia.certificacion.appinder.runners" />
       <option name="MAIN_CLASS_NAME" value="co.com.bancolombia.certificacion.appinder.runners.RegistroUsuario" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Reserva" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AW1029_EJERCICIOSGIT_TEST.AppInder.test" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="co.com.bancolombia.certificacion.appinder.runners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="co.com.bancolombia.certificacion.appinder.runners" />
       <option name="MAIN_CLASS_NAME" value="co.com.bancolombia.certificacion.appinder.runners.Reserva" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
