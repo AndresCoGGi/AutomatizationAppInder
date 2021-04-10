@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="95d0bb838e42a07c3b97385bba325d0b77079a7e4a9c5417338b50963141c7ad.html">Reservar Escenario Deportivo</a></span>
+                > <span class="truncate-60"><a
+                    href="b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6.html">Reserva exitosa Santiago </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-04-2021 14:51</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Reservar Escenario Deportivo </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario<br />
+Necesito realizar una reserva de escenario<br />
+Para divertirme
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="0aa3a5e5bd4b26a0e744669afdffdb76c853ff9a6f2673c9232c400f4b1f4641.html">Reserva Santiago
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Reserva exitosa Santiago
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element not interactable exception: element not interactable</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.ElementNotInteractableException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.bancolombia.certificacion.appinder.interactions.SeleccionarFecha.performAs(SeleccionarFecha.java:30)<br />co.com.bancolombia.certificacion.appinder.tasks.RerservarCancha.performAs(RerservarCancha.java:57)<br />co.com.bancolombia.certificacion.appinder.stepdefinitions.ReservaStepDefinitions.elIngresaLosDatosDeLaReserva(ReservaStepDefinitions.java:31)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource7748024949362406765.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="abf3c1b4ec36bcfb3f99d055e33cb1d4249ddc3e25fb0b6a1df307623252183a.png" title=" Dado que el usuario inicia la sesion
+| tipo_documento | Tarjeta de Identidad |
+| user | 1000207300 |
+| password | nacional |" width="1920"/>
+                <img src="abf3c1b4ec36bcfb3f99d055e33cb1d4249ddc3e25fb0b6a1df307623252183a.png" title=" Andres iniciar sesion" width="1920"/>
+                <img src="abf3c1b4ec36bcfb3f99d055e33cb1d4249ddc3e25fb0b6a1df307623252183a.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="abf3c1b4ec36bcfb3f99d055e33cb1d4249ddc3e25fb0b6a1df307623252183a.png" title=" Andres clicks on Tipo de documento" width="1920"/>
+                <img src="37df4338abb0ffb4a6e60ed2462a755981b4f712dcc35392aa4e5a6ce8dbd7c0.png" title=" Andres clicks on Tipo de documento (completed)" width="1920"/>
+                <img src="37df4338abb0ffb4a6e60ed2462a755981b4f712dcc35392aa4e5a6ce8dbd7c0.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="d0ca7742d55050816ca97ef9bf61398018b2ee56f46ea0f3d48dbe7fcd826232.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="d0ca7742d55050816ca97ef9bf61398018b2ee56f46ea0f3d48dbe7fcd826232.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="d0ca7742d55050816ca97ef9bf61398018b2ee56f46ea0f3d48dbe7fcd826232.png" title=" Andres enters '1000207300' into Numero de documento" width="1920"/>
+                <img src="1c0923eb5ad2198b6ab496cbacbc372c0a3a4c3f584f63c0f5236bc9dbcc06d1.png" title=" Andres enters '1000207300' into Numero de documento (completed)" width="1920"/>
+                <img src="1c0923eb5ad2198b6ab496cbacbc372c0a3a4c3f584f63c0f5236bc9dbcc06d1.png" title=" Andres enters 'nacional' into Contrasenia" width="1920"/>
+                <img src="f587be3700dece5073d89ecb7f17116613f5d427ea35c6aca046b13f1ab2d8f8.png" title=" Andres enters 'nacional' into Contrasenia (completed)" width="1920"/>
+                <img src="f587be3700dece5073d89ecb7f17116613f5d427ea35c6aca046b13f1ab2d8f8.png" title=" Andres clicks on Btn entrar" width="1920"/>
+                <img src="fafe4365a3ba645352ae2b9f22032fcbf3705ab33ea3474259289d1018accb4d.png" title=" Andres clicks on Btn entrar (completed)" width="1920"/>
+                <img src="fafe4365a3ba645352ae2b9f22032fcbf3705ab33ea3474259289d1018accb4d.png" title=" Andres iniciar sesion (completed)" width="1920"/>
+                <img src="fafe4365a3ba645352ae2b9f22032fcbf3705ab33ea3474259289d1018accb4d.png" title=" Dado que el usuario inicia la sesion
+| tipo_documento | Tarjeta de Identidad |
+| user | 1000207300 |
+| password | nacional | (completed)" width="1920"/>
+                <img src="fafe4365a3ba645352ae2b9f22032fcbf3705ab33ea3474259289d1018accb4d.png" title=" Cuando el ingresa los datos de la reserva 16-marzo 2020 dia Lunes" width="1920"/>
+                <img src="fafe4365a3ba645352ae2b9f22032fcbf3705ab33ea3474259289d1018accb4d.png" title=" Andres rerservar cancha" width="1920"/>
+                <img src="dbf00d0c0b79818de45d54d77077ea61bd4e2f94e2e16bde75db97fa0be48143.png" title=" Andres clicks on Escenarios deportivos" width="1920"/>
+                <img src="dbf00d0c0b79818de45d54d77077ea61bd4e2f94e2e16bde75db97fa0be48143.png" title=" Andres clicks on Reserva" width="1920"/>
+                <img src="ab6b2f4891d2d2d3bb7800aacc8d465a2cabbf1e2725eaa0daca5c7788823350.png" title=" Andres clicks on Reserva (completed)" width="1920"/>
+                <img src="db4fe8acc82758434a117a0aa50d5cc0af7b31bd5427e5d8c2b0463eb71f240a.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="2a624131b92fc3a5dcfeca0a5d61a56a66797e3a39c9a67bce178c3a94d007d1.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="2a624131b92fc3a5dcfeca0a5d61a56a66797e3a39c9a67bce178c3a94d007d1.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="2a624131b92fc3a5dcfeca0a5d61a56a66797e3a39c9a67bce178c3a94d007d1.png" title=" Andres clicks on Barrio" width="1920"/>
+                <img src="341676aa4b53e2027b0d22742773145caf8bc9339b303cda4adca89ec35d238c.png" title=" Andres clicks on Barrio (completed)" width="1920"/>
+                <img src="341676aa4b53e2027b0d22742773145caf8bc9339b303cda4adca89ec35d238c.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="9ee5696b9102beebb981484c7ca78ef6ca104c8f055932865d4cb3b2ad6e388a.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="9ee5696b9102beebb981484c7ca78ef6ca104c8f055932865d4cb3b2ad6e388a.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="c679c8e311541c3ee1c2cbac98e948d582fc174609c4db5f1b36e5de1ad14000.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="c679c8e311541c3ee1c2cbac98e948d582fc174609c4db5f1b36e5de1ad14000.png" title=" Andres clicks on Escenario deportivo" width="1920"/>
+                <img src="45e1fcea16a1ed9fc2d93ba4f5e28032b21db074e7d86bf6bc4f54a0a40bb9ea.png" title=" Andres clicks on Escenario deportivo (completed)" width="1920"/>
+                <img src="45e1fcea16a1ed9fc2d93ba4f5e28032b21db074e7d86bf6bc4f54a0a40bb9ea.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="c80b269af2d954a53bba314e207eba0bf686e0aaf3b34af57eabfe2da79fa202.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="c80b269af2d954a53bba314e207eba0bf686e0aaf3b34af57eabfe2da79fa202.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="c80b269af2d954a53bba314e207eba0bf686e0aaf3b34af57eabfe2da79fa202.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="c80b269af2d954a53bba314e207eba0bf686e0aaf3b34af57eabfe2da79fa202.png" title=" Andres clicks on Escenario deportivo" width="1920"/>
+                <img src="e42831fd54af0d5ace2180d9e84fa038bf48824845cb305017063c8539e60994.png" title=" Andres clicks on Escenario deportivo (completed)" width="1920"/>
+                <img src="e42831fd54af0d5ace2180d9e84fa038bf48824845cb305017063c8539e60994.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="1c6c4f7fc40556090f0c8976895852bb15bff788d5fef909d0be5e5b3abd199b.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="1c6c4f7fc40556090f0c8976895852bb15bff788d5fef909d0be5e5b3abd199b.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="1c6c4f7fc40556090f0c8976895852bb15bff788d5fef909d0be5e5b3abd199b.png" title=" Andres clicks on Disciplina" width="1920"/>
+                <img src="5cc2833afc0868d8ae55395c362d8f19b1fcdfde4c7956adcf8fd5eee4f4325a.png" title=" Andres clicks on Disciplina (completed)" width="1920"/>
+                <img src="5cc2833afc0868d8ae55395c362d8f19b1fcdfde4c7956adcf8fd5eee4f4325a.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="5cc2833afc0868d8ae55395c362d8f19b1fcdfde4c7956adcf8fd5eee4f4325a.png" title=" Andres clicks on Disciplina campo" width="1920"/>
+                <img src="accbe26306e950a06d95e73db0a7903b823b23b866e42cce36878424d062e5cb.png" title=" Andres clicks on Disciplina campo (completed)" width="1920"/>
+                <img src="accbe26306e950a06d95e73db0a7903b823b23b866e42cce36878424d062e5cb.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="babfa97dc794a60d76851d25e1ba781eb5620f16b20b37eac98918b9f1d4a11b.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="babfa97dc794a60d76851d25e1ba781eb5620f16b20b37eac98918b9f1d4a11b.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="babfa97dc794a60d76851d25e1ba781eb5620f16b20b37eac98918b9f1d4a11b.png" title=" Andres seleccionar fecha" width="1920"/>
+                <img src="babfa97dc794a60d76851d25e1ba781eb5620f16b20b37eac98918b9f1d4a11b.png" title=" Andres clicks on Fecha inicio" width="1920"/>
+                <img src="c1fe77e30060690bbc497801498a62f06956711b58b52ceb5e8186a5032d35a8.png" title=" Andres clicks on Fecha inicio (completed)" width="1920"/>
+                <img src="8090bbf06316128e749f1116023c771e0f323427f98f183daa57c700cdc2405b.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="447fbd4c6bbae20478b6df61f0fb36d344f9b94c1a8c40bf6e036bf4b586ec49.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="447fbd4c6bbae20478b6df61f0fb36d344f9b94c1a8c40bf6e036bf4b586ec49.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="a1696b4fd972a8026e98d470a76f69817e7eb28d63dce3d1d5bbb73322a26e85.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="a1696b4fd972a8026e98d470a76f69817e7eb28d63dce3d1d5bbb73322a26e85.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="2a2045df7b5140499c513c6931d0d45e04fd5966ad793d92bd7f926829371476.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="2a2045df7b5140499c513c6931d0d45e04fd5966ad793d92bd7f926829371476.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="341c00b0c8e7bb5b525da8dccb8a5d62ba6a6308eaf0401a079cf819441af2ac.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="341c00b0c8e7bb5b525da8dccb8a5d62ba6a6308eaf0401a079cf819441af2ac.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="8779fb1710bf9db5651359615f221f0e9811666b58d239e1786866554a512633.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="8779fb1710bf9db5651359615f221f0e9811666b58d239e1786866554a512633.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="c8e32ca5927f9df44ceae37be873393ebbaf5731de0752b88db263f12d4f76c3.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="c8e32ca5927f9df44ceae37be873393ebbaf5731de0752b88db263f12d4f76c3.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="674f92c9c2da65004c9cd56b4fa07d4efe1eb76736f239621298d68c56face16.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="674f92c9c2da65004c9cd56b4fa07d4efe1eb76736f239621298d68c56face16.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="7ab7a278f36959a9d411499b7f599cab3fa82bc3212d2078c8480c18a4e307c0.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="7ab7a278f36959a9d411499b7f599cab3fa82bc3212d2078c8480c18a4e307c0.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="080b674c99430603ada697095feb3db9f52fd87dec1e545fe25eb7d478f53f9a.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="080b674c99430603ada697095feb3db9f52fd87dec1e545fe25eb7d478f53f9a.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="05e778bd4146df5842ea32a623a5586f2d1432e30b59f337c2c7f39e462a46b0.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="05e778bd4146df5842ea32a623a5586f2d1432e30b59f337c2c7f39e462a46b0.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="6b05918f176b40eb5d7213f7cb7ce93abbc30d14ff52c6cadd8d905a62975c9d.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="6b05918f176b40eb5d7213f7cb7ce93abbc30d14ff52c6cadd8d905a62975c9d.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="77612eb9652acf4d4bb0dab4299fb9dc709fd298e17c0220661e52ea3998239b.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="77612eb9652acf4d4bb0dab4299fb9dc709fd298e17c0220661e52ea3998239b.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="ac4cdf2171357ac4c5ef92511327bbfdd6b0c7acb82d8dbc83e68bec7228bff4.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="ac4cdf2171357ac4c5ef92511327bbfdd6b0c7acb82d8dbc83e68bec7228bff4.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="a6fc785971bcf99a9917bc6a41d0114e82bb059332beacf29923c1260b3fc66d.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="a6fc785971bcf99a9917bc6a41d0114e82bb059332beacf29923c1260b3fc66d.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="02499f482df8a2afbc0f64a32d15ae6dcaee6c26466783f06976d9e0ee66aa96.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="02499f482df8a2afbc0f64a32d15ae6dcaee6c26466783f06976d9e0ee66aa96.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="74047376d73dae633a83c43fa8ec5eac3b165be65e2126695487d2147d7a656c.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="74047376d73dae633a83c43fa8ec5eac3b165be65e2126695487d2147d7a656c.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="4779f43a5ffd909f3351fde268f180d33269d847d87e220f9969948a65fe7a76.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="4779f43a5ffd909f3351fde268f180d33269d847d87e220f9969948a65fe7a76.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="79a7e0a028549348511651b1921c1de8fb727c0da461d79b6a259919fd5e6b95.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="79a7e0a028549348511651b1921c1de8fb727c0da461d79b6a259919fd5e6b95.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="3d4f40b0e2532a9048e98bfd49c21b3c9b3ca84754fb15de8f3e6b13d16867de.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="3d4f40b0e2532a9048e98bfd49c21b3c9b3ca84754fb15de8f3e6b13d16867de.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="af88f5119a1693566bbd69634efbee62eacef22ccf7e22457a3da744ce132ea4.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="af88f5119a1693566bbd69634efbee62eacef22ccf7e22457a3da744ce132ea4.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="c9583b1ed9086ec513dcc79ca84374f7d7ca04b8e91c7d6b88652f6d03b5fd05.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="c9583b1ed9086ec513dcc79ca84374f7d7ca04b8e91c7d6b88652f6d03b5fd05.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="2d8d46dd0182eeba18f532b05e2db63f5faf702376942fcc5b155e04bb0c6c36.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="2d8d46dd0182eeba18f532b05e2db63f5faf702376942fcc5b155e04bb0c6c36.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="3f0b0c2c45ea2ca4a34e04cc84b7052058ecb8a477bd06a2ece78a38d03eb7e6.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="3f0b0c2c45ea2ca4a34e04cc84b7052058ecb8a477bd06a2ece78a38d03eb7e6.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="f023254980eca60c23981a57d660054b2068617c2e7465669fb30f81590d874e.png" title=" Andres clicks on Boton next (completed)" width="1920"/>
+                <img src="f023254980eca60c23981a57d660054b2068617c2e7465669fb30f81590d874e.png" title=" Andres clicks on Boton next" width="1920"/>
+                <img src="6641e911f20f9c1ae7bc764c86761546fb385ddfbb0c751b500c72523845d9ff.png" title=" Andres clicks on Boton next (completed): <span class='error-color'>ERROR</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.30</span>
+</div>
+</body>
+</html>
