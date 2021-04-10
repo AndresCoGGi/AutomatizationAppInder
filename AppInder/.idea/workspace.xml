@@ -9,14 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b56e9ac-4cf2-4a82-ba13-7acadfba719d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/paradigma/funcional/EjemploLambda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/paradigma/funcional/EjemploLambda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/GeneralStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/bancolombia/certificacion/appinder/stepdefinitions/GeneralStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.json" afterDir="false" />
@@ -313,7 +306,7 @@
       <recent name="C:\Users\1583443\Documents\RepoAndres\AW1029_EJERCICIOSGIT_TEST\AppInder\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.InicioSesion">
+  <component name="RunManager" selected="Gradle.Reserva">
     <configuration name="EjemploLambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.com.bancolombia.certificacion.appinder.paradigma.funcional.EjemploLambda" />
       <module name="AW1029_EJERCICIOSGIT_TEST.AppInder.main" />
@@ -333,6 +326,27 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;co.com.bancolombia.certificacion.appinder.runners.InicioSesion&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Reserva" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;co.com.bancolombia.certificacion.appinder.runners.Reserva&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -495,13 +509,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Gradle" order="8" weight="0.23373677" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="Text.of(RegistroElementos.MENSAJE_EXITOSO).viewedBy(actor).asString()" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
