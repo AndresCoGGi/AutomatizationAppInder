@@ -10,7 +10,7 @@ public class MyDriver {
 
   public static MyDriver web() {
     System.setProperty("webdriver.chrome.driver",
-        "C:\\Users\\1583443\\git\\Semillero\\Documentos Semillero\\Selenium\\ChromeDriver.exe");
+        "chromedriver.exe");
     ChromeOptions options = new ChromeOptions();
     options.addArguments("--incognito", "--start-maximized", "--disable-infobars");
     driver = new ChromeDriver(options);
