@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="95d0bb838e42a07c3b97385bba325d0b77079a7e4a9c5417338b50963141c7ad.html">Reservar Escenario Deportivo</a></span>
+                > <span class="truncate-60"><a
+                    href="2337e3b554b25b2fc99dda276b56db70c76a741238d0870ae744447963d663f0.html">Reserva exitosa Andres </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-09-2021 16:14</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Reservar Escenario Deportivo </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario<br />
+Necesito realizar una reserva de escenario<br />
+Para divertirme
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="3cd577160900c4fdcdc7915885c49a34e407319c45a3eee68772f04099203a9f.html">Reserva Andres
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Reserva exitosa Andres
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="7f4f0cef7b1d1b89f59fb1238d6ec396e76013f75a1a2675b97d645fce79a4e8.png" title=" Dado que el usuario inicia la sesion
+| tipo_documento | C&eacute;dula de Ciudadan&iacute;a |
+| user | 1020459879 |
+| password | 1020459879 |" width="1920"/>
+                <img src="7f4f0cef7b1d1b89f59fb1238d6ec396e76013f75a1a2675b97d645fce79a4e8.png" title=" Andres iniciar sesion" width="1920"/>
+                <img src="7f4f0cef7b1d1b89f59fb1238d6ec396e76013f75a1a2675b97d645fce79a4e8.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="7f4f0cef7b1d1b89f59fb1238d6ec396e76013f75a1a2675b97d645fce79a4e8.png" title=" Andres clicks on Tipo de documento" width="1920"/>
+                <img src="9afe8720f5dc409040f8a201f01ed93ac03eb3b080bba6fbc82c3e37d3dc5e86.png" title=" Andres clicks on Tipo de documento (completed)" width="1920"/>
+                <img src="9afe8720f5dc409040f8a201f01ed93ac03eb3b080bba6fbc82c3e37d3dc5e86.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="f259c5bc7b3571e14c020476335ddabad04ff33edc3c6ee115b84aa2d8291da6.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="f259c5bc7b3571e14c020476335ddabad04ff33edc3c6ee115b84aa2d8291da6.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="f259c5bc7b3571e14c020476335ddabad04ff33edc3c6ee115b84aa2d8291da6.png" title=" Andres enters '1020459879' into Numero de documento" width="1920"/>
+                <img src="466cddeaccf9de6432d4e07a4b69fbcc65e33ec9f293a082337a0223c5a5f2f9.png" title=" Andres enters '1020459879' into Numero de documento (completed)" width="1920"/>
+                <img src="466cddeaccf9de6432d4e07a4b69fbcc65e33ec9f293a082337a0223c5a5f2f9.png" title=" Andres enters '1020459879' into Contrasenia" width="1920"/>
+                <img src="3a6a9f1dc96c6d5cccf34212a27368d75fbf3c92386b53318021a7678ee0d638.png" title=" Andres enters '1020459879' into Contrasenia (completed)" width="1920"/>
+                <img src="3a6a9f1dc96c6d5cccf34212a27368d75fbf3c92386b53318021a7678ee0d638.png" title=" Andres clicks on Btn entrar" width="1920"/>
+                <img src="eb9fc612dd97425a15575fe3dea15fa1eaee288895a5d48f7c835b262771af5f.png" title=" Andres clicks on Btn entrar (completed)" width="1920"/>
+                <img src="eb9fc612dd97425a15575fe3dea15fa1eaee288895a5d48f7c835b262771af5f.png" title=" Andres iniciar sesion (completed)" width="1920"/>
+                <img src="eb9fc612dd97425a15575fe3dea15fa1eaee288895a5d48f7c835b262771af5f.png" title=" Dado que el usuario inicia la sesion
+| tipo_documento | C&eacute;dula de Ciudadan&iacute;a |
+| user | 1020459879 |
+| password | 1020459879 | (completed)" width="1920"/>
+                <img src="45f2d8339052ac4610be11a7db5f636c27a6db541c8b5b45773f0ddd4b5ab669.png" title=" Cuando el ingresa los datos de la reserva 15-septiembre 2021 dia Miercoles" width="1920"/>
+                <img src="45f2d8339052ac4610be11a7db5f636c27a6db541c8b5b45773f0ddd4b5ab669.png" title=" Andres rerservar cancha" width="1920"/>
+                <img src="45f2d8339052ac4610be11a7db5f636c27a6db541c8b5b45773f0ddd4b5ab669.png" title=" Andres clicks on Escenarios deportivos" width="1920"/>
+                <img src="45f2d8339052ac4610be11a7db5f636c27a6db541c8b5b45773f0ddd4b5ab669.png" title=" Andres clicks on Reserva" width="1920"/>
+                <img src="1b484f737a70e84f570b3d881bc6ed4dd5c8f492cf19340f1e72954b9dd6c1e9.png" title=" Andres clicks on Reserva (completed)" width="1920"/>
+                <img src="4c1c8496a6cb97c21b237012b15fb0d7a081e6ebae90b2de910218c772d47617.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="8591a798425d0e560a062b29307939ba61763761fcd75a250f9c287a2bb75afb.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="8591a798425d0e560a062b29307939ba61763761fcd75a250f9c287a2bb75afb.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="8591a798425d0e560a062b29307939ba61763761fcd75a250f9c287a2bb75afb.png" title=" Andres clicks on Barrio" width="1920"/>
+                <img src="45250d582a4d3c7344c900d75faf90b2d434b1f25e476505be792dbadc26b1ec.png" title=" Andres clicks on Barrio (completed)" width="1920"/>
+                <img src="45250d582a4d3c7344c900d75faf90b2d434b1f25e476505be792dbadc26b1ec.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="a7a3ac9d18ee663e8cedf489e700bd896b0f55dc7c9ec1c9d05072469a4e56e7.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="a7a3ac9d18ee663e8cedf489e700bd896b0f55dc7c9ec1c9d05072469a4e56e7.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="37ccb3e4be73b02e1dd60f010db94b58b8c1d86d58697add5c3db9d4fe74cffa.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="37ccb3e4be73b02e1dd60f010db94b58b8c1d86d58697add5c3db9d4fe74cffa.png" title=" Andres clicks on Escenario deportivo" width="1920"/>
+                <img src="a7a68856d79b6e2cf5dadb89fb656490cd018f00cda2271bf2819056909cbfc0.png" title=" Andres clicks on Escenario deportivo (completed)" width="1920"/>
+                <img src="a7a68856d79b6e2cf5dadb89fb656490cd018f00cda2271bf2819056909cbfc0.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="2813776646e4343c6c74925d6d327305e81ce0513ff3ddaf4885796c191c58ba.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="2813776646e4343c6c74925d6d327305e81ce0513ff3ddaf4885796c191c58ba.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="2813776646e4343c6c74925d6d327305e81ce0513ff3ddaf4885796c191c58ba.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="2813776646e4343c6c74925d6d327305e81ce0513ff3ddaf4885796c191c58ba.png" title=" Andres clicks on Escenario deportivo" width="1920"/>
+                <img src="d568ebb630c526925acaec65f6a5f131876a64a64367ebead039c744e649ec03.png" title=" Andres clicks on Escenario deportivo (completed)" width="1920"/>
+                <img src="d568ebb630c526925acaec65f6a5f131876a64a64367ebead039c744e649ec03.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="762a745df145cffee17c3824599b4cd0d611fe819238dcc67028d08640bcc0cf.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="762a745df145cffee17c3824599b4cd0d611fe819238dcc67028d08640bcc0cf.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="762a745df145cffee17c3824599b4cd0d611fe819238dcc67028d08640bcc0cf.png" title=" Andres clicks on Disciplina" width="1920"/>
+                <img src="c55a3237d30560ff8d2f879f27cc941641eb63da4b49dd0183772d42dfd48c09.png" title=" Andres clicks on Disciplina (completed)" width="1920"/>
+                <img src="d4df5470510b9ff4a9d527ee517876b5e6c556923fdb12450bb731192c3afd39.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="d4df5470510b9ff4a9d527ee517876b5e6c556923fdb12450bb731192c3afd39.png" title=" Andres clicks on Disciplina campo" width="1920"/>
+                <img src="eefcbbc8d472a2f7886b341ca592fb8b35d3d9080ca269b708d3d99f404307b0.png" title=" Andres clicks on Disciplina campo (completed)" width="1920"/>
+                <img src="eefcbbc8d472a2f7886b341ca592fb8b35d3d9080ca269b708d3d99f404307b0.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="20e88dc70103c253a4889a00d3ff6f44402df58d2cfe97f0281c2ebf62f90361.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="20e88dc70103c253a4889a00d3ff6f44402df58d2cfe97f0281c2ebf62f90361.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="20e88dc70103c253a4889a00d3ff6f44402df58d2cfe97f0281c2ebf62f90361.png" title=" Andres seleccionar fecha" width="1920"/>
+                <img src="20e88dc70103c253a4889a00d3ff6f44402df58d2cfe97f0281c2ebf62f90361.png" title=" Andres clicks on Fecha inicio" width="1920"/>
+                <img src="c5f726869fa864d539f9be8353db5a42fd5997e061186eb2e450039bc1ba5249.png" title=" Andres clicks on Fecha inicio (completed)" width="1920"/>
+                <img src="c5f726869fa864d539f9be8353db5a42fd5997e061186eb2e450039bc1ba5249.png" title=" Andres clicks on Dia de reserva" width="1920"/>
+                <img src="bd7203520b6c7065fba8d0634c30f5bf6e32b8e6537628a566a1b1556b544be2.png" title=" Andres clicks on Dia de reserva (completed)" width="1920"/>
+                <img src="bd7203520b6c7065fba8d0634c30f5bf6e32b8e6537628a566a1b1556b544be2.png" title=" Andres seleccionar fecha (completed)" width="1920"/>
+                <img src="bd7203520b6c7065fba8d0634c30f5bf6e32b8e6537628a566a1b1556b544be2.png" title=" Andres seleccionar en lista" width="1920"/>
+                <img src="bd7203520b6c7065fba8d0634c30f5bf6e32b8e6537628a566a1b1556b544be2.png" title=" Andres clicks on Jornada" width="1920"/>
+                <img src="0c8fe88191d45ff3a3964921bd983cd42e0f7b0060925696510a8553466a78df.png" title=" Andres clicks on Jornada (completed)" width="1920"/>
+                <img src="0c8fe88191d45ff3a3964921bd983cd42e0f7b0060925696510a8553466a78df.png" title=" Andres clicks on Opcion lista" width="1920"/>
+                <img src="4e7a2913e928fc2931320534cd924542dbac3c3f0e17f60a6953618d58e05a35.png" title=" Andres clicks on Opcion lista (completed)" width="1920"/>
+                <img src="4e7a2913e928fc2931320534cd924542dbac3c3f0e17f60a6953618d58e05a35.png" title=" Andres seleccionar en lista (completed)" width="1920"/>
+                <img src="e515f2ae6e48dfa3fe4671d048400b9bd39e2f9928b91eb6e3a7555335d3e523.png" title=" Andres enters '2100' into Hora inicio" width="1920"/>
+                <img src="9a56170b1cc9fb2bf97cabc81273ec9fda834b7c093b2d8e75ccda40c7aa9086.png" title=" Andres enters '2100' into Hora inicio (completed)" width="1920"/>
+                <img src="9a56170b1cc9fb2bf97cabc81273ec9fda834b7c093b2d8e75ccda40c7aa9086.png" title=" Andres enters '2200' into Hora fin" width="1920"/>
+                <img src="7321bf8e1bade832757f5e222ab07ff56327f9845f00f5127f53fc4039ce65ed.png" title=" Andres enters '2200' into Hora fin (completed)" width="1920"/>
+                <img src="7321bf8e1bade832757f5e222ab07ff56327f9845f00f5127f53fc4039ce65ed.png" title=" Andres clicks on Consultar disponibilidad" width="1920"/>
+                <img src="5d14e12f91cf2b4f0e351a9e236bd2e85f480b4b6edc8e5018626eeb56a08091.png" title=" Andres clicks on Consultar disponibilidad (completed)" width="1920"/>
+                <img src="2474571a1eb44d3efea7703b7bc964c4083795218d8f01856c03854d589d24cc.png" title=" Andres clicks on Continuar" width="1920"/>
+                <img src="f35ecb1a517f4705572f1e30d3f64b2d93f1940d4766a42a837a8b9dfb7e7ffb.png" title=" Andres clicks on Continuar (completed)" width="1920"/>
+                <img src="f35ecb1a517f4705572f1e30d3f64b2d93f1940d4766a42a837a8b9dfb7e7ffb.png" title=" Andres clicks on Ubicacion completa" width="1920"/>
+                <img src="3df9954a7e85087557a19bdf989c18dd7b185f2e33c9f3de7ff630f8fb1d9ce8.png" title=" Andres clicks on Ubicacion completa (completed)" width="1920"/>
+                <img src="3df9954a7e85087557a19bdf989c18dd7b185f2e33c9f3de7ff630f8fb1d9ce8.png" title=" Andres clicks on Continuar" width="1920"/>
+                <img src="ce5273f94b7cd1195bd9bf13d8dfc91e9b4787309f01bf89bb6f7455ee323822.png" title=" Andres clicks on Continuar (completed)" width="1920"/>
+                <img src="ce5273f94b7cd1195bd9bf13d8dfc91e9b4787309f01bf89bb6f7455ee323822.png" title=" Andres ingresar jugadores" width="1920"/>
+                <img src="ce5273f94b7cd1195bd9bf13d8dfc91e9b4787309f01bf89bb6f7455ee323822.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="2f34eee66c2b06c233920a327517ce347f4450d9506634af33882e92aae17b12.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="2f34eee66c2b06c233920a327517ce347f4450d9506634af33882e92aae17b12.png" title=" Andres clicks on Tipo documento" width="1920"/>
+                <img src="bd7410b299e6224b9b45a050cf8a69584377841a135991ff20defe5543182bd9.png" title=" Andres clicks on Tipo documento (completed)" width="1920"/>
+                <img src="bd7410b299e6224b9b45a050cf8a69584377841a135991ff20defe5543182bd9.png" title=" Andres clicks on Nro Documento" width="1920"/>
+                <img src="35016cf13bd13ef4db71444b0cbab1bb0d2facc31ec4e55cd98d168a36ed0465.png" title=" Andres clicks on Nro Documento (completed)" width="1920"/>
+                <img src="35016cf13bd13ef4db71444b0cbab1bb0d2facc31ec4e55cd98d168a36ed0465.png" title=" Andres enters '98712618' into Numero de docmento input" width="1920"/>
+                <img src="8ee29c59827a386b116cf68086baba365830894d0f6a4ba70eeed9a3cc9810e2.png" title=" Andres enters '98712618' into Numero de docmento input (completed)" width="1920"/>
+                <img src="8ee29c59827a386b116cf68086baba365830894d0f6a4ba70eeed9a3cc9810e2.png" title=" Andres clicks on Documento encontrado" width="1920"/>
+                <img src="98643eda552159bc7502d3335450ba8aec4a91019341f31f05e46fc67475517a.png" title=" Andres clicks on Documento encontrado (completed)" width="1920"/>
+                <img src="98643eda552159bc7502d3335450ba8aec4a91019341f31f05e46fc67475517a.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="c1ba4f1d97d03db42468e0c9d0b4a2a3e755bfa54ac6d1db40b390972430974d.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="c1ba4f1d97d03db42468e0c9d0b4a2a3e755bfa54ac6d1db40b390972430974d.png" title=" Andres clicks on Tipo documento" width="1920"/>
+                <img src="907ef46c9d9afe89a775ac9b065f7ca7ff63f1263f5e2df6eb0dcf8da9b1e8f1.png" title=" Andres clicks on Tipo documento (completed)" width="1920"/>
+                <img src="907ef46c9d9afe89a775ac9b065f7ca7ff63f1263f5e2df6eb0dcf8da9b1e8f1.png" title=" Andres clicks on Nro Documento" width="1920"/>
+                <img src="1103957dc94bdc8102c85ceb9d9c3dd8377ce897c9d4473abfcc04085be508a6.png" title=" Andres clicks on Nro Documento (completed)" width="1920"/>
+                <img src="1103957dc94bdc8102c85ceb9d9c3dd8377ce897c9d4473abfcc04085be508a6.png" title=" Andres enters '98572088' into Numero de docmento input" width="1920"/>
+                <img src="c335e914c5ebfea9ee50028b3bd4a57c566daa872db35e47aaa35bc77671b51c.png" title=" Andres enters '98572088' into Numero de docmento input (completed)" width="1920"/>
+                <img src="c335e914c5ebfea9ee50028b3bd4a57c566daa872db35e47aaa35bc77671b51c.png" title=" Andres clicks on Documento encontrado" width="1920"/>
+                <img src="96e0d2fb9e0462401946a9e6d84f20d2a5b363fc934dc0d90d18e8890c2b6133.png" title=" Andres clicks on Documento encontrado (completed)" width="1920"/>
+                <img src="96e0d2fb9e0462401946a9e6d84f20d2a5b363fc934dc0d90d18e8890c2b6133.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="55fa10f783d13828c12d905e4cf019e0d689809cf37ec8b5a44514ca9ccc7421.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="55fa10f783d13828c12d905e4cf019e0d689809cf37ec8b5a44514ca9ccc7421.png" title=" Andres clicks on Tipo documento" width="1920"/>
+                <img src="2151edf042c9e584a90f30d003962af3f4c3802b0345c6712f1a3a3b9cb2afd3.png" title=" Andres clicks on Tipo documento (completed)" width="1920"/>
+                <img src="2151edf042c9e584a90f30d003962af3f4c3802b0345c6712f1a3a3b9cb2afd3.png" title=" Andres clicks on Nro Documento" width="1920"/>
+                <img src="472dd1f2024414fef7d8842e15b86f29f8360384e8e43da00d87e04d146f8110.png" title=" Andres clicks on Nro Documento (completed)" width="1920"/>
+                <img src="472dd1f2024414fef7d8842e15b86f29f8360384e8e43da00d87e04d146f8110.png" title=" Andres enters '71266606' into Numero de docmento input" width="1920"/>
+                <img src="10216bbcd98b382e1c95aaa7e86bba04e2f70bf4c06a4756b277729b2eb5b93a.png" title=" Andres enters '71266606' into Numero de docmento input (completed)" width="1920"/>
+                <img src="10216bbcd98b382e1c95aaa7e86bba04e2f70bf4c06a4756b277729b2eb5b93a.png" title=" Andres clicks on Documento encontrado" width="1920"/>
+                <img src="a15dcb0cf63a6ddb5ddd0cd91f36e8176aeef61f46ae6587fbe5c0697db3e441.png" title=" Andres clicks on Documento encontrado (completed)" width="1920"/>
+                <img src="a15dcb0cf63a6ddb5ddd0cd91f36e8176aeef61f46ae6587fbe5c0697db3e441.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="f600832eaf1e38cf349a83bf9e6451c552765366f09e811704a072d3c0219e46.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="f600832eaf1e38cf349a83bf9e6451c552765366f09e811704a072d3c0219e46.png" title=" Andres clicks on Tipo documento" width="1920"/>
+                <img src="bdd3e4e2556d233083ab4f698f48792cc4e34c3d3075f40706f4649ab6514494.png" title=" Andres clicks on Tipo documento (completed)" width="1920"/>
+                <img src="bdd3e4e2556d233083ab4f698f48792cc4e34c3d3075f40706f4649ab6514494.png" title=" Andres clicks on Nro Documento" width="1920"/>
+                <img src="dd5b4a64b4f322d6c6ec36f0d8fd554e2efd66ec338d99aecd2e3772ef6e7803.png" title=" Andres clicks on Nro Documento (completed)" width="1920"/>
+                <img src="dd5b4a64b4f322d6c6ec36f0d8fd554e2efd66ec338d99aecd2e3772ef6e7803.png" title=" Andres enters '98216544' into Numero de docmento input" width="1920"/>
+                <img src="6b1b56c2c15093a15b1caf3f90050117c4f9a85607f6860b177ce42b3d1d8adf.png" title=" Andres enters '98216544' into Numero de docmento input (completed)" width="1920"/>
+                <img src="6b1b56c2c15093a15b1caf3f90050117c4f9a85607f6860b177ce42b3d1d8adf.png" title=" Andres clicks on Documento encontrado" width="1920"/>
+                <img src="0f9c58a45c2f4007548731cb51db10661531a593882cf6479d42432e7544cced.png" title=" Andres clicks on Documento encontrado (completed)" width="1920"/>
+                <img src="0f9c58a45c2f4007548731cb51db10661531a593882cf6479d42432e7544cced.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="1559c6f72d94db80d4aa7cc93139a14aabe5314daac4de97a06319ccaf1c5301.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="1559c6f72d94db80d4aa7cc93139a14aabe5314daac4de97a06319ccaf1c5301.png" title=" Andres clicks on Tipo documento" width="1920"/>
+                <img src="7ec9399bdd1600cdeee70a2f0fb5b2cd8cc364841d61e9cac7746f7e3636d31e.png" title=" Andres clicks on Tipo documento (completed)" width="1920"/>
+                <img src="7ec9399bdd1600cdeee70a2f0fb5b2cd8cc364841d61e9cac7746f7e3636d31e.png" title=" Andres clicks on Nro Documento" width="1920"/>
+                <img src="69e3b456f77880345bf6bf917e35873a850b4e8af8b2d51d52434c68f03e5045.png" title=" Andres clicks on Nro Documento (completed)" width="1920"/>
+                <img src="69e3b456f77880345bf6bf917e35873a850b4e8af8b2d51d52434c68f03e5045.png" title=" Andres enters '1013536502' into Numero de docmento input" width="1920"/>
+                <img src="7a1a7a3fbf848725b91af6b2ffd27bca29cdf56341e187aacd64e7df5bf1564d.png" title=" Andres enters '1013536502' into Numero de docmento input (completed)" width="1920"/>
+                <img src="7a1a7a3fbf848725b91af6b2ffd27bca29cdf56341e187aacd64e7df5bf1564d.png" title=" Andres clicks on Documento encontrado" width="1920"/>
+                <img src="0137ae007c1ee7049cf4bef0ae4939091fe8fe55457885debcf12026b76a54fe.png" title=" Andres clicks on Documento encontrado (completed)" width="1920"/>
+                <img src="0137ae007c1ee7049cf4bef0ae4939091fe8fe55457885debcf12026b76a54fe.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="e036dc31509af6a75553f45b676b6f557122870017f0d39757bab8855c0902d1.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="e036dc31509af6a75553f45b676b6f557122870017f0d39757bab8855c0902d1.png" title=" Andres clicks on Tipo documento" width="1920"/>
+                <img src="27f4e6b0fc5c4bbd719c8f5089846ac8b30eb065e882c65e557c8814974f2957.png" title=" Andres clicks on Tipo documento (completed)" width="1920"/>
+                <img src="27f4e6b0fc5c4bbd719c8f5089846ac8b30eb065e882c65e557c8814974f2957.png" title=" Andres clicks on Nro Documento" width="1920"/>
+                <img src="100984b12df10e4ed9fb4f9d21b66d111d4dda595695b109a573e70ec1604b69.png" title=" Andres clicks on Nro Documento (completed)" width="1920"/>
+                <img src="100984b12df10e4ed9fb4f9d21b66d111d4dda595695b109a573e70ec1604b69.png" title=" Andres enters '1017178720' into Numero de docmento input" width="1920"/>
+                <img src="7dbe446ae69f7d2d15266533b11d990076cb6d232e0bfc2c0c8c54d41b023ae6.png" title=" Andres enters '1017178720' into Numero de docmento input (completed)" width="1920"/>
+                <img src="7dbe446ae69f7d2d15266533b11d990076cb6d232e0bfc2c0c8c54d41b023ae6.png" title=" Andres clicks on Documento encontrado" width="1920"/>
+                <img src="8dc3e8122b44ad32e895114ed3bdcfe489235fee3294b398204daa57490e8ce7.png" title=" Andres clicks on Documento encontrado (completed)" width="1920"/>
+                <img src="8dc3e8122b44ad32e895114ed3bdcfe489235fee3294b398204daa57490e8ce7.png" title=" Andres clicks on Agregar nuevo" width="1920"/>
+                <img src="c297c711abec0cdcbe275194f8ab43bcf5d3df4a2eb30cbeece86e68b8a687d7.png" title=" Andres clicks on Agregar nuevo (completed)" width="1920"/>
+                <img src="c297c711abec0cdcbe275194f8ab43bcf5d3df4a2eb30cbeece86e68b8a687d7.png" title=" Andres clicks on Tipo documento" width="1920"/>
+                <img src="9a7c39854bc2dcbc9c8aa58f82ed9a5c48d15b058ed8c190217f654308547d5e.png" title=" Andres clicks on Tipo documento (completed)" width="1920"/>
+                <img src="9a7c39854bc2dcbc9c8aa58f82ed9a5c48d15b058ed8c190217f654308547d5e.png" title=" Andres clicks on Nro Documento" width="1920"/>
+                <img src="4259f8b4eb2fd30819d7a2117695cb3a9f8cdeeac0e7bf886a1fe624757a6064.png" title=" Andres clicks on Nro Documento (completed)" width="1920"/>
+                <img src="4259f8b4eb2fd30819d7a2117695cb3a9f8cdeeac0e7bf886a1fe624757a6064.png" title=" Andres enters '98716701' into Numero de docmento input" width="1920"/>
+                <img src="649d00bb87492457f79575a3431a836575979c00ad70a0b884073c6b0fc1565d.png" title=" Andres enters '98716701' into Numero de docmento input (completed)" width="1920"/>
+                <img src="649d00bb87492457f79575a3431a836575979c00ad70a0b884073c6b0fc1565d.png" title=" Andres clicks on Documento encontrado" width="1920"/>
+                <img src="a11a4aa177447310f3012624d4e7d6a7d9f9997f7052f7d299fe102d5a86a597.png" title=" Andres clicks on Documento encontrado (completed)" width="1920"/>
+                <img src="a11a4aa177447310f3012624d4e7d6a7d9f9997f7052f7d299fe102d5a86a597.png" title=" Andres ingresar jugadores (completed)" width="1920"/>
+                <img src="a11a4aa177447310f3012624d4e7d6a7d9f9997f7052f7d299fe102d5a86a597.png" title=" Andres clicks on Continuar" width="1920"/>
+                <img src="0a46256f514b8741b5bb97c42e215048a8e5c91dbadbc1223a54bd77477bc00c.png" title=" Andres clicks on Continuar (completed)" width="1920"/>
+                <img src="0a46256f514b8741b5bb97c42e215048a8e5c91dbadbc1223a54bd77477bc00c.png" title=" Andres clicks on Continuar" width="1920"/>
+                <img src="d4b5a39e27ab7260e130c8159e712ef49420e6c03d667d917ea720cfa7198f54.png" title=" Andres clicks on Continuar (completed)" width="1920"/>
+                <img src="d4b5a39e27ab7260e130c8159e712ef49420e6c03d667d917ea720cfa7198f54.png" title=" Andres clicks on Aceptar terminos" width="1920"/>
+                <img src="40d535a3b00206ea9054bced19a3085c3673d2aa4f00a00ff99d191e6ef9014c.png" title=" Andres clicks on Aceptar terminos (completed)" width="1920"/>
+                <img src="40d535a3b00206ea9054bced19a3085c3673d2aa4f00a00ff99d191e6ef9014c.png" title=" Andres clicks on Continuar" width="1920"/>
+                <img src="f3cc6bc708409c3153af1cb029da5db19ebdf2418d122907216edbbdfb845fd5.png" title=" Andres clicks on Continuar (completed)" width="1920"/>
+                <img src="f3cc6bc708409c3153af1cb029da5db19ebdf2418d122907216edbbdfb845fd5.png" title=" Andres clicks on Continuar" width="1920"/>
+                <img src="d4f4a2363e28ed405ae960df10f9809b43170a97ca6d3187f9ab5e27016d57ba.png" title=" Andres clicks on Continuar (completed)" width="1920"/>
+                <img src="d4f4a2363e28ed405ae960df10f9809b43170a97ca6d3187f9ab5e27016d57ba.png" title=" Andres clicks on Continuar" width="1920"/>
+                <img src="56667a3c3c6f143e77b5573cb66945ee6f01fa5877df5b95e056065b3d0a6dec.png" title=" Andres clicks on Continuar (completed)" width="1920"/>
+                <img src="56667a3c3c6f143e77b5573cb66945ee6f01fa5877df5b95e056065b3d0a6dec.png" title=" Andres rerservar cancha (completed)" width="1920"/>
+                <img src="56667a3c3c6f143e77b5573cb66945ee6f01fa5877df5b95e056065b3d0a6dec.png" title=" Cuando el ingresa los datos de la reserva 15-septiembre 2021 dia Miercoles (completed)" width="1920"/>
+                <img src="6795f928886a5dddf82d5e8b124b4cb79025029427244c24135a63b62f078675.png" title=" Entonces el podra ver un mensaje de &iexcl;Felicitaciones!" width="1920"/>
+                <img src="6795f928886a5dddf82d5e8b124b4cb79025029427244c24135a63b62f078675.png" title=" Then verificar reserva should be '&amp;iexcl;Felicitaciones!'" width="1920"/>
+                <img src="0a17dc32a87e724cdd8cbc7af948b36197e2497161887c7b286f3ff80811a8c0.png" title=" Andres clicks on Aceptar resreva" width="1920"/>
+                <img src="ec13f000b677c9843f97518c28ca65b91a2a92ab0547759fa965769ad207d81e.png" title=" Andres clicks on Aceptar resreva (completed)" width="1920"/>
+                <img src="ec13f000b677c9843f97518c28ca65b91a2a92ab0547759fa965769ad207d81e.png" title=" Then verificar reserva should be '&amp;iexcl;Felicitaciones!' (completed)" width="1920"/>
+                <img src="ec13f000b677c9843f97518c28ca65b91a2a92ab0547759fa965769ad207d81e.png" title=" Entonces el podra ver un mensaje de &iexcl;Felicitaciones! (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.30</span>
+</div>
+</body>
+</html>

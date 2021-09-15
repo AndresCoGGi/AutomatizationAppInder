@@ -8,12 +8,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b56e9ac-4cf2-4a82-ba13-7acadfba719d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.0/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.0/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/d53fa755d80e4aed7431b6f33aefc022b01689d820c2a3a9757b2b565cbf13f3_screenshots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/co/com/bancolombia/certificacion/appinder/model/Jugadores.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/co/com/bancolombia/certificacion/appinder/model/Jugadores.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/co/com/bancolombia/certificacion/appinder/tasks/IngresarJugadores.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/co/com/bancolombia/certificacion/appinder/tasks/IngresarJugadores.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Inicio#20de#20sesion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/co.com.bancolombia.certificacion.appinder.runners.InicioSesion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/co.com.bancolombia.certificacion.appinder.runners.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/co.com.bancolombia.certificacion.appinder.runners.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/features/reserva.feature" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/test/features/reserva.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Inicio#20de#20sesion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-co.com.bancolombia.certificacion.appinder.runners.InicioSesion.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/model/Jugadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IngresarJugadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/IngresarJugadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/bancolombia/certificacion/appinder/tasks/RerservarCancha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/reserva.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/reserva.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/b01bf602207a7a621b7d7bf079f470fb9aee16b7cef017ae2e13ef6188fda6e6_screenshots.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +330,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

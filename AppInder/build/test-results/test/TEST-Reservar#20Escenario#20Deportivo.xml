@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Reservar Escenario Deportivo" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-04T21:19:16" hostname="PCSANTI" time="63.982">
+  <properties/>
+  <testcase name="Reserva exitosa Santiago" classname="Reservar Escenario Deportivo" time="63.982"/>
+  <system-out><![CDATA[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jugadores Santiago
+TamaÃ±o: 7
+Tipo :dula de Ciudadan
+COntador :1
+
+
+
+
+
+
+
+
+
+
+Tipo :dula de Ciudadan
+COntador :2
+
+
+
+
+
+
+
+
+
+
+Tipo :dula de Ciudadan
+COntador :3
+
+
+
+
+
+
+
+
+
+
+Tipo :dula de Ciudadan
+COntador :4
+
+
+
+
+
+
+
+
+
+
+Tipo :dula de Ciudadan
+COntador :5
+
+
+
+
+
+
+
+
+
+
+Tipo :dula de Ciudadan
+COntador :6
+
+
+
+
+
+
+
+
+
+
+Tipo :dula de Ciudadan
+COntador :7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SE HA RESERVADO EXITOSAMENTE EN LA Fecha: 2021-09-21 y 2021-09-21
+
+
+
+
+
+
+
+
+
+
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 25677
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+sep 04, 2021 4:19:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Reserva exitosa Santiago
+----------------------------------------------------------------------------
+]]></system-err>
+</testsuite>

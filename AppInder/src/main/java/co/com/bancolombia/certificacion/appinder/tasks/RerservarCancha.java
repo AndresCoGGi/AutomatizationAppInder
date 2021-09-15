@@ -52,6 +52,7 @@ public class RerservarCancha implements Task {
         WaitUntil.the(ReservaElements.DISCIPLINA_CHECKBOX, isVisible()),
         Click.on(ReservaElements.DISCIPLINA_CHECKBOX),
         WaitUntil.the(ReservaElements.DISCIPLINA_CAMPO, isEnabled()),
+        Scroll.to(ReservaElements.DISCIPLINA_CAMPO),
         SeleccionarEnLista.opcion("MICROFUTBOL", ReservaElements.DISCIPLINA_CAMPO));
     do {
       actor.attemptsTo(SeleccionarFecha.deReserva(dia, mes),
@@ -60,9 +61,9 @@ public class RerservarCancha implements Task {
           WaitUntil
               .the(ReservaElements.HORA_INICIO.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana)),
                   isVisible()),
-          Enter.theValue("2000")
-              .into(ReservaElements.HORA_INICIO.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana))),
           Enter.theValue("2100")
+              .into(ReservaElements.HORA_INICIO.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana))),
+          Enter.theValue("2200")
               .into(ReservaElements.HORA_FIN.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana))),
           Click.on(ReservaElements.DISPONIBILIDAD));
       try {
