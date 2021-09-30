@@ -44,10 +44,10 @@ public class RerservarCancha implements Task {
         WaitUntil.the(ReservaElements.LOADER, isNotVisible()),
         WaitUntil.the(ReservaElements.ESCENARIO_DEPORTIVO, isEnabled()),
         SeleccionarEnLista.opcion(
-            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.1 UNIDAD DEPORTIVA JUANES DE LA PAZ",
+            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.2 UNIDAD DEPORTIVA JUANES DE LA PAZ",
             ReservaElements.ESCENARIO_DEPORTIVO),
         SeleccionarEnLista.opcion(
-            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.1 UNIDAD DEPORTIVA JUANES DE LA PAZ",
+            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.2 UNIDAD DEPORTIVA JUANES DE LA PAZ",
             ReservaElements.ESCENARIO_DEPORTIVO),
         WaitUntil.the(ReservaElements.DISCIPLINA_CHECKBOX, isVisible()),
         Click.on(ReservaElements.DISCIPLINA_CHECKBOX),
@@ -61,9 +61,9 @@ public class RerservarCancha implements Task {
           WaitUntil
               .the(ReservaElements.HORA_INICIO.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana)),
                   isVisible()),
-          Enter.theValue("2100")
+          Enter.theValue("2000")
               .into(ReservaElements.HORA_INICIO.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana))),
-          Enter.theValue("2200")
+          Enter.theValue("2100")
               .into(ReservaElements.HORA_FIN.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana))),
           Click.on(ReservaElements.DISPONIBILIDAD));
       try {
