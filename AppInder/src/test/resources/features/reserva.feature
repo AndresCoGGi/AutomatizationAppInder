@@ -10,7 +10,7 @@ Característica: Reservar Escenario Deportivo
       | tipo_documento | Tarjeta de Identidad |
       | user           | 1000207300           |
       | password       | nacional             |
-    Cuando el ingresa los datos de la reserva 4-octubre 2021 dia Lunes
+    Cuando el ingresa los datos de la reserva 18-octubre 2021 dia Lunes
     Entonces el podra ver un mensaje de ¡Felicitaciones!
 
   @reserva_andres

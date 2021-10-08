@@ -61,9 +61,9 @@ public class RerservarCancha implements Task {
           WaitUntil
               .the(ReservaElements.HORA_INICIO.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana)),
                   isVisible()),
-          Enter.theValue("2000")
-              .into(ReservaElements.HORA_INICIO.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana))),
           Enter.theValue("2100")
+              .into(ReservaElements.HORA_INICIO.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana))),
+          Enter.theValue("2200")
               .into(ReservaElements.HORA_FIN.of(DiaSemanaUtility.obtenerDiaSemana(diaSemana))),
           Click.on(ReservaElements.DISPONIBILIDAD));
       try {
