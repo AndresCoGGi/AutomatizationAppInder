@@ -19,5 +19,5 @@ Característica: Reservar Escenario Deportivo
       | tipo_documento | Cédula de Ciudadanía |
       | user           | 1020459879           |
       | password       | 1020459879           |
-    Cuando el ingresa los datos de la reserva 11-octubre 2021 dia Lunes
+    Cuando el ingresa los datos de la reserva 25-octubre 2021 dia Lunes
     Entonces el podra ver un mensaje de ¡Felicitaciones!

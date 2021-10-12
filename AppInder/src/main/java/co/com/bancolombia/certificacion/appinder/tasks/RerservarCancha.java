@@ -44,10 +44,10 @@ public class RerservarCancha implements Task {
         WaitUntil.the(ReservaElements.LOADER, isNotVisible()),
         WaitUntil.the(ReservaElements.ESCENARIO_DEPORTIVO, isEnabled()),
         SeleccionarEnLista.opcion(
-            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.2 UNIDAD DEPORTIVA JUANES DE LA PAZ",
+            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.1 UNIDAD DEPORTIVA JUANES DE LA PAZ",
             ReservaElements.ESCENARIO_DEPORTIVO),
         SeleccionarEnLista.opcion(
-            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.2 UNIDAD DEPORTIVA JUANES DE LA PAZ",
+            "CANCHA DE MICROFUTBOL EN GRAMA SINTETICA N.1 UNIDAD DEPORTIVA JUANES DE LA PAZ",
             ReservaElements.ESCENARIO_DEPORTIVO),
         WaitUntil.the(ReservaElements.DISCIPLINA_CHECKBOX, isVisible()),
         Click.on(ReservaElements.DISCIPLINA_CHECKBOX),

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Reservar Escenario Deportivo" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-30T03:53:43" hostname="PCSANTI" time="83.46">
+<testsuite name="Reservar Escenario Deportivo" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-12T14:08:34" hostname="PCSANTI" time="80.256">
   <properties/>
-  <testcase name="Reserva exitosa Andres" classname="Reservar Escenario Deportivo" time="83.46"/>
+  <testcase name="Reserva exitosa Andres" classname="Reservar Escenario Deportivo" time="80.256"/>
   <system-out><![CDATA[
-
-
 
 
 
@@ -176,7 +174,7 @@ COntador :7
 
 
 
-SE HA RESERVADO EXITOSAMENTE EN LA Fecha: 2021-10-11 y 2021-10-11
+SE HA RESERVADO EXITOSAMENTE EN LA Fecha: 2021-10-25 y 2021-10-25
 
 
 
@@ -188,12 +186,12 @@ SE HA RESERVADO EXITOSAMENTE EN LA Fecha: 2021-10-11 y 2021-10-11
 
 
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 36004
+  <system-err><![CDATA[Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 19729
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1632974027.270][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-sep 29, 2021 10:53:47 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1634047716.963][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
+oct 12, 2021 9:08:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
