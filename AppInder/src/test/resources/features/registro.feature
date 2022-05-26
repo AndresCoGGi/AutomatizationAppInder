@@ -8,6 +8,6 @@ Característica: Registro en Simon Inder
   Escenario: : Registro exitoso
     Dado que el usuario se encuentra en el formulario de registro
     Cuando el ingresa los datos personales
-      | tipoPersona     | tipoDocumento | numeroIdentificacion | nombre | apellido | sexo      | fechaNacimiento | clave    | municipio | estrato | correo               |
-      | Persona Natural | Pasaporte     | 29370322             | Juan   | Tapias   | Masculino | 10061995        | 202090an | Medellín  | 3       | andres13@hotmail.com |
+      | tipoPersona     | tipoDocumento        | numeroIdentificacion | nombre | apellido | sexo      | fechaNacimiento | clave      | municipio | estrato | correo                  |
+      | Persona Natural | Cédula de Ciudadanía | 1036339913           | Daniel | Correa   | Masculino | 02061999        | 1036339913 | Medellin  | 3       | danicorregi15@gmail.com |
     Entonces el podra registrar exitosamente

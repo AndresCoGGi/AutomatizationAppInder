@@ -23,6 +23,7 @@ public class SeleccionarEnLista implements Interaction {
 
   @Override
   public <T extends Actor> void performAs(T actor) {
+    System.out.println();
     actor.attemptsTo(Click.on(campo), Click.on(RegistroElementos.OPCION_LISTA.of(option)));
   }
 }

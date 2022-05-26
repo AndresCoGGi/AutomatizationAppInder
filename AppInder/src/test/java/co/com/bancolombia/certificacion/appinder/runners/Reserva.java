@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features/reserva.feature",
     glue = "co.com.bancolombia.certificacion.appinder.stepdefinitions",
     snippets = SnippetType.CAMELCASE,
-    tags = "@reserva_andres")
+    tags = "@reserva_elkin")
 public class Reserva {
 
 }

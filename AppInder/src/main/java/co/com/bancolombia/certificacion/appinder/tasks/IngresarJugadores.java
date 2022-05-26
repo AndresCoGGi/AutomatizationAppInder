@@ -32,8 +32,8 @@ public class IngresarJugadores implements Task {
             System.out.println("Jugadores Andres");
             jugadores = Jugadores.obtenerJugadoresAndres();
         } else {
-            System.out.println("Jugadores Santiago");
-            jugadores = Jugadores.obtenerJugadoresSantiago();
+            System.out.println("Jugadores Elkin");
+            jugadores = Jugadores.obtenerJugadoresElkin();
         }
         System.out.println("Tamaño: " + jugadores.size());
         for (Iterator it = jugadores.keySet().iterator(); it.hasNext(); ) {

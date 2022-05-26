@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Reservar Escenario Deportivo" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-12T14:08:34" hostname="PCSANTI" time="80.256">
+<testsuite name="Reservar Escenario Deportivo" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-05-26T19:09:47" hostname="PCSANTI" time="78.33">
   <properties/>
-  <testcase name="Reserva exitosa Andres" classname="Reservar Escenario Deportivo" time="80.256"/>
+  <testcase name="Reserva exitosa Elkin" classname="Reservar Escenario Deportivo" time="78.33"/>
   <system-out><![CDATA[
 
 
@@ -77,7 +77,15 @@
 
 
 
-Jugadores Andres
+
+
+
+
+
+
+
+
+Jugadores Elkin
 TamaÃ±o: 7
 Tipo :dula de Ciudadan
 COntador :1
@@ -174,7 +182,7 @@ COntador :7
 
 
 
-SE HA RESERVADO EXITOSAMENTE EN LA Fecha: 2021-10-25 y 2021-10-25
+SE HA RESERVADO EXITOSAMENTE EN LA Fecha: 2022-06-13 y 2022-06-13
 
 
 
@@ -186,12 +194,12 @@ SE HA RESERVADO EXITOSAMENTE EN LA Fecha: 2021-10-25 y 2021-10-25
 
 
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 93.0.4577.15 (660fc11082ba57405eca2e8c49c3e1af756fbfae-refs/branch-heads/4577@{#203}) on port 19729
+  <system-err><![CDATA[Starting ChromeDriver 101.0.4951.41 (93c720db8323b3ec10d056025ab95c23a31997c9-refs/branch-heads/4951@{#904}) on port 5982
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1634047716.963][WARNING]: This version of ChromeDriver has not been tested with Chrome version 94.
-oct 12, 2021 9:08:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1653592189.572][WARNING]: This version of ChromeDriver has not been tested with Chrome version 102.
+may 26, 2022 2:09:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
@@ -201,7 +209,7 @@ INFORMACIÓN: Detected dialect: W3C
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: Reserva exitosa Andres
+TEST PASSED: Reserva exitosa Elkin
 ----------------------------------------------------------------------------
 ]]></system-err>
 </testsuite>
